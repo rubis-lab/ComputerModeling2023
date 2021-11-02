@@ -1,0 +1,5 @@
+<map id="Task" name="Task">
+<area shape="rect" id="node2" href="$class_e_c_u_task.html" title="ECUTask" alt="" coords="5,80,85,107"/>
+<area shape="rect" id="node3" href="$class_job.html" title="Header file for Engine&#45;Job A job is the instance of certain task. So it has dynamical properties with..." alt="" coords="109,80,152,107"/>
+<area shape="rect" id="node4" href="$class_software_component_task.html" title="SoftwareComponentTask" alt="" coords="176,80,347,107"/>
+</map>
