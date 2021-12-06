@@ -33,7 +33,7 @@
  */
 Logger::Logger()
 {
-    
+
 }
 
 /**
@@ -113,4 +113,88 @@ void Logger::start_logging()
         scheduling_log.close();
         utils::mtx_data_log.unlock();    
     }    
+}
+
+std::string Logger::_2019_13914_print_tagged_data_log(std::string task_name, std::shared_ptr<TaggedData> current_data, int size){
+    std::stringstream data;
+    data << std::hex << "0x" << current_data -> data_read1 << " ";
+    data << std::hex << "0x" << current_data -> data_read2 << " ";
+    data << std::hex << "0x" << current_data -> data_read3 << " ";
+    data << std::hex << "0x" << current_data -> data_read4 << " ";
+    data << std::hex << "0x" << current_data -> data_read5 << " ";
+    data << std::hex << "0x" << current_data -> data_read6 << "\n";
+    
+    std::stringstream log;
+    log << " ";
+    log << std::left << std::setw(14) << task_name;
+    log << std::left << std::setw(9) << std::to_string(current_data -> data_time);
+    log << std::left << std::setw(15) << "READ";
+    log << std::left << std::setw(16) << std::to_string(size);
+
+    return log.str() + data.str();
+}
+
+std::string Logger::_2019_13914_print_delayed_data_log(std::string task_name, std::shared_ptr<DelayedData> delayed_data, int size){
+    std::stringstream data;
+    data << std::hex << "0x" << delayed_data -> data_write1 << " ";
+    data << std::hex << "0x" << delayed_data -> data_write2 << " ";
+    data << std::hex << "0x" << delayed_data -> data_write3 << " ";
+    data << std::hex << "0x" << delayed_data -> data_write4 << "\n";
+    
+    std::stringstream log;
+    log << " ";
+    log << std::left << std::setw(14) << task_name;
+    log << std::left << std::setw(9) << std::to_string(delayed_data -> data_time);
+    log << std::left << std::setw(15) << "READ";
+    log << std::left << std::setw(16) << std::to_string(size);
+
+    return log.str() + data.str();
+}
+
+void Logger::_2019_13914_task_read_write_logger(std::string task_name){
+    std::ofstream log;
+    log.open(utils::cpsim_path + "/Log/2019-13914_read_write.log", std::ios::app);
+
+    static bool init = false;
+    if(!init){
+        log << "[ TASK NAME ] [ TIME ] [ READ/WRITE ] [ DATA LENGTH ] [ RAW DATA ]\n";
+        log.close();
+        init = true;
+    }
+    log.open(utils::cpsim_path + "/Log/2019-13914_read_write.log", std::ios::app);
+    log << task_name;
+    log.close();
+    return;
+}
+
+void Logger::_2019_13914_real_cyber_event_logger(long long time, int job_id, std::string event_type){
+    std::ofstream event_log;
+    event_log.open(utils::cpsim_path+"/Log/2019-13914_event.log",std::ios::app);
+
+    static bool init = false;
+    if(!init){
+        event_log << "[ TIME ] [ JOB ID ] [ EVENT TYPE ]\n";
+        event_log.close();
+        init = true;
+    }
+
+    std::stringstream log;
+    log << " ";
+    log << std::left << std::setw(9) << std::to_string(time);
+    log << std::left << std::setw(11) << "J" + std::to_string(job_id);
+    log << std::left << std::setw(15) << event_type;
+
+    Event event;
+    event.time = time;
+    event.job_id = job_id;
+    event.log = log.str();
+    event_buffer.push(event);
+    utils::mtx_data_log.lock();
+    while(event_buffer.size() > 10){
+        std::ofstream event_log;
+        event_log << event_buffer.top().log << "\n";
+        event_buffer.pop();
+        event_log.close();
+    }
+    utils::mtx_data_log.unlock();
 }
