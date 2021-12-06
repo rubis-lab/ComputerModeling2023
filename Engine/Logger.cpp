@@ -156,7 +156,7 @@ void Logger::_2019_13914_task_read_write_logger(std::string task_name){
 
     static bool init = false;
     if(!init){
-        log.open(utils::cpsim_path + "/Log/2019-13914_read_write.log", std::ios::app|std::ofstream::trunc);
+        log.open(utils::cpsim_path + "/Log/2019-13914_read_write.log", std::ios::out);
         log << "[ TASK NAME ] [ TIME ] [ READ/WRITE ] [ DATA LENGTH ] [ RAW DATA ]\n";
         log.close();
         init = true;
@@ -172,7 +172,7 @@ void Logger::_2019_13914_real_cyber_event_logger(long long time, int job_id, std
 
     static bool init = false;
     if(!init){
-        event_log.open(utils::cpsim_path+"/Log/2019-13914_event.log",std::ios::app|std::ofstream::trunc);
+        event_log.open(utils::cpsim_path+"/Log/2019-13914_event.log",std::ios::out);
         event_log << "[ TIME ] [ JOB ID ] [ EVENT TYPE ]\n";
         event_log.close();
         init = true;
@@ -189,7 +189,6 @@ void Logger::_2019_13914_real_cyber_event_logger(long long time, int job_id, std
     event.job_id = job_id;
     event.log = log.str();
     event_buffer.push(event);
-    utils::mtx_data_log.lock();
     while(event_buffer.size() > 10){
         std::ofstream event_log;
         event_log.open(utils::cpsim_path+"/Log/2019-13914_event.log",std::ios::app);
@@ -197,5 +196,4 @@ void Logger::_2019_13914_real_cyber_event_logger(long long time, int job_id, std
         event_buffer.pop();
         event_log.close();
     }
-    utils::mtx_data_log.unlock();
 }
