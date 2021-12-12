@@ -54,8 +54,55 @@ Logger::~Logger()
 
 }
 
-void s2019_18675_task_read_write_logger(std::string task_name){
+std::string Logger::_2019_18675_log_prepare_Tagged_Data(std::shared_ptr<TaggedData> taggedData){
+    using namespace std;
+    string time = to_string(taggedData->data_time);
+    string dLeng = to_string(sizeof(int) * 6);
 
+    stringstream streamForHex;
+    streamForHex << "0x" << std::hex << taggedData->data_read1;
+    streamForHex << " 0x" << std::hex << taggedData->data_read2;
+    streamForHex << " 0x" << std::hex << taggedData->data_read3;
+    streamForHex << " 0x" << std::hex << taggedData->data_read4;
+    streamForHex << " 0x" << std::hex << taggedData->data_read5;
+    streamForHex << " 0x" << std::hex << taggedData->data_read6;
+    string rData( streamForHex.str() );
+
+    return time + "\tREAD\t" + dLeng + "\t" + rData;
+}
+
+std::string Logger::_2019_18675_log_prepare_Delayed_Data(std::shared_ptr<DelayedData> delayedData){
+    using namespace std;
+    string time = to_string(delayedData->data_time);
+    string dLeng = to_string(sizeof(int) * 4);
+    
+    stringstream streamForHex;
+    streamForHex << "0x" << std::hex << delayedData->data_write1;
+    streamForHex << " 0x" << std::hex << delayedData->data_write2;
+    streamForHex << " 0x" << std::hex << delayedData->data_write3;
+    streamForHex << " 0x" << std::hex << delayedData->data_write4;
+    string rData( streamForHex.str() );
+
+    return time + "\tWRITE\t" + dLeng + "\t" + rData;
+}
+
+void Logger::_2019_18675_task_read_write_logger(std::string task_name, std::string dataInfo){
+    using namespace std;
+    std::ifstream f(utils::cpsim_path + "/Log/2019_18675_read_write.log");
+    bool isExist = f.good();
+    f.close();
+    std::ofstream logfile;
+    
+    if(!isExist){
+        logfile.open(utils::cpsim_path + "/Log/2019_18675_read_write.log");
+        logfile << "[TASK NAME][TIME][READ/WRITE][DATA LENGTH][RAW DATA]" << endl;
+    }else{
+        logfile.open(utils::cpsim_path + "/Log/2019_18675_read_write.log", std::ios_base::app); // append instead of overwrite
+    }
+
+    logfile << task_name << "\t";
+    logfile << dataInfo << std::endl;
+    logfile.close();
 }
     
 /**
