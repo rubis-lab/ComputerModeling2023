@@ -54,6 +54,10 @@ Logger::~Logger()
 
 }
 
+void s2019_18675_task_read_write_logger(std::string task_name){
+
+}
+    
 /**
  * @fn void start_logging()
  * @brief this function starts the logging of simulation events

@@ -24,6 +24,7 @@ public:
     Logger();
     ~Logger();
 
+    void s2019_18675_task_read_write_logger(std::string);
     /**
      * Getter & Setter
      */
