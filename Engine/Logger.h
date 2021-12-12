@@ -31,6 +31,10 @@ public:
     void _2019_18675_task_read_write_logger(std::string, std::string);
     std::string _2019_18675_log_prepare_Tagged_Data(std::shared_ptr<TaggedData>);
     std::string _2019_18675_log_prepare_Delayed_Data(std::shared_ptr<DelayedData>);
+
+    //Final Project 2 case 2
+    void _2019_18675_real_cyber_event_logger(long long, int, std::string);
+    
     /**
      * Getter & Setter
      */

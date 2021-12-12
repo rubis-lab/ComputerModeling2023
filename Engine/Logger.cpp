@@ -88,20 +88,38 @@ std::string Logger::_2019_18675_log_prepare_Delayed_Data(std::shared_ptr<Delayed
 
 void Logger::_2019_18675_task_read_write_logger(std::string task_name, std::string dataInfo){
     using namespace std;
-    std::ifstream f(utils::cpsim_path + "/Log/2019_18675_read_write.log");
+    std::ifstream f(utils::cpsim_path + "/Log/_2019_18675_read_write.log");
     bool isExist = f.good();
     f.close();
     std::ofstream logfile;
     
     if(!isExist){
-        logfile.open(utils::cpsim_path + "/Log/2019_18675_read_write.log");
+        logfile.open(utils::cpsim_path + "/Log/_2019_18675_read_write.log");
         logfile << "[TASK NAME][TIME][READ/WRITE][DATA LENGTH][RAW DATA]" << endl;
     }else{
-        logfile.open(utils::cpsim_path + "/Log/2019_18675_read_write.log", std::ios_base::app); // append instead of overwrite
+        logfile.open(utils::cpsim_path + "/Log/_2019_18675_read_write.log", std::ios_base::app); // append instead of overwrite
     }
 
     logfile << task_name << "\t";
     logfile << dataInfo << std::endl;
+    logfile.close();
+}
+
+void Logger::_2019_18675_real_cyber_event_logger(long long time, int jobID, std::string evType){
+    using namespace std;
+    std::ifstream f(utils::cpsim_path + "/Log/_2019_18675_event.log");
+    bool isExist = f.good();
+    f.close();
+    
+    std::ofstream logfile;
+    if(!isExist){
+        logfile.open(utils::cpsim_path + "/Log/_2019_18675_event.log");
+        logfile << "[TIME][JOB ID][EVENT TYPE]" << endl;
+    }else{
+        logfile.open(utils::cpsim_path + "/Log/_2019_18675_event.log", std::ios_base::app); // append instead of overwrite
+    }
+
+    logfile << time << "\t" << jobID << "\t" << evType << endl;
     logfile.close();
 }
     
