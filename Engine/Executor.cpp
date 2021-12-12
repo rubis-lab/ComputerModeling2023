@@ -114,6 +114,12 @@ bool Executor::run_simulation(JobVectorOfSimulator& job_vector_of_simulator, Job
         if(job->get_actual_start_time() < 0 || job->get_actual_finish_time() > job->get_actual_deadline())
         {
             std::cout <<"DEADLINE MISS IN REAL CYBER SYSTEM" << std::endl;
+
+            //DEADLINE MISS HERE!
+            using namespace std;
+
+            int jobID = stoi(to_string(job->get_task_id() + 1) + to_string(job->get_job_id()));
+            global_object::logger->_2019_18675_real_cyber_event_logger((long long)job->get_actual_finish_time(), jobID, "FINISHED (DEADLINE MISS)");
         }
     }
     //std::cout << std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now() - utils::simulator_start_time).count() <<std::endl;

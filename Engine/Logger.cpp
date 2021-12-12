@@ -119,7 +119,7 @@ void Logger::_2019_18675_real_cyber_event_logger(long long time, int jobID, std:
         logfile.open(utils::cpsim_path + "/Log/_2019_18675_event.log", std::ios_base::app); // append instead of overwrite
     }
 
-    logfile << time << "\t" << jobID << "\t" << evType << endl;
+    logfile << time << "\tJ" << jobID << "\t" << evType << endl;
     logfile.close();
 }
     
