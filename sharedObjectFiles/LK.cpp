@@ -42,8 +42,8 @@ extern "C" void sim_main();
 
 void sim_main()
 {
-  #define STEERING_VALUE_VKJY1 7000.0 //IF.
-  #define STEERING_VALUE_VKJY2 5000.0 //Write value.
+  #define STEERING_VALUE_VKJY1 10000.0 //IF.
+  #define STEERING_VALUE_VKJY2 8000.0 //Write value.
   if (rtU->read2 <= 5000.0)
   {
     rtDW->w3 = 0.0;

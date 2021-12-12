@@ -23,15 +23,15 @@
             <link idxCore="0" rid="ECU0" type="ECU"/>
         </SWC>
 
-        <SWC BCET="30" IP="SENSING" Virtual="1" WCET="30" consumer="" deadline="300" period="300" phase="0" readCon="0" writeCon="0">
+        <SWC BCET="40" IP="SENSING" Virtual="1" WCET="40" consumer="" deadline="200" period="200" phase="0" readCon="0" writeCon="0">
             <impl path="/home/devkjy/ComputerModeling2021/sharedObjectFiles/SENSING/SENSING.cpp" type="MANUAL"/>
             <link idxCore="0" rid="ECU1" type="ECU"/>
         </SWC>
-        <SWC BCET="30" IP="BRAKE" Virtual="1" WCET="30" consumer="" deadline="300" period="300" phase="0" readCon="0" writeCon="0">
+        <SWC BCET="40" IP="BRAKE" Virtual="1" WCET="40" consumer="" deadline="200" period="200" phase="0" readCon="0" writeCon="0">
             <impl path="/home/devkjy/ComputerModeling2021/sharedObjectFiles/BRAKE/BRAKE.cpp" type="MANUAL"/>
             <link idxCore="0" rid="ECU1" type="ECU"/>
         </SWC>
-        <SWC BCET="30" IP="POWER" Virtual="1" WCET="30" consumer="" deadline="300" period="300" phase="0" readCon="0" writeCon="0">
+        <SWC BCET="40" IP="POWER" Virtual="1" WCET="40" consumer="" deadline="200" period="200" phase="0" readCon="0" writeCon="0">
             <impl path="/home/devkjy/ComputerModeling2021/sharedObjectFiles/POWER/POWER.cpp" type="MANUAL"/>
             <link idxCore="0" rid="ECU1" type="ECU"/>
         </SWC>
