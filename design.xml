@@ -10,11 +10,11 @@
         <link rid="192.168.0.100" type="ETH"/>
     </CAR>
     <SWCs>
-        <SWC BCET="20" IP="LK" Virtual="1" WCET="20" consumer="" deadline="100" period="100" phase="0" readCon="1" writeCon="1">
+        <SWC BCET="20" IP="LK" Virtual="1" WCET="20" consumer="" deadline="80" period="100" phase="0" readCon="1" writeCon="1">
             <impl path="/home/lemarais/ComputerModeling2021/sharedObjectFiles/LK/LK.cpp" type="MANUAL"/>
             <link idxCore="0" rid="ECU1" type="ECU"/>
         </SWC>
-        <SWC BCET="20" IP="CC" Virtual="1" WCET="20" consumer="" deadline="80" period="100" phase="0" readCon="1" writeCon="1">
+        <SWC BCET="20" IP="CC" Virtual="1" WCET="20" consumer="" deadline="100" period="100" phase="0" readCon="1" writeCon="1">
             <impl path="/home/lemarais/ComputerModeling2021/sharedObjectFiles/CC/CC.cpp" type="MANUAL"/>
             <link idxCore="0" rid="ECU1" type="ECU"/>
         </SWC>
