@@ -22,7 +22,14 @@ void sim_main()
   /********************************************/
   write5 = 0;
   write6 = 0;
-  read2 = read2 / 100 - 100000;
+  read2 = read2 / 100 + 400000;
+
+  double STEERING = 1500.0;
+
+  // if (rtU->read2 > STEERING / 2)
+  // {
+  //   read2 = read2 - 200000;
+  // }
 
   if(read4 > 6000) {
     

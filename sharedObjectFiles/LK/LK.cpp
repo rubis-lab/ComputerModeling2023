@@ -3,7 +3,7 @@
 
 void sim_main()
 {
-  double STEERING = 3300.0;
+  double STEERING = 1500.0;
 
   if (rtU->read2 <= STEERING / 2)
   {
