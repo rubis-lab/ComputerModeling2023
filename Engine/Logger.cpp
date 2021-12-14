@@ -53,6 +53,20 @@ Logger::~Logger()
 {
 
 }
+std::string Logger::_2019_18675_log_prepare_byte_hex(int value){
+    using namespace std;
+    stringstream streamForHex;
+    unsigned int bytes[4];
+    bytes[0] = (value >> 24) & 0xFF;
+    bytes[1] = (value >> 16) & 0xFF;
+    bytes[2] = (value >> 8) & 0xFF;
+    bytes[3] = (value) & 0xFF;
+    streamForHex << "0x" << setfill('0') << setw(2) << hex << bytes[0];
+    streamForHex << " 0x" << setfill('0') << setw(2) << hex << bytes[1];
+    streamForHex << " 0x" << setfill('0') << setw(2) << hex << bytes[2];
+    streamForHex << " 0x" << setfill('0') << setw(2) << hex << bytes[3];
+    return streamForHex.str();
+}
 
 std::string Logger::_2019_18675_log_prepare_Tagged_Data(std::shared_ptr<TaggedData> taggedData){
     using namespace std;
@@ -60,12 +74,14 @@ std::string Logger::_2019_18675_log_prepare_Tagged_Data(std::shared_ptr<TaggedDa
     string dLeng = to_string(sizeof(int) * 6);
 
     stringstream streamForHex;
-    streamForHex << "0x" << std::setfill ('0') << std::setw(sizeof(int)*2) << std::hex << taggedData->data_read1;
-    streamForHex << " 0x" << std::setfill ('0') << std::setw(sizeof(int)*2) << std::hex << taggedData->data_read2;
-    streamForHex << " 0x" << std::setfill ('0') << std::setw(sizeof(int)*2) << std::hex << taggedData->data_read3;
-    streamForHex << " 0x" << std::setfill ('0') << std::setw(sizeof(int)*2) << std::hex << taggedData->data_read4;
-    streamForHex << " 0x" << std::setfill ('0') << std::setw(sizeof(int)*2) << std::hex << taggedData->data_read5;
-    streamForHex << " 0x" << std::setfill ('0') << std::setw(sizeof(int)*2) << std::hex << taggedData->data_read6;
+
+    streamForHex << _2019_18675_log_prepare_byte_hex(taggedData->data_read1);
+    streamForHex << " " << _2019_18675_log_prepare_byte_hex(taggedData->data_read2);
+    streamForHex << " " << _2019_18675_log_prepare_byte_hex(taggedData->data_read3);
+    streamForHex << " " << _2019_18675_log_prepare_byte_hex(taggedData->data_read4);
+    streamForHex << " " << _2019_18675_log_prepare_byte_hex(taggedData->data_read5);
+    streamForHex << " " << _2019_18675_log_prepare_byte_hex(taggedData->data_read6);
+
     string rData( streamForHex.str() );
 
     return time + "\tREAD\t" + dLeng + "\t" + rData;
@@ -77,10 +93,12 @@ std::string Logger::_2019_18675_log_prepare_Delayed_Data(std::shared_ptr<Delayed
     string dLeng = to_string(sizeof(int) * 4);
     
     stringstream streamForHex;
-    streamForHex << "0x" << std::setfill ('0') << std::setw(sizeof(int)*2) << std::hex << delayedData->data_write1;
-    streamForHex << " 0x" << std::setfill ('0') << std::setw(sizeof(int)*2) << std::hex << delayedData->data_write2;
-    streamForHex << " 0x" << std::setfill ('0') << std::setw(sizeof(int)*2) << std::hex << delayedData->data_write3;
-    streamForHex << " 0x" << std::setfill ('0') << std::setw(sizeof(int)*2) << std::hex << delayedData->data_write4;
+
+    streamForHex << _2019_18675_log_prepare_byte_hex(delayedData->data_write1);
+    streamForHex << " " << _2019_18675_log_prepare_byte_hex(delayedData->data_write2);
+    streamForHex << " " << _2019_18675_log_prepare_byte_hex(delayedData->data_write3);
+    streamForHex << " " << _2019_18675_log_prepare_byte_hex(delayedData->data_write4);
+
     string rData( streamForHex.str() );
 
     return time + "\tWRITE\t" + dLeng + "\t" + rData;
@@ -99,7 +117,8 @@ void Logger::_2019_18675_task_read_write_logger(std::string task_name, std::stri
             logfile.open(utils::cpsim_path + "/Log/_2019_18675_read_write.log");
             logfile << "[TASK NAME][TIME][READ/WRITE][DATA LENGTH][RAW DATA]" << endl;
         }else{
-            logfile.open(utils::cpsim_path + "/Log/_2019_18675_read_write.log", std::ios_base::app); // append instead of overwrite
+            //logfile.open(utils::cpsim_path + "/Log/_2019_18675_read_write.log", std::ios_base::app); // append instead of overwrite
+            logfile.open(utils::cpsim_path + "/Log/_2019_18675_read_write.log", std::ios_base::app);
         }
 
         logfile << task_name << "\t";
