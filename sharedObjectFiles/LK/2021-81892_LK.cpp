@@ -2,8 +2,8 @@
 
 void sim_main()
 {
-  double lk = 8000.0;
-  double lk_cond = 6000.0;
+  double lk = 5000.0;
+  double lk_cond = 5000.0;
   if (rtU->read2 <= 5000.0)
   {
     rtDW->w3 = 0.0;
