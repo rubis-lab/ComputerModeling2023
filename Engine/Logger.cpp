@@ -143,11 +143,11 @@ std::string Logger::_2018_11150_task1_tagged(std::string task_name, std::shared_
     content << std::left << std::setw(15) << "READ";
     content << std::left << std::setw(16) << std::to_string(6*sizeof(int));
     content << std::left << std::hex << "0x" << data->data_read1 << " "
-                                     << "0x" << data->data_read2 << " "
-                                     << "0x" << data->data_read3 << " "
-                                     << "0x" << data->data_read4 << " "
-                                     << "0x" << data->data_read5 << " "
-                                     << "0x" << data->data_read6 << "\n";
+                         << std::hex << "0x" << data->data_read2 << " "
+                         << std::hex << "0x" << data->data_read3 << " "
+                         << std::hex << "0x" << data->data_read4 << " "
+                         << std::hex << "0x" << data->data_read5 << " "
+                         << std::hex << "0x" << data->data_read6 << "\n";
     return content.str();
 }
 std::string Logger::_2018_11150_task1_delayed(std::string task_name, std::shared_ptr<DelayedData> data){
@@ -157,9 +157,9 @@ std::string Logger::_2018_11150_task1_delayed(std::string task_name, std::shared
     content << std::left << std::setw(15) << "READ";
     content << std::left << std::setw(16) << std::to_string(4*sizeof(int));
     content << std::left << std::hex << "0x" << data->data_write1 << " "
-                                     << "0x" << data->data_write2 << " "
-                                     << "0x" << data->data_write3 << " "
-                                     << "0x" << data->data_write4 << "\n";
+                         << std::hex << "0x" << data->data_write2 << " "
+                         << std::hex << "0x" << data->data_write3 << " "
+                         << std::hex << "0x" << data->data_write4 << "\n";
     return content.str();
 }
 
