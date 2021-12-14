@@ -117,7 +117,6 @@ bool Executor::run_simulation(JobVectorOfSimulator& job_vector_of_simulator, Job
 
             //DEADLINE MISS HERE!
             using namespace std;
-
             int jobID = stoi(to_string(job->get_task_id() + 1) + to_string(job->get_job_id()));
             global_object::logger->_2019_18675_real_cyber_event_logger((long long)job->get_actual_finish_time(), jobID, "FINISHED (DEADLINE MISS)");
         }
@@ -147,6 +146,11 @@ bool Executor::run_simulation(JobVectorOfSimulator& job_vector_of_simulator, Job
                         job->set_is_released(true);
                         job->set_simulated_release_time(utils::current_time + std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now() - hyper_period_start).count());
                         simulation_ready_queue.push_back(job);
+                        
+                        using namespace std;
+                        int jobID = stoi(to_string(job->get_task_id() + 1) + to_string(job->get_job_id()));
+                        global_object::logger->_2019_18675_real_cyber_event_logger((long long)job->get_actual_finish_time(), jobID, "RELEASED");
+        
                         is_idle = false;   
                     }
                 }
