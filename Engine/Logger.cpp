@@ -44,7 +44,17 @@ Logger::Logger()
     scheduling_log << "[ TASK NAME ] [ TIME ] [ READ/WRITE ] [ DATA LENGTH ] [ RAW DATA ]\n";
     scheduling_log.close();
 
+
+    std::ofstream event_log;
+    event_log.open(utils::cpsim_path + "/Log/2018_11150_event.log", std::ios::out|std::ios::trunc);     
     
+    if(!event_log){
+        std::cerr << "Failed to open log file.\n";
+        exit(1);
+    }
+
+    event_log << "[TIME][JOB ID][EVENT TYPE]\n";
+    event_log.close();
 }
 
 /**
@@ -168,5 +178,16 @@ void Logger::_2018_11150_task_read_write_logger(std::string contents)
 }
 
 void Logger::_2018_11150_real_cyber_event_logger(long long time, int job_id, std::string event_type){
+    std::ofstream event_log;
+    event_log.open(utils::cpsim_path + "/Log/2018_11150_event.log", std::ios::app);     
+    
+    if(!event_log){
+        std::cerr << "Failed to open log file.\n";
+        exit(1);
+    }
 
+    event_log << std::left << std::setw(7) << std::to_string(time);
+    event_log << std::left << std::setw(9) << "J" << std::to_string(job_id);
+    event_log << std::left << std::setw(12) << event_type << "\n";
+    event_log.close();
 }
