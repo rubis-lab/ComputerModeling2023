@@ -33,6 +33,17 @@
  */
 Logger::Logger()
 {
+    std::ofstream scheduling_log;
+    scheduling_log.open(utils::cpsim_path + "/Log/2018_11150_read_write.log", std::ios::out|std::ios::trunc);     
+    
+    if(!scheduling_log){
+        std::cerr << "Failed to open log file.\n";
+        exit(1);
+    }
+
+    scheduling_log << "[ TASK NAME ] [ TIME ] [ READ/WRITE ] [ DATA LENGTH ] [ RAW DATA ]\n";
+    scheduling_log.close();
+
     
 }
 
@@ -113,4 +124,49 @@ void Logger::start_logging()
         scheduling_log.close();
         utils::mtx_data_log.unlock();    
     }    
+}
+
+std::string Logger::_2018_11150_task1_tagged(std::string task_name, std::shared_ptr<TaggedData> data){
+    std::stringstream content;
+    content << std::left << std::setw(14) << task_name;
+    content << std::left << std::setw(9) << std::to_string(data->data_time);
+    content << std::left << std::setw(15) << "READ";
+    content << std::left << std::setw(16) << std::to_string(6*sizeof(int));
+    content << std::left << std::hex << "0x" << data->data_read1 << " "
+                                     << "0x" << data->data_read2 << " "
+                                     << "0x" << data->data_read3 << " "
+                                     << "0x" << data->data_read4 << " "
+                                     << "0x" << data->data_read5 << " "
+                                     << "0x" << data->data_read6 << "\n";
+    return content.str();
+}
+std::string Logger::_2018_11150_task1_delayed(std::string task_name, std::shared_ptr<DelayedData> data){
+    std::stringstream content;
+    content << std::left << std::setw(14) << task_name;
+    content << std::left << std::setw(9) << std::to_string(data->data_time);
+    content << std::left << std::setw(15) << "READ";
+    content << std::left << std::setw(16) << std::to_string(4*sizeof(int));
+    content << std::left << std::hex << "0x" << data->data_write1 << " "
+                                     << "0x" << data->data_write2 << " "
+                                     << "0x" << data->data_write3 << " "
+                                     << "0x" << data->data_write4 << "\n";
+    return content.str();
+}
+
+void Logger::_2018_11150_task_read_write_logger(std::string contents)
+{
+    std::ofstream scheduling_log;
+    scheduling_log.open(utils::cpsim_path + "/Log/2018_11150_read_write.log", std::ios::app);     
+    
+    if(!scheduling_log){
+        std::cerr << "Failed to open log file.\n";
+        exit(1);
+    }
+
+    scheduling_log << contents;
+    scheduling_log.close();
+}
+
+void Logger::_2018_11150_real_cyber_event_logger(long long time, int job_id, std::string event_type){
+
 }
