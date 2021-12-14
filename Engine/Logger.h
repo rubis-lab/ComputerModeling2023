@@ -2,6 +2,8 @@
 #define LOGGER_H__
 #include <iostream>
 #include <vector>
+#include <queue>
+
 #include "Job.h"
 
 #include "TaggedData.h"
@@ -15,6 +17,23 @@
  * @date 2020-04-30
  * @brief Codes for Engine-Logger 
 */
+struct logDump{
+    long long timeStamp;
+    int jobID;
+    std::string evType;
+    bool operator<(const logDump& rhs) const{
+        return timeStamp > rhs.timeStamp;
+    }
+};
+
+class logComp{
+public:
+    int operator() (const logDump& l1, const logDump& l2)
+    {
+        return l1.timeStamp > l2.timeStamp;
+    }
+};
+
 class Logger{
 private:
     std::vector<std::shared_ptr<Job>> m_execution_order_buffer;
@@ -24,6 +43,7 @@ public:
     /**
      * Constructors and Destructors
      */
+    
     Logger();
     ~Logger();
 
@@ -33,8 +53,8 @@ public:
     std::string _2019_18675_log_prepare_Delayed_Data(std::shared_ptr<DelayedData>);
     std::string _2019_18675_log_prepare_byte_hex(int);
     //Final Project 2 case 2
-    void _2019_18675_real_cyber_event_logger(long long, int, std::string);
-    
+    void _2019_18675_real_cyber_event_logger(long long, int, std::string, bool);
+    std::priority_queue<logDump, std::vector<logDump>, logComp> prQ;
     /**
      * Getter & Setter
      */

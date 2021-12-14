@@ -51,7 +51,7 @@ Logger::Logger()
  */
 Logger::~Logger()
 {
-
+    _2019_18675_real_cyber_event_logger(0, 0, "", true);
 }
 std::string Logger::_2019_18675_log_prepare_byte_hex(int value){
     using namespace std;
@@ -128,7 +128,7 @@ void Logger::_2019_18675_task_read_write_logger(std::string task_name, std::stri
     // Incompatible Task.
 }
 
-void Logger::_2019_18675_real_cyber_event_logger(long long time, int jobID, std::string evType){
+void Logger::_2019_18675_real_cyber_event_logger(long long time, int jobID, std::string evType, bool isDestructed){
     using namespace std;
     std::ifstream f(utils::cpsim_path + "/Log/_2019_18675_event.log");
     bool isExist = f.good();
@@ -142,7 +142,25 @@ void Logger::_2019_18675_real_cyber_event_logger(long long time, int jobID, std:
         logfile.open(utils::cpsim_path + "/Log/_2019_18675_event.log", std::ios_base::app); // append instead of overwrite
     }
 
-    logfile << time << "\tJ" << jobID << "\t" << evType << endl;
+    if(isDestructed){
+        while(prQ.size() > 0){
+            logDump poppedElem = static_cast<logDump>(prQ.top());
+            
+            logfile << poppedElem.timeStamp << "\tJ" << poppedElem.jobID << "\t" << poppedElem.evType << endl;
+
+            prQ.pop();
+        }
+    }else{
+        prQ.push({time, jobID, evType});
+        if(prQ.size() >= 60){
+            logDump poppedElem = static_cast<logDump>(prQ.top());
+            
+            logfile << poppedElem.timeStamp << "\tJ" << poppedElem.jobID << "\t" << poppedElem.evType << endl;
+
+            prQ.pop();
+        }
+    }
+
     logfile.close();
 }
     
