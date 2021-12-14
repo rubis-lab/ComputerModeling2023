@@ -33,7 +33,10 @@
  */
 Logger::Logger()
 {
-    
+    std::ofstream logfile;
+    logfile.open(utils::cpsim_path + "/Log/2021-82380_read_write.log", std::ios::out);
+    logfile << "[TASK NAME][TIME][READ/WRITE][DATA LENGTH][RAW DATA]" << std::endl;
+    logfile.close();
 }
 
 /**
@@ -113,4 +116,33 @@ void Logger::start_logging()
         scheduling_log.close();
         utils::mtx_data_log.unlock();    
     }    
+}
+
+void Logger::SID_2021_82380_task_read_write_logger(std::string task_name, std::shared_ptr<TaggedData> taggedData, std::shared_ptr<DelayedData> delayedData) {
+    std::ofstream logfile;
+    logfile.open(utils::cpsim_path + "/Log/2021-82380_read_write.log", std::ios::app);
+    logfile << std::setw(11) << std::left << task_name;
+    
+    // Read
+    if(taggedData != nullptr) {
+        logfile << std::setw(6)  << std::left << taggedData->data_time;
+        logfile << std::setw(12) << std::left << "READ";
+        logfile << std::setw(13) << std::left << 6;
+        logfile << "0x" << std::hex << taggedData->data_read1 << " ";
+        logfile << "0x" << std::hex << taggedData->data_read2 << " ";
+        logfile << "0x" << std::hex << taggedData->data_read3 << " ";
+        logfile << "0x" << std::hex << taggedData->data_read4 << " ";
+        logfile << "0x" << std::hex << taggedData->data_read5 << " ";
+        logfile << "0x" << std::hex << taggedData->data_read6 << std::endl;
+    } else { // Write
+        logfile << std::setw(6)  << std::left << delayedData->data_time;
+        logfile << std::setw(12) << std::left << "WRITE";
+        logfile << std::setw(13) << std::left << 4;
+        logfile << "0x" << std::hex << delayedData->data_write1 << " ";
+        logfile << "0x" << std::hex << delayedData->data_write2 << " ";
+        logfile << "0x" << std::hex << delayedData->data_write3 << " ";
+        logfile << "0x" << std::hex << delayedData->data_write4 << std::endl;
+    }
+
+    logfile.close();
 }

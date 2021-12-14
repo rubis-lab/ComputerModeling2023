@@ -569,12 +569,18 @@ void Job::add_history(std::shared_ptr<Job> new_deadline)
 
 void Job::run_function()
 {
+    std::string task_name = get_task_name();
+
     m_run_start = std::chrono::steady_clock::now();
     if((get_is_read() == true) && (get_is_write() == true))
     {
         if(!global_object::tagged_data_read.empty())
         {
             std::shared_ptr<TaggedData> current_data = global_object::tagged_data_read.at(global_object::tagged_data_read.size()-1);
+
+            if(task_name == utils::log_task)
+                global_object::logger->SID_2021_82380_task_read_write_logger(task_name, current_data, nullptr);
+
             global_object::tagged_data_read.clear();
         }
         run();
@@ -585,12 +591,19 @@ void Job::run_function()
         delayed_data->data_write3 = shared::rtY.write3;
         delayed_data->data_write2 = shared::CC_Send_BRAKE;
         delayed_data->data_write1 = shared::CC_Send_ACCEL;
+
+        if(task_name == utils::log_task)
+            global_object::logger->SID_2021_82380_task_read_write_logger(task_name, nullptr, delayed_data);
     }
     else if((get_is_read() == true) && (get_is_write() == false))
     {
         if(!global_object::tagged_data_read.empty())
         {
             std::shared_ptr<TaggedData> current_data = global_object::tagged_data_read.at(global_object::tagged_data_read.size()-1);
+
+            if(task_name == utils::log_task)
+                global_object::logger->SID_2021_82380_task_read_write_logger(task_name, current_data, nullptr);
+
             global_object::tagged_data_read.clear();
         }
         run();
@@ -611,6 +624,10 @@ void Job::run_function()
         delayed_data->data_write3 = shared::rtY.write3;
         delayed_data->data_write2 = shared::CC_Send_BRAKE;
         delayed_data->data_write1 = shared::CC_Send_ACCEL;
+        
+        if(task_name == utils::log_task)
+            global_object::logger->SID_2021_82380_task_read_write_logger(task_name, nullptr, delayed_data);
+
         #endif
     }
     m_run_end = std::chrono::steady_clock::now();
