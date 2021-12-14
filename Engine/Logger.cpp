@@ -137,8 +137,6 @@ void Logger::_201616286_real_cyber_event_logger(long long time, int task_id, int
     long long t;
     std::string j, e;
     std::ofstream event_log;
-    std::cout << time << " " << task_id << " " << job_id << " " << utils::current_time <<  std::endl;
-
 
     this -> event_queue.push(std::make_tuple(-time, "J" + std::to_string(task_id) + std::to_string(job_id), event_type));
     event_log.open(utils::cpsim_path + "/Log/_201616286_event.log", std::ios::app);    

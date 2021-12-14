@@ -196,8 +196,6 @@ bool Executor::run_simulation(JobVectorOfSimulator& job_vector_of_simulator, Job
             }
             else utils::current_time += run_job->get_simulated_execution_time();
 
-            // if (run_job)
-            // global_object::logger -> _201616286_real_cyber_event_logger(job->get_actual_deadline(), job -> get_job_id(), "FINISHED");
             global_object::logger -> _201616286_real_cyber_event_logger(run_job -> get_actual_release_time(), run_job -> get_task_id(), run_job -> get_job_id(), "RELEASED");
             if(run_job->get_actual_start_time() < 0) 
                 global_object::logger -> _201616286_real_cyber_event_logger(0, run_job -> get_task_id(), run_job -> get_job_id(), "FINISHED");
