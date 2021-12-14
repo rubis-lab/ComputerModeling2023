@@ -186,8 +186,8 @@ void Logger::_2018_11150_real_cyber_event_logger(long long time, int job_id, std
         exit(1);
     }
 
-    event_log << std::left << std::setw(7) << std::to_string(time);
-    event_log << std::left << std::setw(9) << "J" << std::to_string(job_id);
-    event_log << std::left << std::setw(12) << event_type << "\n";
+    event_log << std::left << std::setw(6) << std::to_string(time);
+    event_log << std::left << std::setw(8) << "J" + std::to_string(job_id);
+    event_log << std::left << event_type << "\n";
     event_log.close();
 }

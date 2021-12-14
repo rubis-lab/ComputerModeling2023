@@ -115,7 +115,8 @@ bool Executor::run_simulation(JobVectorOfSimulator& job_vector_of_simulator, Job
         {
             std::cout <<"DEADLINE MISS IN REAL CYBER SYSTEM" << std::endl;
             utils::mtx_data_log.lock();
-            global_object::logger->_2018_11150_real_cyber_event_logger(job->get_actual_deadline(), job->get_job_id(), "FINISHED (DEADLINE MISS)");
+            int job_id = std::stoi(std::to_string(job->get_job_id()) + std::to_string(job->get_task_id()));
+            global_object::logger->_2018_11150_real_cyber_event_logger(job->get_actual_deadline(), job_id, "FINISHED (DEADLINE MISS)");
             utils::mtx_data_log.unlock();
         }
     }
@@ -147,7 +148,8 @@ bool Executor::run_simulation(JobVectorOfSimulator& job_vector_of_simulator, Job
                         is_idle = false;   
                         
                         utils::mtx_data_log.lock();
-                        global_object::logger->_2018_11150_real_cyber_event_logger(job->get_actual_release_time(), job->get_job_id(), "RELEASED");
+                        int job_id = std::stoi(std::to_string(job->get_job_id()) + std::to_string(job->get_task_id()));
+                        global_object::logger->_2018_11150_real_cyber_event_logger(job->get_actual_release_time(), job_id, "RELEASED");
                         utils::mtx_data_log.unlock();
                     }
                 }
@@ -159,7 +161,8 @@ bool Executor::run_simulation(JobVectorOfSimulator& job_vector_of_simulator, Job
                     is_idle = false; 
 
                     utils::mtx_data_log.lock();
-                    global_object::logger->_2018_11150_real_cyber_event_logger(job->get_actual_release_time(), job->get_job_id(), "RELEASED");
+                    int job_id = std::stoi(std::to_string(job->get_job_id()) + std::to_string(job->get_task_id()));
+                    global_object::logger->_2018_11150_real_cyber_event_logger(job->get_actual_release_time(), job_id, "RELEASED");
                     utils::mtx_data_log.unlock();
                 }
             }
@@ -204,8 +207,9 @@ bool Executor::run_simulation(JobVectorOfSimulator& job_vector_of_simulator, Job
                 std::shared_ptr<ScheduleData> diagram_finish = std::make_shared<ScheduleData>(run_job->get_actual_finish_time(), run_job->get_actual_execution_time(),std::to_string(run_job->get_actual_finish_time()) + ", ECU" + std::to_string(run_job->get_ECU()->get_ECU_id()) + ": " + run_job->get_task_name() + ", 0\n" );
                 global_object::schedule_data.push_back(std::move(diagram_finish));
 
-                global_object::logger->_2018_11150_real_cyber_event_logger(run_job->get_actual_start_time(), run_job->get_job_id(), "STARTED");
-                global_object::logger->_2018_11150_real_cyber_event_logger(run_job->get_actual_finish_time(), run_job->get_job_id(), "FINISHED");
+                int job_id = std::stoi(std::to_string(run_job->get_job_id()) + std::to_string(run_job->get_task_id()));
+                global_object::logger->_2018_11150_real_cyber_event_logger(run_job->get_actual_start_time(), job_id, "STARTED");
+                global_object::logger->_2018_11150_real_cyber_event_logger(run_job->get_actual_finish_time(), job_id, "FINISHED");
 
                 utils::mtx_data_log.unlock();
             }
