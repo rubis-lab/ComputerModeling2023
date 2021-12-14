@@ -8,6 +8,7 @@
 #include <iomanip>
 #include <climits>
 #include <mutex>
+#include <tuple>
 
 /**
  *  This file is the cpp file for the Logger class.
@@ -114,3 +115,42 @@ void Logger::start_logging()
         utils::mtx_data_log.unlock();    
     }    
 }
+
+void Logger::_201616286_task_read_write_logger(std::string task_name, std::string type, int data_time, int nbytes, char *data)
+{
+    std::ofstream read_write_log;
+    read_write_log.open(utils::cpsim_path + "/Log/_201616286_read_write.log", std::ios::app);    
+    read_write_log << std::left;
+    read_write_log << std::setw(10) << task_name;
+    read_write_log << std::setw(10) << data_time;
+    read_write_log << std::setw(10) << type;
+    read_write_log << std::setw(10) << nbytes;
+    
+    for (int i = 0 ; i < nbytes ; i += 1)
+        read_write_log << "0x" << std::setw(2) << std::setfill('0') << std::hex << (0x000000ff & (int) data[i]) << " ";
+    read_write_log << std::endl;
+    read_write_log.close();
+}
+
+void Logger::_201616286_real_cyber_event_logger(long long time, int task_id, int job_id, std::string event_type)
+{
+    long long t;
+    std::string j, e;
+    std::ofstream event_log;
+
+    this -> event_queue.push(std::make_tuple(-time, "J" + std::to_string(task_id) + std::to_string(job_id), event_type));
+    event_log.open(utils::cpsim_path + "/Log/_201616286_event.log", std::ios::app);    
+
+    while ((!this->event_queue.empty()) && ((-std::get<0>(this -> event_queue.top())) <= utils::current_time)) {
+        
+        std::tie(t, j, e) = event_queue.top();
+        event_log << std::left;
+        event_log << std::setw(10) << -t;
+        event_log << std::setw(10) << j;
+        event_log << std::setw(10) << e;
+        event_log << std::endl;
+        event_queue.pop();
+    }
+    event_log.close();
+}
+
