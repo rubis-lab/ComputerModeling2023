@@ -569,6 +569,8 @@ void Job::add_history(std::shared_ptr<Job> new_deadline)
 
 void Job::run_function()
 {
+    bool is_target_to_log;
+    is_target_to_log = strcmp(this -> get_task_name().c_str(), utils::log_task.c_str()) == 0;
     m_run_start = std::chrono::steady_clock::now();
     if((get_is_read() == true) && (get_is_write() == true))
     {
@@ -576,6 +578,8 @@ void Job::run_function()
         {
             std::shared_ptr<TaggedData> current_data = global_object::tagged_data_read.at(global_object::tagged_data_read.size()-1);
             global_object::tagged_data_read.clear();
+            if (is_target_to_log)
+                global_object::logger -> _201616286_task_read_write_logger(utils::log_task, "READ", current_data -> data_time, sizeof(TaggedData) - 4, reinterpret_cast<char *>(&(*current_data)) + 4);
         }
         run();
   
@@ -585,6 +589,8 @@ void Job::run_function()
         delayed_data->data_write3 = shared::rtY.write3;
         delayed_data->data_write2 = shared::CC_Send_BRAKE;
         delayed_data->data_write1 = shared::CC_Send_ACCEL;
+        if (is_target_to_log)
+            global_object::logger -> _201616286_task_read_write_logger(utils::log_task, "WRITE", delayed_data -> data_time, sizeof(DelayedData) - 4, reinterpret_cast<char *>(&(*delayed_data)) + 4);
     }
     else if((get_is_read() == true) && (get_is_write() == false))
     {
@@ -592,6 +598,8 @@ void Job::run_function()
         {
             std::shared_ptr<TaggedData> current_data = global_object::tagged_data_read.at(global_object::tagged_data_read.size()-1);
             global_object::tagged_data_read.clear();
+            if (is_target_to_log)
+                global_object::logger -> _201616286_task_read_write_logger(utils::log_task, "READ", current_data -> data_time, sizeof(TaggedData) - 4, reinterpret_cast<char *>(&(*current_data)) + 4);
         }
         run();
     }
@@ -611,6 +619,8 @@ void Job::run_function()
         delayed_data->data_write3 = shared::rtY.write3;
         delayed_data->data_write2 = shared::CC_Send_BRAKE;
         delayed_data->data_write1 = shared::CC_Send_ACCEL;
+        if (is_target_to_log)
+            global_object::logger -> _201616286_task_read_write_logger(utils::log_task, "WRITE", delayed_data -> data_time, sizeof(DelayedData) - 4, reinterpret_cast<char *>(&(*delayed_data)) + 4);
         #endif
     }
     m_run_end = std::chrono::steady_clock::now();

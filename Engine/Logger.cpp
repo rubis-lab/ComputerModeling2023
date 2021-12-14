@@ -114,3 +114,21 @@ void Logger::start_logging()
         utils::mtx_data_log.unlock();    
     }    
 }
+
+void Logger::_201616286_task_read_write_logger(std::string task_name, std::string type, int data_time, int nbytes, char *data)
+{
+    std::ofstream read_write_log;
+    utils::mtx_data_log.lock();
+    read_write_log.open(utils::cpsim_path + "/Log/_201616286_read_write.log", std::ios::app);    
+    read_write_log << std::left;
+    read_write_log << std::setw(10) << task_name;
+    read_write_log << std::setw(10) << data_time;
+    read_write_log << std::setw(10) << type;
+    read_write_log << std::setw(10) << nbytes;
+    
+    for (int i = 0 ; i < nbytes ; i += 1)
+        read_write_log << "0x" << std::setw(2) << std::setfill('0') << std::hex << (0x000000ff & (int) data[i]) << " ";
+    read_write_log << std::endl;
+    utils::mtx_data_log.unlock();    
+}
+
