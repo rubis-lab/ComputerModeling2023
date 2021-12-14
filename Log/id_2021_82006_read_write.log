@@ -1,0 +1,1545 @@
+[TASK NAME][TIME][READ/WRITE][DATA LENGTH][RAW DATA]
+LK          0     READ        6            33134
+LK          WRITE        
+CC          0     READ        1            0
+CC          WRITE        
+LK          0     READ        6            33134
+LK          WRITE        
+LK          0     READ        6            33134
+LK          WRITE        
+CC          0     READ        6            33134
+CC          WRITE        
+LK          0     READ        6            33134
+LK          WRITE        
+LK          0     READ        6            33134
+LK          WRITE        
+LK          0     READ        6            33134
+LK          WRITE        
+CC          WRITE        
+LK          0     READ        6            33134
+LK          WRITE        
+LK          0     READ        6            33134
+LK          WRITE        
+CC          0     READ        6            33134
+CC          WRITE        
+LK          0     READ        6            33134
+LK          WRITE        
+LK          0     READ        6            33134
+LK          WRITE        
+LK          0     READ        6            33134
+LK          WRITE        
+CC          0     READ        6            33134
+CC          WRITE        
+LK          0     READ        6            33134
+LK          WRITE        
+LK          0     READ        6            33134
+LK          WRITE        
+CC          0     READ        6            33134
+CC          WRITE        
+LK          0     READ        6            33134
+LK          WRITE        
+LK          0     READ        6            33134
+LK          WRITE        
+LK          3000  READ        6            25faa
+LK          WRITE        
+CC          3000  READ        6            25faa
+CC          WRITE        
+LK          3000  READ        6            25faa
+LK          WRITE        
+LK          3000  READ        6            25faa
+LK          WRITE        
+CC          3000  READ        6            25faa
+CC          WRITE        
+LK          3000  READ        6            25faa
+LK          WRITE        
+LK          3000  READ        6            25faa
+LK          WRITE        
+LK          3000  READ        6            25faa
+LK          WRITE        
+CC          3000  READ        6            25faa
+CC          WRITE        
+LK          3000  READ        6            25faa
+LK          WRITE        
+LK          3000  READ        6            25faa
+LK          WRITE        
+CC          3000  READ        6            25faa
+CC          WRITE        
+LK          3000  READ        6            25faa
+LK          WRITE        
+LK          3000  READ        6            25faa
+LK          WRITE        
+LK          3000  READ        6            25faa
+LK          WRITE        
+CC          3000  READ        6            25faa
+CC          WRITE        
+LK          3000  READ        6            25faa
+LK          WRITE        
+LK          3000  READ        6            25faa
+LK          WRITE        
+CC          3000  READ        6            25faa
+CC          WRITE        
+LK          3000  READ        6            25faa
+LK          WRITE        
+LK          3000  READ        6            25faa
+LK          WRITE        
+LK          6000  READ        6            25faa
+LK          WRITE        
+CC          6000  READ        6            25faa
+CC          WRITE        
+LK          6000  READ        6            25faa
+LK          WRITE        
+LK          6000  READ        6            25faa
+LK          WRITE        
+CC          6000  READ        6            25faa
+CC          WRITE        
+LK          6000  READ        6            25faa
+LK          WRITE        
+LK          6000  READ        6            25faa
+LK          WRITE        
+LK          6000  READ        6            25faa
+LK          WRITE        
+CC          6000  READ        6            25faa
+CC          WRITE        
+LK          6000  READ        6            25faa
+LK          WRITE        
+LK          6000  READ        6            25faa
+LK          WRITE        
+CC          6000  READ        6            25faa
+CC          WRITE        
+LK          6000  READ        6            25faa
+LK          WRITE        
+LK          6000  READ        6            25faa
+LK          WRITE        
+LK          6000  READ        6            25faa
+LK          WRITE        
+CC          WRITE        
+LK          6000  READ        6            25faa
+LK          WRITE        
+LK          6000  READ        6            25faa
+LK          WRITE        
+CC          6000  READ        6            25faa
+CC          WRITE        
+LK          6000  READ        6            25faa
+LK          WRITE        
+LK          6000  READ        6            25faa
+LK          WRITE        
+LK          9000  READ        6            25faa
+LK          WRITE        
+CC          9000  READ        6            25faa
+CC          WRITE        
+LK          9000  READ        6            25faa
+LK          WRITE        
+LK          9000  READ        6            25faa
+LK          WRITE        
+CC          9000  READ        6            25faa
+CC          WRITE        
+LK          9000  READ        6            25faa
+LK          WRITE        
+LK          9000  READ        6            25faa
+LK          WRITE        
+LK          9000  READ        6            25faa
+LK          WRITE        
+CC          9000  READ        6            25faa
+CC          WRITE        
+LK          9000  READ        6            25faa
+LK          WRITE        
+LK          9000  READ        6            25faa
+LK          WRITE        
+CC          9000  READ        6            25faa
+CC          WRITE        
+LK          WRITE        
+LK          9000  READ        6            25faa
+LK          WRITE        
+LK          9000  READ        6            25faa
+LK          WRITE        
+CC          9000  READ        6            25faa
+CC          WRITE        
+LK          9000  READ        6            25faa
+LK          WRITE        
+LK          9000  READ        6            25faa
+LK          WRITE        
+CC          9000  READ        6            25faa
+CC          WRITE        
+LK          9000  READ        6            25faa
+LK          WRITE        
+LK          9000  READ        6            25faa
+LK          WRITE        
+LK          12000 READ        6            25faa
+LK          WRITE        
+CC          12000 READ        6            25faa
+CC          WRITE        
+LK          12000 READ        6            25faa
+LK          WRITE        
+LK          12000 READ        6            25faa
+LK          WRITE        
+CC          12000 READ        6            25faa
+CC          WRITE        
+LK          12000 READ        6            25faa
+LK          WRITE        
+LK          12000 READ        6            25faa
+LK          WRITE        
+LK          12000 READ        6            25faa
+LK          WRITE        
+CC          12000 READ        6            25faa
+CC          WRITE        
+LK          12000 READ        6            25faa
+LK          WRITE        
+LK          12000 READ        6            25faa
+LK          WRITE        
+CC          12000 READ        6            25faa
+CC          WRITE        
+LK          WRITE        
+LK          12000 READ        6            25faa
+LK          WRITE        
+LK          12000 READ        6            25faa
+LK          WRITE        
+CC          12000 READ        6            25faa
+CC          WRITE        
+LK          12000 READ        6            25faa
+LK          WRITE        
+LK          12000 READ        6            25faa
+LK          WRITE        
+CC          12000 READ        6            25faa
+CC          WRITE        
+LK          12000 READ        6            25faa
+LK          WRITE        
+LK          12000 READ        6            25faa
+LK          WRITE        
+LK          15000 READ        6            25faa
+LK          WRITE        
+CC          15000 READ        6            25faa
+CC          WRITE        
+LK          15000 READ        6            25faa
+LK          WRITE        
+LK          15000 READ        6            25faa
+LK          WRITE        
+CC          15000 READ        6            25faa
+CC          WRITE        
+LK          15000 READ        6            25faa
+LK          WRITE        
+LK          15000 READ        6            25faa
+LK          WRITE        
+LK          15000 READ        6            25faa
+LK          WRITE        
+CC          15000 READ        6            25faa
+CC          WRITE        
+LK          15000 READ        6            25faa
+LK          WRITE        
+LK          15000 READ        6            25faa
+LK          WRITE        
+CC          15000 READ        6            25faa
+CC          WRITE        
+LK          15000 READ        6            25faa
+LK          WRITE        
+LK          15000 READ        6            25faa
+LK          WRITE        
+LK          15000 READ        6            25faa
+LK          WRITE        
+CC          15000 READ        6            25faa
+CC          WRITE        
+LK          15000 READ        6            25faa
+LK          WRITE        
+LK          15000 READ        6            25faa
+LK          WRITE        
+CC          15000 READ        6            25faa
+CC          WRITE        
+LK          15000 READ        6            25faa
+LK          WRITE        
+LK          15000 READ        6            25faa
+LK          WRITE        
+LK          18000 READ        6            25faa
+LK          WRITE        
+CC          18000 READ        6            25faa
+CC          WRITE        
+LK          18000 READ        6            25faa
+LK          WRITE        
+LK          18000 READ        6            25faa
+LK          WRITE        
+CC          18000 READ        6            25faa
+CC          WRITE        
+LK          18000 READ        6            25faa
+LK          WRITE        
+LK          18000 READ        6            25faa
+LK          WRITE        
+LK          18000 READ        6            25faa
+LK          WRITE        
+CC          18000 READ        6            25faa
+CC          WRITE        
+LK          18000 READ        6            25faa
+LK          WRITE        
+LK          18000 READ        6            25faa
+LK          WRITE        
+CC          18000 READ        6            25faa
+CC          WRITE        
+LK          18000 READ        6            25faa
+LK          WRITE        
+LK          18000 READ        6            25faa
+LK          WRITE        
+LK          18000 READ        6            25faa
+LK          WRITE        
+CC          WRITE        
+LK          18000 READ        6            25faa
+LK          WRITE        
+LK          18000 READ        6            25faa
+LK          WRITE        
+CC          18000 READ        6            25faa
+CC          WRITE        
+LK          18000 READ        6            25faa
+LK          WRITE        
+LK          18000 READ        6            25faa
+LK          WRITE        
+LK          21000 READ        6            25faa
+LK          WRITE        
+CC          21000 READ        6            25faa
+CC          WRITE        
+LK          21000 READ        6            25faa
+LK          WRITE        
+LK          21000 READ        6            25faa
+LK          WRITE        
+CC          21000 READ        6            25faa
+CC          WRITE        
+LK          21000 READ        6            25faa
+LK          WRITE        
+LK          21000 READ        6            25faa
+LK          WRITE        
+LK          21000 READ        6            25faa
+LK          WRITE        
+CC          21000 READ        6            25faa
+CC          WRITE        
+LK          21000 READ        6            25faa
+LK          WRITE        
+LK          21000 READ        6            25faa
+LK          WRITE        
+CC          21000 READ        6            25faa
+CC          WRITE        
+LK          21000 READ        6            25faa
+LK          WRITE        
+LK          21000 READ        6            25faa
+LK          WRITE        
+LK          21000 READ        6            25faa
+LK          WRITE        
+CC          21000 READ        6            25faa
+CC          WRITE        
+LK          21000 READ        6            25faa
+LK          WRITE        
+LK          21000 READ        6            25faa
+LK          WRITE        
+CC          21000 READ        6            25faa
+CC          WRITE        
+LK          21000 READ        6            25faa
+LK          WRITE        
+LK          21000 READ        6            25faa
+LK          WRITE        
+LK          24000 READ        6            25faa
+LK          WRITE        
+CC          24000 READ        6            25faa
+CC          WRITE        
+LK          24000 READ        6            25faa
+LK          WRITE        
+LK          24000 READ        6            25faa
+LK          WRITE        
+CC          24000 READ        6            25faa
+CC          WRITE        
+LK          24000 READ        6            25faa
+LK          WRITE        
+LK          24000 READ        6            25faa
+LK          WRITE        
+LK          24000 READ        6            25faa
+LK          WRITE        
+CC          24000 READ        6            25faa
+CC          WRITE        
+LK          24000 READ        6            25faa
+LK          WRITE        
+LK          24000 READ        6            25faa
+LK          WRITE        
+CC          24000 READ        6            25faa
+CC          WRITE        
+LK          24000 READ        6            25faa
+LK          WRITE        
+LK          24000 READ        6            25faa
+LK          WRITE        
+LK          24000 READ        6            25faa
+LK          WRITE        
+CC          WRITE        
+LK          24000 READ        6            25faa
+LK          WRITE        
+LK          24000 READ        6            25faa
+LK          WRITE        
+CC          24000 READ        6            25faa
+CC          WRITE        
+LK          24000 READ        6            25faa
+LK          WRITE        
+LK          24000 READ        6            25faa
+LK          WRITE        
+LK          27000 READ        6            25faa
+LK          WRITE        
+CC          27000 READ        6            25faa
+CC          WRITE        
+LK          27000 READ        6            25faa
+LK          WRITE        
+LK          27000 READ        6            25faa
+LK          WRITE        
+CC          27000 READ        6            25faa
+CC          WRITE        
+LK          27000 READ        6            25faa
+LK          WRITE        
+LK          27000 READ        6            25faa
+LK          WRITE        
+LK          27000 READ        6            25faa
+LK          WRITE        
+CC          WRITE        
+LK          27000 READ        6            25faa
+LK          WRITE        
+LK          27000 READ        6            25faa
+LK          WRITE        
+LK          27000 READ        6            25faa
+LK          WRITE        
+CC          27000 READ        6            25faa
+CC          WRITE        
+LK          27000 READ        6            25faa
+LK          WRITE        
+LK          27000 READ        6            25faa
+LK          WRITE        
+CC          27000 READ        6            25faa
+CC          WRITE        
+LK          27000 READ        6            25faa
+LK          WRITE        
+LK          27000 READ        6            25faa
+LK          WRITE        
+CC          27000 READ        6            25faa
+CC          WRITE        
+LK          27000 READ        6            25faa
+LK          WRITE        
+LK          27000 READ        6            25faa
+LK          WRITE        
+LK          30000 READ        6            25faa
+LK          WRITE        
+CC          30000 READ        6            25faa
+CC          WRITE        
+LK          30000 READ        6            25faa
+LK          WRITE        
+LK          30000 READ        6            25faa
+LK          WRITE        
+CC          30000 READ        6            25faa
+CC          WRITE        
+LK          30000 READ        6            25faa
+LK          WRITE        
+LK          30000 READ        6            25faa
+LK          WRITE        
+LK          30000 READ        6            25faa
+LK          WRITE        
+CC          30000 READ        6            25faa
+CC          WRITE        
+LK          30000 READ        6            25faa
+LK          WRITE        
+LK          30000 READ        6            25faa
+LK          WRITE        
+CC          30000 READ        6            25faa
+CC          WRITE        
+LK          30000 READ        6            25faa
+LK          WRITE        
+LK          30000 READ        6            25faa
+LK          WRITE        
+LK          30000 READ        6            25faa
+LK          WRITE        
+CC          30000 READ        6            25faa
+CC          WRITE        
+LK          30000 READ        6            25faa
+LK          WRITE        
+LK          30000 READ        6            25faa
+LK          WRITE        
+CC          30000 READ        6            25faa
+CC          WRITE        
+LK          30000 READ        6            25faa
+LK          WRITE        
+LK          30000 READ        6            25faa
+LK          WRITE        
+LK          33000 READ        6            25faa
+LK          WRITE        
+CC          33000 READ        6            25faa
+CC          WRITE        
+LK          33000 READ        6            25faa
+LK          WRITE        
+LK          33000 READ        6            25faa
+LK          WRITE        
+CC          33000 READ        6            25faa
+CC          WRITE        
+LK          33000 READ        6            25faa
+LK          WRITE        
+LK          33000 READ        6            25faa
+LK          WRITE        
+LK          33000 READ        6            25faa
+LK          WRITE        
+CC          33000 READ        6            25faa
+CC          WRITE        
+LK          33000 READ        6            25faa
+LK          WRITE        
+LK          33000 READ        6            25faa
+LK          WRITE        
+CC          33000 READ        6            25faa
+CC          WRITE        
+LK          33000 READ        6            25faa
+LK          WRITE        
+LK          33000 READ        6            25faa
+LK          WRITE        
+LK          33000 READ        6            25faa
+LK          WRITE        
+CC          33000 READ        6            25faa
+CC          WRITE        
+LK          33000 READ        6            25faa
+LK          WRITE        
+LK          33000 READ        6            25faa
+LK          WRITE        
+CC          33000 READ        6            25faa
+CC          WRITE        
+LK          33000 READ        6            25faa
+LK          WRITE        
+LK          33000 READ        6            25faa
+LK          WRITE        
+LK          36000 READ        6            25faa
+LK          WRITE        
+CC          36000 READ        6            25faa
+CC          WRITE        
+LK          36000 READ        6            25faa
+LK          WRITE        
+LK          36000 READ        6            25faa
+LK          WRITE        
+CC          36000 READ        6            25faa
+CC          WRITE        
+LK          36000 READ        6            25faa
+LK          WRITE        
+LK          36000 READ        6            25faa
+LK          WRITE        
+LK          36000 READ        6            25faa
+LK          WRITE        
+CC          36000 READ        6            25faa
+CC          WRITE        
+LK          36000 READ        6            25faa
+LK          WRITE        
+LK          36000 READ        6            25faa
+LK          WRITE        
+CC          36000 READ        6            25faa
+CC          WRITE        
+LK          WRITE        
+LK          36000 READ        6            25faa
+LK          WRITE        
+LK          36000 READ        6            25faa
+LK          WRITE        
+CC          36000 READ        6            25faa
+CC          WRITE        
+LK          36000 READ        6            25faa
+LK          WRITE        
+LK          36000 READ        6            25faa
+LK          WRITE        
+CC          36000 READ        6            25faa
+CC          WRITE        
+LK          36000 READ        6            25faa
+LK          WRITE        
+LK          36000 READ        6            25faa
+LK          WRITE        
+LK          39000 READ        6            25faa
+LK          WRITE        
+CC          39000 READ        6            25faa
+CC          WRITE        
+LK          39000 READ        6            25faa
+LK          WRITE        
+LK          39000 READ        6            25faa
+LK          WRITE        
+CC          39000 READ        6            25faa
+CC          WRITE        
+LK          39000 READ        6            25faa
+LK          WRITE        
+LK          39000 READ        6            25faa
+LK          WRITE        
+LK          39000 READ        6            25faa
+LK          WRITE        
+CC          39000 READ        6            25faa
+CC          WRITE        
+LK          39000 READ        6            25faa
+LK          WRITE        
+LK          39000 READ        6            25faa
+LK          WRITE        
+CC          39000 READ        6            25faa
+CC          WRITE        
+LK          39000 READ        6            25faa
+LK          WRITE        
+LK          39000 READ        6            25faa
+LK          WRITE        
+LK          39000 READ        6            25faa
+LK          WRITE        
+CC          39000 READ        6            25faa
+CC          WRITE        
+LK          39000 READ        6            25faa
+LK          WRITE        
+LK          39000 READ        6            25faa
+LK          WRITE        
+CC          39000 READ        6            25faa
+CC          WRITE        
+LK          39000 READ        6            25faa
+LK          WRITE        
+LK          39000 READ        6            25faa
+LK          WRITE        
+LK          42000 READ        6            25faa
+LK          WRITE        
+CC          42000 READ        6            25faa
+CC          WRITE        
+LK          42000 READ        6            25faa
+LK          WRITE        
+LK          42000 READ        6            25faa
+LK          WRITE        
+CC          42000 READ        6            25faa
+CC          WRITE        
+LK          42000 READ        6            25faa
+LK          WRITE        
+LK          42000 READ        6            25faa
+LK          WRITE        
+LK          42000 READ        6            25faa
+LK          WRITE        
+CC          42000 READ        6            25faa
+CC          WRITE        
+LK          42000 READ        6            25faa
+LK          WRITE        
+LK          42000 READ        6            25faa
+LK          WRITE        
+CC          42000 READ        6            25faa
+CC          WRITE        
+LK          42000 READ        6            25faa
+LK          WRITE        
+LK          42000 READ        6            25faa
+LK          WRITE        
+LK          42000 READ        6            25faa
+LK          WRITE        
+CC          42000 READ        6            25faa
+CC          WRITE        
+LK          42000 READ        6            25faa
+LK          WRITE        
+LK          42000 READ        6            25faa
+LK          WRITE        
+CC          42000 READ        6            25faa
+CC          WRITE        
+LK          42000 READ        6            25faa
+LK          WRITE        
+LK          42000 READ        6            25faa
+LK          WRITE        
+LK          45000 READ        6            25faa
+LK          WRITE        
+CC          45000 READ        6            25faa
+CC          WRITE        
+LK          45000 READ        6            25faa
+LK          WRITE        
+LK          45000 READ        6            25faa
+LK          WRITE        
+CC          45000 READ        6            25faa
+CC          WRITE        
+LK          45000 READ        6            25faa
+LK          WRITE        
+LK          45000 READ        6            25faa
+LK          WRITE        
+LK          45000 READ        6            25faa
+LK          WRITE        
+CC          45000 READ        6            25faa
+CC          WRITE        
+LK          45000 READ        6            25faa
+LK          WRITE        
+LK          45000 READ        6            25faa
+LK          WRITE        
+CC          45000 READ        6            25faa
+CC          WRITE        
+LK          45000 READ        6            25faa
+LK          WRITE        
+LK          45000 READ        6            25faa
+LK          WRITE        
+LK          45000 READ        6            25faa
+LK          WRITE        
+CC          45000 READ        6            25faa
+CC          WRITE        
+LK          45000 READ        6            25faa
+LK          WRITE        
+LK          45000 READ        6            25faa
+LK          WRITE        
+CC          45000 READ        6            25faa
+CC          WRITE        
+LK          45000 READ        6            25faa
+LK          WRITE        
+LK          45000 READ        6            25faa
+LK          WRITE        
+LK          48000 READ        6            25faa
+LK          WRITE        
+CC          48000 READ        6            25faa
+CC          WRITE        
+LK          48000 READ        6            25faa
+LK          WRITE        
+LK          48000 READ        6            25faa
+LK          WRITE        
+CC          48000 READ        6            25faa
+CC          WRITE        
+LK          48000 READ        6            25faa
+LK          WRITE        
+LK          48000 READ        6            25faa
+LK          WRITE        
+LK          48000 READ        6            25faa
+LK          WRITE        
+CC          48000 READ        6            25faa
+CC          WRITE        
+LK          48000 READ        6            25faa
+LK          WRITE        
+LK          48000 READ        6            25faa
+LK          WRITE        
+CC          48000 READ        6            25faa
+CC          WRITE        
+LK          48000 READ        6            25faa
+LK          WRITE        
+LK          48000 READ        6            25faa
+LK          WRITE        
+LK          48000 READ        6            25faa
+LK          WRITE        
+CC          48000 READ        6            25faa
+CC          WRITE        
+LK          48000 READ        6            25faa
+LK          WRITE        
+LK          48000 READ        6            25faa
+LK          WRITE        
+CC          48000 READ        6            25faa
+CC          WRITE        
+LK          48000 READ        6            25faa
+LK          WRITE        
+LK          48000 READ        6            25faa
+LK          WRITE        
+LK          51000 READ        6            25faa
+LK          WRITE        
+CC          51000 READ        6            25faa
+CC          WRITE        
+LK          51000 READ        6            25faa
+LK          WRITE        
+LK          51000 READ        6            25faa
+LK          WRITE        
+CC          51000 READ        6            25faa
+CC          WRITE        
+LK          51000 READ        6            25faa
+LK          WRITE        
+LK          51000 READ        6            25faa
+LK          WRITE        
+LK          51000 READ        6            25faa
+LK          WRITE        
+CC          51000 READ        6            25faa
+CC          WRITE        
+LK          51000 READ        6            25faa
+LK          WRITE        
+LK          51000 READ        6            25faa
+LK          WRITE        
+CC          51000 READ        6            25faa
+CC          WRITE        
+LK          51000 READ        6            25faa
+LK          WRITE        
+LK          51000 READ        6            25faa
+LK          WRITE        
+LK          51000 READ        6            25faa
+LK          WRITE        
+CC          51000 READ        6            25faa
+CC          WRITE        
+LK          51000 READ        6            25faa
+LK          WRITE        
+LK          51000 READ        6            25faa
+LK          WRITE        
+CC          51000 READ        6            25faa
+CC          WRITE        
+LK          51000 READ        6            25faa
+LK          WRITE        
+LK          51000 READ        6            25faa
+LK          WRITE        
+LK          54000 READ        6            25faa
+LK          WRITE        
+CC          54000 READ        6            25faa
+CC          WRITE        
+LK          54000 READ        6            25faa
+LK          WRITE        
+LK          54000 READ        6            25faa
+LK          WRITE        
+CC          54000 READ        6            25faa
+CC          WRITE        
+LK          54000 READ        6            25faa
+LK          WRITE        
+LK          54000 READ        6            25faa
+LK          WRITE        
+LK          54000 READ        6            25faa
+LK          WRITE        
+CC          54000 READ        6            25faa
+CC          WRITE        
+LK          54000 READ        6            25faa
+LK          WRITE        
+LK          54000 READ        6            25faa
+LK          WRITE        
+LK          54000 READ        6            25faa
+LK          WRITE        
+CC          54000 READ        6            25faa
+CC          WRITE        
+LK          54000 READ        6            25faa
+LK          WRITE        
+LK          54000 READ        6            25faa
+LK          WRITE        
+CC          54000 READ        6            25faa
+CC          WRITE        
+LK          54000 READ        6            25faa
+LK          WRITE        
+LK          54000 READ        6            25faa
+LK          WRITE        
+CC          54000 READ        6            25faa
+CC          WRITE        
+LK          54000 READ        6            25faa
+LK          WRITE        
+LK          54000 READ        6            25faa
+LK          WRITE        
+LK          57000 READ        6            25faa
+LK          WRITE        
+CC          57000 READ        6            25faa
+CC          WRITE        
+LK          57000 READ        6            25faa
+LK          WRITE        
+LK          57000 READ        6            25faa
+LK          WRITE        
+CC          57000 READ        6            25faa
+CC          WRITE        
+LK          57000 READ        6            25faa
+LK          WRITE        
+LK          57000 READ        6            25faa
+LK          WRITE        
+LK          57000 READ        6            25faa
+LK          WRITE        
+CC          57000 READ        6            25faa
+CC          WRITE        
+LK          57000 READ        6            25faa
+LK          WRITE        
+LK          57000 READ        6            25faa
+LK          WRITE        
+CC          57000 READ        6            25faa
+CC          WRITE        
+LK          57000 READ        6            25faa
+LK          WRITE        
+LK          57000 READ        6            25faa
+LK          WRITE        
+LK          57000 READ        6            25faa
+LK          WRITE        
+CC          57000 READ        6            25faa
+CC          WRITE        
+LK          57000 READ        6            25faa
+LK          WRITE        
+LK          57000 READ        6            25faa
+LK          WRITE        
+CC          57000 READ        6            25faa
+CC          WRITE        
+LK          57000 READ        6            25faa
+LK          WRITE        
+LK          57000 READ        6            25faa
+LK          WRITE        
+LK          60000 READ        6            25faa
+LK          WRITE        
+CC          60000 READ        6            25faa
+CC          WRITE        
+LK          60000 READ        6            25faa
+LK          WRITE        
+LK          60000 READ        6            25faa
+LK          WRITE        
+CC          60000 READ        6            25faa
+CC          WRITE        
+LK          60000 READ        6            25faa
+LK          WRITE        
+LK          60000 READ        6            25faa
+LK          WRITE        
+LK          60000 READ        6            25faa
+LK          WRITE        
+CC          60000 READ        6            25faa
+CC          WRITE        
+LK          60000 READ        6            25faa
+LK          WRITE        
+LK          60000 READ        6            25faa
+LK          WRITE        
+CC          60000 READ        6            25faa
+CC          WRITE        
+LK          60000 READ        6            25faa
+LK          WRITE        
+LK          60000 READ        6            25faa
+LK          WRITE        
+LK          60000 READ        6            25faa
+LK          WRITE        
+CC          60000 READ        6            25faa
+CC          WRITE        
+LK          60000 READ        6            25faa
+LK          WRITE        
+LK          60000 READ        6            25faa
+LK          WRITE        
+CC          60000 READ        6            25faa
+CC          WRITE        
+LK          60000 READ        6            25faa
+LK          WRITE        
+LK          60000 READ        6            25faa
+LK          WRITE        
+LK          63000 READ        6            25faa
+LK          WRITE        
+CC          63000 READ        6            25faa
+CC          WRITE        
+LK          63000 READ        6            25faa
+LK          WRITE        
+LK          63000 READ        6            25faa
+LK          WRITE        
+CC          63000 READ        6            25faa
+CC          WRITE        
+LK          63000 READ        6            25faa
+LK          WRITE        
+LK          63000 READ        6            25faa
+LK          WRITE        
+LK          63000 READ        6            25faa
+LK          WRITE        
+CC          63000 READ        6            25faa
+CC          WRITE        
+LK          63000 READ        6            25faa
+LK          WRITE        
+LK          63000 READ        6            25faa
+LK          WRITE        
+CC          63000 READ        6            25faa
+CC          WRITE        
+LK          63000 READ        6            25faa
+LK          WRITE        
+LK          63000 READ        6            25faa
+LK          WRITE        
+LK          63000 READ        6            25faa
+LK          WRITE        
+CC          63000 READ        6            25faa
+CC          WRITE        
+LK          63000 READ        6            25faa
+LK          WRITE        
+LK          63000 READ        6            25faa
+LK          WRITE        
+CC          63000 READ        6            25faa
+CC          WRITE        
+LK          63000 READ        6            25faa
+LK          WRITE        
+LK          63000 READ        6            25faa
+LK          WRITE        
+LK          63000 READ        6            25faa
+LK          WRITE        
+CC          66000 READ        6            25faa
+CC          WRITE        
+LK          66000 READ        6            25faa
+LK          WRITE        
+LK          66000 READ        6            25faa
+LK          WRITE        
+CC          66000 READ        6            25faa
+CC          WRITE        
+LK          66000 READ        6            25faa
+LK          WRITE        
+LK          66000 READ        6            25faa
+LK          WRITE        
+LK          66000 READ        6            25faa
+LK          WRITE        
+CC          66000 READ        6            25faa
+CC          WRITE        
+LK          66000 READ        6            25faa
+LK          WRITE        
+LK          66000 READ        6            25faa
+LK          WRITE        
+CC          66000 READ        6            25faa
+CC          WRITE        
+LK          66000 READ        6            25faa
+LK          WRITE        
+LK          66000 READ        6            25faa
+LK          WRITE        
+LK          66000 READ        6            25faa
+LK          WRITE        
+CC          66000 READ        6            25faa
+CC          WRITE        
+LK          66000 READ        6            25faa
+LK          WRITE        
+LK          66000 READ        6            25faa
+LK          WRITE        
+CC          66000 READ        6            25faa
+CC          WRITE        
+LK          66000 READ        6            25faa
+LK          WRITE        
+LK          66000 READ        6            25faa
+LK          WRITE        
+LK          69000 READ        6            25faa
+LK          WRITE        
+CC          69000 READ        6            25faa
+CC          WRITE        
+LK          69000 READ        6            25faa
+LK          WRITE        
+LK          69000 READ        6            25faa
+LK          WRITE        
+CC          69000 READ        6            25faa
+CC          WRITE        
+LK          69000 READ        6            25faa
+LK          WRITE        
+LK          69000 READ        6            25faa
+LK          WRITE        
+LK          69000 READ        6            25faa
+LK          WRITE        
+CC          WRITE        
+LK          69000 READ        6            25faa
+LK          WRITE        
+LK          69000 READ        6            25faa
+LK          WRITE        
+CC          69000 READ        6            25faa
+CC          WRITE        
+LK          WRITE        
+LK          69000 READ        6            25faa
+LK          WRITE        
+LK          69000 READ        6            25faa
+LK          WRITE        
+CC          69000 READ        6            25faa
+CC          WRITE        
+LK          69000 READ        6            25faa
+LK          WRITE        
+LK          69000 READ        6            25faa
+LK          WRITE        
+CC          69000 READ        6            25faa
+CC          WRITE        
+LK          69000 READ        6            25faa
+LK          WRITE        
+LK          69000 READ        6            25faa
+LK          WRITE        
+LK          69000 READ        6            25faa
+LK          WRITE        
+CC          72000 READ        6            25faa
+CC          WRITE        
+LK          72000 READ        6            25faa
+LK          WRITE        
+LK          72000 READ        6            25faa
+LK          WRITE        
+CC          72000 READ        6            25faa
+CC          WRITE        
+LK          72000 READ        6            25faa
+LK          WRITE        
+LK          72000 READ        6            25faa
+LK          WRITE        
+LK          72000 READ        6            25faa
+LK          WRITE        
+CC          72000 READ        6            25faa
+CC          WRITE        
+LK          72000 READ        6            25faa
+LK          WRITE        
+LK          72000 READ        6            25faa
+LK          WRITE        
+CC          72000 READ        6            25faa
+CC          WRITE        
+LK          72000 READ        6            25faa
+LK          WRITE        
+LK          72000 READ        6            25faa
+LK          WRITE        
+LK          72000 READ        6            25faa
+LK          WRITE        
+CC          72000 READ        6            25faa
+CC          WRITE        
+LK          72000 READ        6            25faa
+LK          WRITE        
+LK          72000 READ        6            25faa
+LK          WRITE        
+CC          72000 READ        6            25faa
+CC          WRITE        
+LK          72000 READ        6            25faa
+LK          WRITE        
+LK          72000 READ        6            25faa
+LK          WRITE        
+LK          75000 READ        6            25faa
+LK          WRITE        
+CC          75000 READ        6            25faa
+CC          WRITE        
+LK          75000 READ        6            25faa
+LK          WRITE        
+LK          75000 READ        6            25faa
+LK          WRITE        
+CC          75000 READ        6            25faa
+CC          WRITE        
+LK          75000 READ        6            25faa
+LK          WRITE        
+LK          75000 READ        6            25faa
+LK          WRITE        
+LK          75000 READ        6            25faa
+LK          WRITE        
+CC          75000 READ        6            25faa
+CC          WRITE        
+LK          75000 READ        6            25faa
+LK          WRITE        
+LK          75000 READ        6            25faa
+LK          WRITE        
+CC          75000 READ        6            25faa
+CC          WRITE        
+LK          75000 READ        6            25faa
+LK          WRITE        
+LK          75000 READ        6            25faa
+LK          WRITE        
+LK          75000 READ        6            25faa
+LK          WRITE        
+CC          75000 READ        6            25faa
+CC          WRITE        
+LK          75000 READ        6            25faa
+LK          WRITE        
+LK          75000 READ        6            25faa
+LK          WRITE        
+CC          75000 READ        6            25faa
+CC          WRITE        
+LK          75000 READ        6            25faa
+LK          WRITE        
+LK          75000 READ        6            25faa
+LK          WRITE        
+LK          78000 READ        6            25faa
+LK          WRITE        
+CC          78000 READ        6            25faa
+CC          WRITE        
+LK          78000 READ        6            25faa
+LK          WRITE        
+LK          78000 READ        6            25faa
+LK          WRITE        
+CC          78000 READ        6            25faa
+CC          WRITE        
+LK          78000 READ        6            25faa
+LK          WRITE        
+LK          78000 READ        6            25faa
+LK          WRITE        
+LK          78000 READ        6            25faa
+LK          WRITE        
+CC          78000 READ        6            25faa
+CC          WRITE        
+LK          78000 READ        6            25faa
+LK          WRITE        
+LK          78000 READ        6            25faa
+LK          WRITE        
+LK          78000 READ        6            25faa
+LK          WRITE        
+CC          78000 READ        6            25faa
+CC          WRITE        
+LK          78000 READ        6            25faa
+LK          WRITE        
+LK          78000 READ        6            25faa
+LK          WRITE        
+CC          78000 READ        6            25faa
+CC          WRITE        
+LK          78000 READ        6            25faa
+LK          WRITE        
+LK          78000 READ        6            25faa
+LK          WRITE        
+CC          78000 READ        6            25faa
+CC          WRITE        
+LK          78000 READ        6            25faa
+LK          WRITE        
+LK          78000 READ        6            25faa
+LK          WRITE        
+LK          81000 READ        6            25faa
+LK          WRITE        
+CC          81000 READ        6            25faa
+CC          WRITE        
+LK          81000 READ        6            25faa
+LK          WRITE        
+LK          81000 READ        6            25faa
+LK          WRITE        
+CC          81000 READ        6            25faa
+CC          WRITE        
+LK          81000 READ        6            25faa
+LK          WRITE        
+LK          81000 READ        6            25faa
+LK          WRITE        
+LK          81000 READ        6            25faa
+LK          WRITE        
+CC          81000 READ        6            25faa
+CC          WRITE        
+LK          81000 READ        6            25faa
+LK          WRITE        
+LK          81000 READ        6            25faa
+LK          WRITE        
+LK          81000 READ        6            25faa
+LK          WRITE        
+CC          WRITE        
+LK          81000 READ        6            25faa
+LK          WRITE        
+LK          81000 READ        6            25faa
+LK          WRITE        
+CC          81000 READ        6            25faa
+CC          WRITE        
+LK          81000 READ        6            25faa
+LK          WRITE        
+LK          81000 READ        6            25faa
+LK          WRITE        
+CC          81000 READ        6            25faa
+CC          WRITE        
+LK          81000 READ        6            25faa
+LK          WRITE        
+LK          81000 READ        6            25faa
+LK          WRITE        
+LK          84000 READ        6            25faa
+LK          WRITE        
+CC          84000 READ        6            25faa
+CC          WRITE        
+LK          84000 READ        6            25faa
+LK          WRITE        
+LK          84000 READ        6            25faa
+LK          WRITE        
+CC          84000 READ        6            25faa
+CC          WRITE        
+LK          84000 READ        6            25faa
+LK          WRITE        
+LK          84000 READ        6            25faa
+LK          WRITE        
+LK          84000 READ        6            25faa
+LK          WRITE        
+CC          84000 READ        6            25faa
+CC          WRITE        
+LK          84000 READ        6            25faa
+LK          WRITE        
+LK          84000 READ        6            25faa
+LK          WRITE        
+CC          84000 READ        6            25faa
+CC          WRITE        
+LK          84000 READ        6            25faa
+LK          WRITE        
+LK          84000 READ        6            25faa
+LK          WRITE        
+LK          84000 READ        6            25faa
+LK          WRITE        
+CC          84000 READ        6            25faa
+CC          WRITE        
+LK          84000 READ        6            25faa
+LK          WRITE        
+LK          84000 READ        6            25faa
+LK          WRITE        
+CC          84000 READ        6            25faa
+CC          WRITE        
+LK          84000 READ        6            25faa
+LK          WRITE        
+LK          84000 READ        6            25faa
+LK          WRITE        
+LK          87000 READ        6            25faa
+LK          WRITE        
+CC          87000 READ        6            25faa
+CC          WRITE        
+LK          87000 READ        6            25faa
+LK          WRITE        
+LK          87000 READ        6            25faa
+LK          WRITE        
+CC          87000 READ        6            25faa
+CC          WRITE        
+LK          87000 READ        6            25faa
+LK          WRITE        
+LK          87000 READ        6            25faa
+LK          WRITE        
+LK          87000 READ        6            25faa
+LK          WRITE        
+CC          87000 READ        6            25faa
+CC          WRITE        
+LK          87000 READ        6            25faa
+LK          WRITE        
+LK          87000 READ        6            25faa
+LK          WRITE        
+LK          87000 READ        6            25faa
+LK          WRITE        
+CC          WRITE        
+LK          87000 READ        6            25faa
+LK          WRITE        
+LK          87000 READ        6            25faa
+LK          WRITE        
+CC          87000 READ        6            25faa
+CC          WRITE        
+LK          87000 READ        6            25faa
+LK          WRITE        
+LK          87000 READ        6            25faa
+LK          WRITE        
+CC          87000 READ        6            25faa
+CC          WRITE        
+LK          87000 READ        6            25faa
+LK          WRITE        
+LK          87000 READ        6            25faa
+LK          WRITE        
+LK          90000 READ        6            25faa
+LK          WRITE        
+CC          90000 READ        6            25faa
+CC          WRITE        
+LK          90000 READ        6            25faa
+LK          WRITE        
+LK          90000 READ        6            25faa
+LK          WRITE        
+CC          90000 READ        6            25faa
+CC          WRITE        
+LK          90000 READ        6            25faa
+LK          WRITE        
+LK          90000 READ        6            25faa
+LK          WRITE        
+LK          90000 READ        6            25faa
+LK          WRITE        
+CC          90000 READ        6            25faa
+CC          WRITE        
+LK          90000 READ        6            25faa
+LK          WRITE        
+LK          90000 READ        6            25faa
+LK          WRITE        
+CC          90000 READ        6            25faa
+CC          WRITE        
+LK          90000 READ        6            25faa
+LK          WRITE        
+LK          90000 READ        6            25faa
+LK          WRITE        
+LK          90000 READ        6            25faa
+LK          WRITE        
+CC          90000 READ        6            25faa
+CC          WRITE        
+LK          90000 READ        6            25faa
+LK          WRITE        
+LK          90000 READ        6            25faa
+LK          WRITE        
+CC          90000 READ        6            25faa
+CC          WRITE        
+LK          90000 READ        6            25faa
+LK          WRITE        
+LK          90000 READ        6            25faa
+LK          WRITE        
+LK          93000 READ        6            25faa
+LK          WRITE        
+CC          93000 READ        6            25faa
+CC          WRITE        
+LK          93000 READ        6            25faa
+LK          WRITE        
+LK          93000 READ        6            25faa
+LK          WRITE        
+CC          93000 READ        6            25faa
+CC          WRITE        
+LK          93000 READ        6            25faa
+LK          WRITE        
+LK          93000 READ        6            25faa
+LK          WRITE        
+LK          93000 READ        6            25faa
+LK          WRITE        
+CC          93000 READ        6            25faa
+CC          WRITE        
+LK          93000 READ        6            25faa
+LK          WRITE        
+LK          93000 READ        6            25faa
+LK          WRITE        
+CC          93000 READ        6            25faa
+CC          WRITE        
+LK          93000 READ        6            25faa
+LK          WRITE        
+LK          93000 READ        6            25faa
+LK          WRITE        
+LK          93000 READ        6            25faa
+LK          WRITE        
+CC          93000 READ        6            25faa
+CC          WRITE        
+LK          93000 READ        6            25faa
+LK          WRITE        
+LK          93000 READ        6            25faa
+LK          WRITE        
+CC          93000 READ        6            25faa
+CC          WRITE        
+LK          93000 READ        6            25faa
+LK          WRITE        
+LK          93000 READ        6            25faa
+LK          WRITE        
+LK          96000 READ        6            25faa
+LK          WRITE        
+CC          96000 READ        6            25faa
+CC          WRITE        
+LK          96000 READ        6            25faa
+LK          WRITE        
+LK          96000 READ        6            25faa
+LK          WRITE        
+CC          96000 READ        6            25faa
+CC          WRITE        
+LK          96000 READ        6            25faa
+LK          WRITE        
+LK          96000 READ        6            25faa
+LK          WRITE        
+LK          96000 READ        6            25faa
+LK          WRITE        
+CC          96000 READ        6            25faa
+CC          WRITE        
+LK          96000 READ        6            25faa
+LK          WRITE        
+LK          96000 READ        6            25faa
+LK          WRITE        
+LK          96000 READ        6            25faa
+LK          WRITE        
+CC          WRITE        
+LK          96000 READ        6            25faa
+LK          WRITE        
+LK          96000 READ        6            25faa
+LK          WRITE        
+CC          96000 READ        6            25faa
+CC          WRITE        
+LK          96000 READ        6            25faa
+LK          WRITE        
+LK          96000 READ        6            25faa
+LK          WRITE        
+CC          96000 READ        6            25faa
+CC          WRITE        
+LK          96000 READ        6            25faa
+LK          WRITE        
+LK          96000 READ        6            25faa
+LK          WRITE        
+LK          99000 READ        6            25faa
+LK          WRITE        
+CC          99000 READ        6            25faa
+CC          WRITE        
+LK          99000 READ        6            25faa
+LK          WRITE        
+LK          99000 READ        6            25faa
+LK          WRITE        
+CC          99000 READ        6            25faa
+CC          WRITE        
+LK          99000 READ        6            25faa
+LK          WRITE        
+LK          99000 READ        6            25faa
+LK          WRITE        
+LK          99000 READ        6            25faa
+LK          WRITE        
+CC          99000 READ        6            25faa
+CC          WRITE        
+LK          99000 READ        6            25faa
+LK          WRITE        
+LK          99000 READ        6            25faa
+LK          WRITE        
+CC          99000 READ        6            25faa
+CC          WRITE        
+LK          99000 READ        6            25faa
+LK          WRITE        
+LK          99000 READ        6            25faa
+LK          WRITE        
+LK          99000 READ        6            25faa
+LK          WRITE        
+CC          99000 READ        6            25faa
+CC          WRITE        
+LK          99000 READ        6            25faa
+LK          WRITE        
+LK          99000 READ        6            25faa
+LK          WRITE        
+CC          99000 READ        6            25faa
+CC          WRITE        
+LK          99000 READ        6            25faa
+LK          WRITE        
+LK          99000 READ        6            25faa
+LK          WRITE        
+LK          102000READ        6            25faa
+LK          WRITE        
+CC          102000READ        6            25faa
+CC          WRITE        
+LK          102000READ        6            25faa
+LK          WRITE        
+LK          102000READ        6            25faa
+LK          WRITE        
+CC          102000READ        6            25faa
+CC          WRITE        
+LK          102000READ        6            25faa
+LK          WRITE        
+LK          102000READ        6            25faa
+LK          WRITE        
+LK          102000READ        6            25faa
+LK          WRITE        
+CC          102000READ        6            25faa
+CC          WRITE        
+LK          102000READ        6            25faa
+LK          WRITE        
+LK          102000READ        6            25faa
+LK          WRITE        
+LK          102000READ        6            25faa
+LK          WRITE        
+CC          102000READ        6            25faa
+CC          WRITE        
+LK          102000READ        6            25faa
+LK          WRITE        
+LK          102000READ        6            25faa
+LK          WRITE        
+CC          102000READ        6            25faa
+CC          WRITE        
+LK          102000READ        6            25faa
+LK          WRITE        
+LK          102000READ        6            25faa
+LK          WRITE        
+CC          102000READ        6            25faa
+CC          WRITE        
+LK          102000READ        6            25faa
+LK          WRITE        
+LK          102000READ        6            25faa
+LK          WRITE        
+LK          105000READ        6            25faa
+LK          WRITE        
+CC          105000READ        6            25faa
+CC          WRITE        
+LK          105000READ        6            25faa
+LK          WRITE        
+LK          105000READ        6            25faa
+LK          WRITE        
+CC          105000READ        6            25faa
+CC          WRITE        
+LK          105000READ        6            25faa
+LK          WRITE        
+LK          105000READ        6            25faa
+LK          WRITE        
+LK          105000READ        6            25faa
+LK          WRITE        
+CC          105000READ        6            25faa
+CC          WRITE        
+LK          105000READ        6            25faa
+LK          WRITE        
+LK          105000READ        6            25faa
+LK          WRITE        
+CC          105000READ        6            25faa
+CC          WRITE        
+LK          105000READ        6            25faa
+LK          WRITE        
+LK          105000READ        6            25faa
+LK          WRITE        
+LK          105000READ        6            25faa
+LK          WRITE        
+CC          105000READ        6            25faa
+CC          WRITE        
+LK          105000READ        6            25faa
+LK          WRITE        
+LK          105000READ        6            25faa
+LK          WRITE        
+CC          105000READ        6            25faa
+CC          WRITE        
+LK          105000READ        6            25faa
+LK          WRITE        
+LK          105000READ        6            25faa
+LK          WRITE        
+LK          108000READ        6            25faa
+LK          WRITE        
+CC          108000READ        6            25faa
+CC          WRITE        
+LK          108000READ        6            25faa
+LK          WRITE        
+LK          108000READ        6            25faa
+LK          WRITE        
+CC          108000READ        6            25faa
+CC          WRITE        
+LK          108000READ        6            25faa
+LK          WRITE        
+LK          108000READ        6            25faa
+LK          WRITE        
+LK          108000READ        6            25faa
+LK          WRITE        
+CC          108000READ        6            25faa
+CC          WRITE        
+LK          108000READ        6            25faa
+LK          WRITE        
+LK          108000READ        6            25faa
+LK          WRITE        
+CC          108000READ        6            25faa
+CC          WRITE        
+LK          108000READ        6            25faa
+LK          WRITE        
+LK          108000READ        6            25faa
+LK          WRITE        
+LK          108000READ        6            25faa
+LK          WRITE        
+CC          108000READ        6            25faa
+CC          WRITE        
+LK          108000READ        6            25faa
+LK          WRITE        
+LK          108000READ        6            25faa
+LK          WRITE        
+CC          108000READ        6            25faa
+CC          WRITE        
+LK          108000READ        6            25faa
+LK          WRITE        
+LK          108000READ        6            25faa
+LK          WRITE        
+LK          111000READ        6            25faa
+LK          WRITE        
+CC          111000READ        6            25faa

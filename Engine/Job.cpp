@@ -1,3 +1,4 @@
+
 #include "Job.h"
 #include "Utils.h"
 #include <ctime>
@@ -570,27 +571,30 @@ void Job::add_history(std::shared_ptr<Job> new_deadline)
 void Job::run_function()
 {
     m_run_start = std::chrono::steady_clock::now();
-    if((get_is_read() == true) && (get_is_write() == true))
+    if((get_is_read() == true) && (get_is_write() == true)) //only for tasks CC and LK
     {
-        if(!global_object::tagged_data_read.empty())
+        if(!global_object::tagged_data_read.empty()) //reset old data
         {
             std::shared_ptr<TaggedData> current_data = global_object::tagged_data_read.at(global_object::tagged_data_read.size()-1);
+            global_object::logger->id_2021_82006_task_read_write_logger(get_task_name(), true);
             global_object::tagged_data_read.clear();
         }
         run();
   
-        std::shared_ptr<DelayedData> delayed_data = std::make_shared<DelayedData>();
+        std::shared_ptr<DelayedData> delayed_data = std::make_shared<DelayedData>(); //write new data
         delayed_data->data_time = m_actual_finish_time;
         delayed_data->data_write4 = shared::rtY.write4;
         delayed_data->data_write3 = shared::rtY.write3;
         delayed_data->data_write2 = shared::CC_Send_BRAKE;
         delayed_data->data_write1 = shared::CC_Send_ACCEL;
+        global_object::logger->id_2021_82006_task_read_write_logger(get_task_name(), false);
     }
-    else if((get_is_read() == true) && (get_is_write() == false))
+    else if((get_is_read() == true) && (get_is_write() == false)) //for other tasks (SENSING...)
     {
-        if(!global_object::tagged_data_read.empty())
+        if(!global_object::tagged_data_read.empty()) //reset old data
         {
             std::shared_ptr<TaggedData> current_data = global_object::tagged_data_read.at(global_object::tagged_data_read.size()-1);
+            global_object::logger->id_2021_82006_task_read_write_logger(get_task_name(), true);
             global_object::tagged_data_read.clear();
         }
         run();
@@ -611,6 +615,7 @@ void Job::run_function()
         delayed_data->data_write3 = shared::rtY.write3;
         delayed_data->data_write2 = shared::CC_Send_BRAKE;
         delayed_data->data_write1 = shared::CC_Send_ACCEL;
+        global_object::logger->id_2021_82006_task_read_write_logger(get_task_name(), false);
         #endif
     }
     m_run_end = std::chrono::steady_clock::now();
