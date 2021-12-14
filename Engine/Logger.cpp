@@ -34,7 +34,7 @@
 Logger::Logger()
 {
     std::ofstream logfile;
-    logfile.open(utils::cpsim_path + "/Log/2021-82380_read_write.log", std::ios::out);
+    logfile.open(utils::cpsim_path + "/Log/_2021-82380_read_write.log", std::ios::out);
     logfile << "[TASK NAME][TIME][READ/WRITE][DATA LENGTH][RAW DATA]" << std::endl;
     logfile.close();
 }
@@ -120,7 +120,7 @@ void Logger::start_logging()
 
 void Logger::SID_2021_82380_task_read_write_logger(std::string task_name, std::shared_ptr<TaggedData> taggedData, std::shared_ptr<DelayedData> delayedData) {
     std::ofstream logfile;
-    logfile.open(utils::cpsim_path + "/Log/2021-82380_read_write.log", std::ios::app);
+    logfile.open(utils::cpsim_path + "/Log/_2021-82380_read_write.log", std::ios::app);
     logfile << std::setw(11) << std::left << task_name;
     
     // Read
