@@ -11,7 +11,7 @@ CPU family:          6
 Model:               142
 Model name:          Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz
 Stepping:            9
-CPU MHz:             2903.998
+CPU MHz:             2903.997
 BogoMIPS:            5807.99
 Hypervisor vendor:   Microsoft
 Virtualization type: full

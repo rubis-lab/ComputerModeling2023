@@ -576,7 +576,7 @@ void Job::run_function()
         {
             std::shared_ptr<TaggedData> current_data = global_object::tagged_data_read.at(global_object::tagged_data_read.size()-1);
             
-            global_object::logger -> _2019_18675_task_read_write_logger(utils::log_task, global_object::logger->_2019_18675_log_prepare_Tagged_Data(current_data));
+            global_object::logger -> _2019_18675_task_read_write_logger(this->get_task_name(), global_object::logger->_2019_18675_log_prepare_Tagged_Data(current_data));
             
             global_object::tagged_data_read.clear();
         }
@@ -589,7 +589,7 @@ void Job::run_function()
         delayed_data->data_write2 = shared::CC_Send_BRAKE;
         delayed_data->data_write1 = shared::CC_Send_ACCEL;
 
-        global_object::logger -> _2019_18675_task_read_write_logger(utils::log_task, global_object::logger->_2019_18675_log_prepare_Delayed_Data(delayed_data));
+        global_object::logger -> _2019_18675_task_read_write_logger(this->get_task_name(), global_object::logger->_2019_18675_log_prepare_Delayed_Data(delayed_data));
             
     }
     else if((get_is_read() == true) && (get_is_write() == false))
@@ -598,7 +598,7 @@ void Job::run_function()
         {
             std::shared_ptr<TaggedData> current_data = global_object::tagged_data_read.at(global_object::tagged_data_read.size()-1);
             
-            global_object::logger -> _2019_18675_task_read_write_logger(utils::log_task, global_object::logger->_2019_18675_log_prepare_Tagged_Data(current_data));
+            global_object::logger -> _2019_18675_task_read_write_logger(this->get_task_name(), global_object::logger->_2019_18675_log_prepare_Tagged_Data(current_data));
             
             global_object::tagged_data_read.clear();
         }
@@ -621,7 +621,7 @@ void Job::run_function()
         delayed_data->data_write2 = shared::CC_Send_BRAKE;
         delayed_data->data_write1 = shared::CC_Send_ACCEL;
 
-        global_object::logger -> _2019_18675_task_read_write_logger(utils::log_task, global_object::logger->_2019_18675_log_prepare_Delayed_Data(delayed_data));
+        global_object::logger -> _2019_18675_task_read_write_logger(this->get_task_name(), global_object::logger->_2019_18675_log_prepare_Delayed_Data(delayed_data));
          
         #endif
     }
