@@ -42,8 +42,9 @@ public:
     void print_job_execution_schedule();
     void print_offline_guider_status();
     void set_schedule_log_info(std::vector<std::shared_ptr<Task>>&);
-    // Student-implemented logging function
+    // Student-implemented logging functions
     void SID_2021_82380_task_read_write_logger(std::string task_name, std::shared_ptr<TaggedData> taggedData, std::shared_ptr<DelayedData> delayedData);
+    void SID_2021_82380_real_cyber_event_logger(long long time, int job_id, std::string event_type);
 };
 
 #endif
