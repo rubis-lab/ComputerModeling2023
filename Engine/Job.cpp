@@ -555,7 +555,8 @@ double Job::min_simulated_deadline_det_successor()
     }
     std::cout << "FATAL ERROR" << std::endl;
     std::cin >> min_value;
-} 
+    return min_value;
+}
 
 std::vector<std::shared_ptr<Job>> Job::get_history()
 {
@@ -575,11 +576,17 @@ void Job::run_function()
         if(!global_object::tagged_data_read.empty())
         {
             std::shared_ptr<TaggedData> current_data = global_object::tagged_data_read.at(global_object::tagged_data_read.size()-1);
+          /*
+            if(get_task_name() == utils::log_task)
+                global_object::logger->_201717288_task_read_write_logger(utils::log_task, current_data, nullptr);
+          */
             global_object::tagged_data_read.clear();
+          /*
             if(get_task_name() == utils::log_task){
                 std::string log = global_object::logger -> _2019_13914_print_tagged_data_log(utils::log_task, current_data, 6*sizeof(int));
                 global_object::logger -> _2019_13914_task_read_write_logger(log);
             }
+          */
         }
         run();
   
@@ -589,21 +596,32 @@ void Job::run_function()
         delayed_data->data_write3 = shared::rtY.write3;
         delayed_data->data_write2 = shared::CC_Send_BRAKE;
         delayed_data->data_write1 = shared::CC_Send_ACCEL;
-        if(get_task_name() == utils::log_task){
+
+      if(get_task_name() == utils::log_task){
             std::string log = global_object::logger -> _2019_13914_print_delayed_data_log(utils::log_task, delayed_data, 4*sizeof(int));
             global_object::logger -> _2019_13914_task_read_write_logger(log);
         }
+      /*
+        if(get_task_name() == utils::log_task)
+            global_object::logger->_201717288_task_read_write_logger(utils::log_task, nullptr, delayed_data);
+       */
     }
     else if((get_is_read() == true) && (get_is_write() == false))
     {
         if(!global_object::tagged_data_read.empty())
         {
             std::shared_ptr<TaggedData> current_data = global_object::tagged_data_read.at(global_object::tagged_data_read.size()-1);
+            /*
+            if(get_task_name() == utils::log_task)
+                global_object::logger->_201717288_task_read_write_logger(utils::log_task, current_data, nullptr);
+            */
             global_object::tagged_data_read.clear();
+          /*
             if(get_task_name() == utils::log_task){
                 std::string log = global_object::logger -> _2019_13914_print_tagged_data_log(utils::log_task, current_data, 6*sizeof(int));
                 global_object::logger -> _2019_13914_task_read_write_logger(log);
             }
+           */
         }
         run();
     }
@@ -623,10 +641,15 @@ void Job::run_function()
         delayed_data->data_write3 = shared::rtY.write3;
         delayed_data->data_write2 = shared::CC_Send_BRAKE;
         delayed_data->data_write1 = shared::CC_Send_ACCEL;
+
         if(get_task_name() == utils::log_task){
             std::string log = global_object::logger -> _2019_13914_print_delayed_data_log(utils::log_task, delayed_data, 4*sizeof(int));
             global_object::logger -> _2019_13914_task_read_write_logger(log);
         }
+/*
+        if(get_task_name() == utils::log_task)
+            global_object::logger->_201717288_task_read_write_logger(utils::log_task, nullptr, delayed_data);
+*/
         #endif
     }
     m_run_end = std::chrono::steady_clock::now();

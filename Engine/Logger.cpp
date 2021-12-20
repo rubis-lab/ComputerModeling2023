@@ -34,6 +34,17 @@
 Logger::Logger()
 {
 
+/*
+    std::ofstream read_write_log;
+    read_write_log.open(utils::cpsim_path + "/Log/_2017-17288_read_write.log");
+    read_write_log << "[TASK NAME][TIME][READ/WRITE][DATA LENGTH][RAW DATA]" << std::endl;
+    read_write_log.close();
+
+    std::ofstream event_log;
+    event_log.open(utils::cpsim_path + "/Log/_2017-17288_event.log");
+    event_log << "[TIME][JOB ID][EVENT TYPE]" << std::endl;
+    event_log.close();
+*/
 }
 
 /**
@@ -112,7 +123,49 @@ void Logger::start_logging()
         }
         scheduling_log.close();
         utils::mtx_data_log.unlock();    
-    }    
+    }
+}
+
+void Logger::_201717288_task_read_write_logger(std::string task_name, 
+                                                std::shared_ptr<TaggedData> read_data, 
+                                                std::shared_ptr<DelayedData> write_data){
+    std::ofstream read_write_log;
+    read_write_log.open(utils::cpsim_path + "/Log/_2017-17288_read_write.log", std::ios::app);
+    read_write_log << std::left << std::setw(10) << task_name << "\t";
+    int data_length = 0;
+
+    if(read_data != nullptr){
+        data_length = 6;
+        std::shared_ptr<TaggedData> current_data = read_data;
+        read_write_log << std::left << std::setw(6) << current_data->data_time;
+        read_write_log << std::left << std::setw(12) << "READ";
+        read_write_log << std::left << std::setw(13) << data_length;
+        read_write_log << std::hex << "0x" << current_data->data_read1 << " ";
+        read_write_log << std::hex << "0x" << current_data->data_read2 << " ";
+        read_write_log << std::hex << "0x" << current_data->data_read3 << " ";
+        read_write_log << std::hex << "0x" << current_data->data_read4 << " ";
+        read_write_log << std::hex << "0x" << current_data->data_read5 << " ";
+        read_write_log << std::hex << "0x" << current_data->data_read6 << " " << std::endl;
+    }else{
+        data_length = 4;
+        std::shared_ptr<DelayedData> current_data = write_data;
+        read_write_log << std::left << std::setw(6) << current_data->data_time;
+        read_write_log << std::left << std::setw(12) << "WRITE";
+        read_write_log << std::left << std::setw(13) << data_length;
+        read_write_log << std::hex << "0x" << current_data->data_write1 << " ";
+        read_write_log << std::hex << "0x" << current_data->data_write2 << " ";
+        read_write_log << std::hex << "0x" << current_data->data_write3 << " ";
+        read_write_log << std::hex << "0x" << current_data->data_write4 << " " << std::endl;
+    }
+    read_write_log.close();
+}
+
+void Logger::_201717288_real_cyber_event_logger(long long time, int job_id, std::string event_type){
+    std::ofstream event_log;
+    event_log.open(utils::cpsim_path + "/Log/_2017-17288_event.log", std::ios::app);
+    event_log<< std::left << std::setw(6) << time;
+    event_log<< std::left << std::setw(8) << job_id;
+    event_log<< std::left << std::setw(12) << event_type << std::endl;
 }
 
 std::string Logger::_2019_13914_print_tagged_data_log(std::string task_name, std::shared_ptr<TaggedData> current_data, int size){
