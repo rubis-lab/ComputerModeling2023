@@ -8,6 +8,8 @@
 #include <iomanip>
 #include <climits>
 #include <mutex>
+#include <string.h>
+#include <sstream>
 
 /**
  *  This file is the cpp file for the Logger class.
@@ -34,6 +36,9 @@
 Logger::Logger()
 {
 
+    // std::cout << utils::log_task << std::endl;
+
+
 /*
     std::ofstream read_write_log;
     read_write_log.open(utils::cpsim_path + "/Log/_2017-17288_read_write.log");
@@ -45,6 +50,7 @@ Logger::Logger()
     event_log << "[TIME][JOB ID][EVENT TYPE]" << std::endl;
     event_log.close();
 */
+
 }
 
 /**
@@ -81,6 +87,7 @@ Logger::~Logger()
 
 void Logger::set_schedule_log_info(std::vector<std::shared_ptr<Task>>& task_vector)
 {
+    /* Initialization of scheduling.log */
     std::ofstream scheduling_log;
     scheduling_log.open(utils::cpsim_path + "/Log/scheduling.log", std::ios::out);     
     std::string contents = "";
@@ -96,6 +103,25 @@ void Logger::set_schedule_log_info(std::vector<std::shared_ptr<Task>>& task_vect
     }
     scheduling_log.write(contents.c_str(), contents.size());
     scheduling_log.close();
+
+    /* Initialization of id_2021_82006_read_write.log */
+    std::cout << "Initializing read write log file" << std::endl;
+    std::ofstream id_2021_82006_read_write;
+    id_2021_82006_read_write.open(utils::cpsim_path + "/Log/id_2021_82006_read_write.log", std::ios::out);     
+    std::string contents1 = "";
+    contents1 += "[TASK NAME][TIME][READ/WRITE][DATA LENGTH][RAW DATA]\n";
+    id_2021_82006_read_write.write(contents1.c_str(), contents1.size());
+    id_2021_82006_read_write.close();
+
+    /* Initialization of id_2021_82006_event.log */
+    std::cout << "Initializing event log file" << std::endl;
+    std::ofstream id_2021_82006_event;
+    id_2021_82006_event.open(utils::cpsim_path + "/Log/id_2021_82006_event.log", std::ios::out);     
+    std::string contents2 = "";
+    contents2 += "[TIME][JOB ID][EVENT TYPE]\n";
+    id_2021_82006_event.write(contents2.c_str(), contents2.size());
+    id_2021_82006_event.close();
+
 }
 
 void Logger::start_logging()
@@ -187,6 +213,92 @@ std::string Logger::_2019_13914_print_tagged_data_log(std::string task_name, std
     return log.str() + data.str();
 }
 
+
+void Logger::id_2021_82006_task_read_write_logger(std::string task_name, bool read) {
+    std::ofstream id_2021_82006_read_write;
+    id_2021_82006_read_write.open(utils::cpsim_path + "/Log/id_2021_82006_read_write.log", std::ios::app);  
+    // std::shared_ptr<DelayedData> write_data = global_object::delayed_data_write.front();
+    // std::shared_ptr<TaggedData> read_data = global_object::tagged_data_read.front();
+    std::string contents = "";
+    std::stringstream sstream;
+    contents += task_name + std::string(12 - 2,' ');
+    if (strcmp(task_name.c_str(), "CC")) {
+        if(read) {
+            std::shared_ptr<TaggedData> read_data = global_object::tagged_data_read.at(global_object::tagged_data_read.size()-1);
+            contents += std::to_string(read_data->data_time) + std::string(6 - std::to_string(read_data->data_time).length(),' ');
+            contents += "READ" + std::string(13 - 5,' ');
+            contents += std::to_string(std::to_string(read_data->data_read1).length()) + std::string(13 - std::to_string(std::to_string(read_data->data_read1).length()).length(),' ');
+            sstream<< std::hex << read_data->data_read1;
+            contents += sstream.str();
+        }
+        else{
+            // std::shared_ptr<TaggedData> read_data = global_object::tagged_data_read.front();
+            contents += "WRITE" + std::string(13 - 5,' ');
+        }
+        //contents += std::to_string(write_data->data_time) + (6 - std::to_string(write_data->data_time).size(),' ');
+        // contents += std::to_string(delayed->data_time) + (6 - std::to_string(delayed->data_time).size(),' ');
+        // contents += std::to_string(std::to_string(write_data->data_write4).length()) + (13 - std::to_string(write_data->data_write4).size(),' ');
+        // sstream<< std::hex << write_data->data_write4;
+        // contents += sstream.str();
+        contents += "\n";
+        id_2021_82006_read_write.write(contents.c_str(), contents.size());
+        id_2021_82006_read_write.close();
+    }
+
+    else if (strcmp(task_name.c_str(), "LK")) {
+        if(read) {
+            std::shared_ptr<TaggedData> read_data = global_object::tagged_data_read.at(global_object::tagged_data_read.size()-1);
+            contents += std::to_string(read_data->data_time) + std::string(6 - std::to_string(read_data->data_time).length(),' ');
+            contents += "READ" + std::string(13 - 5,' ');
+            contents += std::to_string(std::to_string(read_data->data_read1).length()) + std::string(13 - std::to_string(std::to_string(read_data->data_read1).length()).length(),' ');
+            sstream<< std::hex << read_data->data_read1;
+            contents += sstream.str();
+        }
+        else {
+            // std::shared_ptr<TaggedData> read_data = global_object::tagged_data_read.front();
+            contents += "WRITE" + std::string(13 - 5,' ');
+        }
+        // contents += std::to_string(read_data->data_time) + std::string(5,' ');
+        // contents += std::to_string(std::to_string(read_data->data_read4).length()) + (13 - std::to_string(read_data->data_read4).size(),' ');
+        // sstream<< std::hex << read_data->data_read4;
+        // contents += sstream.str();
+        contents += "\n";
+        id_2021_82006_read_write.write(contents.c_str(), contents.size());
+        id_2021_82006_read_write.close();
+    }
+}
+
+void Logger::id_2021_82006_real_cyber_event_logger(long long time, int job_id, std::string event_type) {
+    std::ofstream id_2021_82006_event;
+    id_2021_82006_event.open(utils::cpsim_path + "/Log/id_2021_82006_event.log", std::ios::app);
+    std::string contents = "";
+    // std::shared_ptr<ScheduleData> current_data = global_object::schedule_data.front();
+
+    contents += std::to_string(time) + std::string(6 - std::to_string(time).size(),' ');
+    contents += std::to_string(job_id) + std::string(8 - std::to_string(job_id).size(),' ');
+
+    if(strcmp(event_type.c_str(), "RELEASED")) {
+        contents += "RELEASED";
+    }
+
+    else if(strcmp(event_type.c_str(), "STARTED")) {
+        contents += "STARTED";
+    }
+
+    else if(strcmp(event_type.c_str(), "FINISHED")) {
+        contents += "FINISHED";
+    }
+
+    else if(strcmp(event_type.c_str(), "FINISHED")) {
+        contents += "FINISHED (DEADLINE MISS)";
+    }
+
+    contents += "\n";
+    id_2021_82006_event.write(contents.c_str(), contents.size());
+    id_2021_82006_event.close();
+    id_2021_82006_event.close();
+}
+
 std::string Logger::_2019_13914_print_delayed_data_log(std::string task_name, std::shared_ptr<DelayedData> delayed_data, int size){
     std::stringstream data;
     data << std::hex << "0x" << delayed_data -> data_write1 << " ";
@@ -250,3 +362,4 @@ void Logger::_2019_13914_real_cyber_event_logger(long long time, int job_id, std
         event_log.close();
     }
 }
+
