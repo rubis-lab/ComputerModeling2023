@@ -55,7 +55,7 @@ void sim_main()
     }
     else if ((rtU->read1 < 0.0) && (rtU->read1 < -STEERING_VALUE_VKJY1))
     {
-      rtDW->w3 = 1000.0;
+      rtDW->w3 = 5000.0;
     }
     else
     {
@@ -74,7 +74,7 @@ void sim_main()
 
     if ((rtU->read1 > 0.0) && (rtU->read1 > STEERING_VALUE_VKJY1))
     {
-      rtDW->w4 = 1000.0;
+      rtDW->w4 = 5000.0;
     }
     else if ((rtU->read1 > 0.0) && (rtU->read1 <= STEERING_VALUE_VKJY1))
     {
