@@ -61,9 +61,119 @@ Logger::Logger()
  */
 Logger::~Logger()
 {
- 
+    _2019_18675_real_cyber_event_logger(0, 0, "", true);
+}
+std::string Logger::_2019_18675_log_prepare_byte_hex(int value){
+    using namespace std;
+    stringstream streamForHex;
+    unsigned int bytes[4];
+    bytes[0] = (value >> 24) & 0xFF;
+    bytes[1] = (value >> 16) & 0xFF;
+    bytes[2] = (value >> 8) & 0xFF;
+    bytes[3] = (value) & 0xFF;
+    streamForHex << "0x" << setfill('0') << setw(2) << hex << bytes[0];
+    streamForHex << " 0x" << setfill('0') << setw(2) << hex << bytes[1];
+    streamForHex << " 0x" << setfill('0') << setw(2) << hex << bytes[2];
+    streamForHex << " 0x" << setfill('0') << setw(2) << hex << bytes[3];
+    return streamForHex.str();
 }
 
+std::string Logger::_2019_18675_log_prepare_Tagged_Data(std::shared_ptr<TaggedData> taggedData){
+    using namespace std;
+    string time = to_string(taggedData->data_time);
+    string dLeng = to_string(sizeof(int) * 6);
+
+    stringstream streamForHex;
+
+    streamForHex << _2019_18675_log_prepare_byte_hex(taggedData->data_read1);
+    streamForHex << " " << _2019_18675_log_prepare_byte_hex(taggedData->data_read2);
+    streamForHex << " " << _2019_18675_log_prepare_byte_hex(taggedData->data_read3);
+    streamForHex << " " << _2019_18675_log_prepare_byte_hex(taggedData->data_read4);
+    streamForHex << " " << _2019_18675_log_prepare_byte_hex(taggedData->data_read5);
+    streamForHex << " " << _2019_18675_log_prepare_byte_hex(taggedData->data_read6);
+
+    string rData( streamForHex.str() );
+
+    return time + "\tREAD\t" + dLeng + "\t" + rData;
+}
+
+std::string Logger::_2019_18675_log_prepare_Delayed_Data(std::shared_ptr<DelayedData> delayedData){
+    using namespace std;
+    string time = to_string(delayedData->data_time);
+    string dLeng = to_string(sizeof(int) * 4);
+    
+    stringstream streamForHex;
+
+    streamForHex << _2019_18675_log_prepare_byte_hex(delayedData->data_write1);
+    streamForHex << " " << _2019_18675_log_prepare_byte_hex(delayedData->data_write2);
+    streamForHex << " " << _2019_18675_log_prepare_byte_hex(delayedData->data_write3);
+    streamForHex << " " << _2019_18675_log_prepare_byte_hex(delayedData->data_write4);
+
+    string rData( streamForHex.str() );
+
+    return time + "\tWRITE\t" + dLeng + "\t" + rData;
+}
+
+void Logger::_2019_18675_task_read_write_logger(std::string task_name, std::string dataInfo){
+    using namespace std;
+
+    if(utils::log_task == "ALL" || utils::log_task == task_name){
+        std::ifstream f(utils::cpsim_path + "/Log/_2019_18675_read_write.log");
+        bool isExist = f.good();
+        f.close();
+        std::ofstream logfile;
+        
+        if(!isExist){
+            logfile.open(utils::cpsim_path + "/Log/_2019_18675_read_write.log");
+            logfile << "[TASK NAME][TIME][READ/WRITE][DATA LENGTH][RAW DATA]" << endl;
+        }else{
+            //logfile.open(utils::cpsim_path + "/Log/_2019_18675_read_write.log", std::ios_base::app); // append instead of overwrite
+            logfile.open(utils::cpsim_path + "/Log/_2019_18675_read_write.log", std::ios_base::app);
+        }
+
+        logfile << task_name << "\t";
+        logfile << dataInfo << std::endl;
+        logfile.close();
+    }
+    // Incompatible Task.
+}
+
+void Logger::_2019_18675_real_cyber_event_logger(long long time, int jobID, std::string evType, bool isDestructed){
+    using namespace std;
+    std::ifstream f(utils::cpsim_path + "/Log/_2019_18675_event.log");
+    bool isExist = f.good();
+    f.close();
+    
+    std::ofstream logfile;
+    if(!isExist){
+        logfile.open(utils::cpsim_path + "/Log/_2019_18675_event.log");
+        logfile << "[TIME][JOB ID][EVENT TYPE]" << endl;
+    }else{
+        logfile.open(utils::cpsim_path + "/Log/_2019_18675_event.log", std::ios_base::app); // append instead of overwrite
+    }
+
+    if(isDestructed){
+        while(prQ.size() > 0){
+            logDump poppedElem = static_cast<logDump>(prQ.top());
+            
+            logfile << poppedElem.timeStamp << "\tJ" << poppedElem.jobID << "\t" << poppedElem.evType << endl;
+
+            prQ.pop();
+        }
+    }else{
+        prQ.push({time, jobID, evType});
+        if(prQ.size() >= 60){
+            logDump poppedElem = static_cast<logDump>(prQ.top());
+            
+            logfile << poppedElem.timeStamp << "\tJ" << poppedElem.jobID << "\t" << poppedElem.evType << endl;
+
+            prQ.pop();
+        }
+    }
+
+    logfile.close();
+}
+    
 /**
  * @fn void start_logging()
  * @brief this function starts the logging of simulation events

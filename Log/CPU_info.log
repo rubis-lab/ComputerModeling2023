@@ -6,7 +6,6 @@ On-line CPU(s) list: 0
 Thread(s) per core:  1
 Core(s) per socket:  1
 Socket(s):           1
-NUMA node(s):        1
 Vendor ID:           GenuineIntel
 CPU family:          6
 Model:               78

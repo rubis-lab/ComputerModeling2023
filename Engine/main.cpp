@@ -70,6 +70,10 @@ int main(int argc, char *argv[])
     int simulatable_count = 0;
     int nonsimulatable_count = 0;
 
+    // HERE is the location for the Log Task Name test!
+    std::cout << utils::log_task << " : is the log task name" << std::endl;
+    // Until Above!!
+    
     for(int i = 0; i < epochs; i++) // Initializer, ScheduleSimulator, OfflineGuider and Executer will be reset due to going out of scope at each loop.
     {
         /** [Initialization with Specification]
@@ -92,6 +96,7 @@ int main(int argc, char *argv[])
         ScheduleGenerator schedule_generator;
         OfflineGuider offline_guider;
         Executor executor;
+
 
          /** [Generation of Real-Cyber System's Scheduling]
           * To run simulator, 
@@ -157,5 +162,6 @@ int main(int argc, char *argv[])
         std::cout << "--------------------" << std::endl;
     }        
     global_object::logger_thread->join();
+    
     return 0;
 }
