@@ -114,11 +114,10 @@ bool Executor::run_simulation(JobVectorOfSimulator& job_vector_of_simulator, Job
         if(job->get_actual_start_time() < 0 || job->get_actual_finish_time() > job->get_actual_deadline())
         {
             std::cout <<"DEADLINE MISS IN REAL CYBER SYSTEM" << std::endl;
-
-            //DEADLINE MISS HERE!
-            using namespace std;
-            int jobID = stoi(to_string(job->get_task_id() + 1) + to_string(job->get_job_id()));
-            global_object::logger->_2019_18675_real_cyber_event_logger((long long)job->get_actual_finish_time(), jobID, "FINISHED (DEADLINE MISS)", false);
+            utils::mtx_data_log.lock();
+            int job_id = std::stoi(std::to_string(job->get_job_id()) + std::to_string(job->get_task_id()));
+            global_object::logger->_2018_11150_real_cyber_event_logger(job->get_actual_deadline(), job_id, "FINISHED (DEADLINE MISS)");
+            utils::mtx_data_log.unlock();
         }
     }
     //std::cout << std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now() - utils::simulator_start_time).count() <<std::endl;
@@ -152,13 +151,11 @@ bool Executor::run_simulation(JobVectorOfSimulator& job_vector_of_simulator, Job
                         global_object::logger->_2019_18675_real_cyber_event_logger((long long)job->get_actual_release_time(), jobID, "RELEASED", false);
         
                         is_idle = false;   
-
-                        ////// LOG RELEASE //////
-                        global_object::logger->_202182520_real_cyber_event_logger(
-                            job->get_actual_release_time(),
-                            job->get_job_id(), 
-                            "RELEASE"
-                        );
+                        
+                        utils::mtx_data_log.lock();
+                        int job_id = std::stoi(std::to_string(job->get_job_id()) + std::to_string(job->get_task_id()));
+                        global_object::logger->_2018_11150_real_cyber_event_logger(job->get_actual_release_time(), job_id, "RELEASED");
+                        utils::mtx_data_log.unlock();
                     }
                 }
                 else
@@ -181,10 +178,10 @@ bool Executor::run_simulation(JobVectorOfSimulator& job_vector_of_simulator, Job
 */
                     is_idle = false; 
 
-                    using namespace std;
-                    int jobID = stoi(to_string(job->get_task_id() + 1) + to_string(job->get_job_id()));
-                    global_object::logger->_2019_18675_real_cyber_event_logger((long long)job->get_actual_release_time(), jobID, "RELEASED", false);
-        
+                    utils::mtx_data_log.lock();
+                    int job_id = std::stoi(std::to_string(job->get_job_id()) + std::to_string(job->get_task_id()));
+                    global_object::logger->_2018_11150_real_cyber_event_logger(job->get_actual_release_time(), job_id, "RELEASED");
+                    utils::mtx_data_log.unlock();
                 }
             }
         }
@@ -269,12 +266,10 @@ bool Executor::run_simulation(JobVectorOfSimulator& job_vector_of_simulator, Job
                 global_object::logger -> _2019_13914_real_cyber_event_logger((long long)run_job->get_actual_finish_time(), jid, "FINISHED");
                 global_object::schedule_data.push_back(std::move(diagram_finish));
 
-                using namespace std;
-                int jobID = stoi(to_string(run_job->get_task_id() + 1) + to_string(run_job->get_job_id()));
-                
-                global_object::logger->_2019_18675_real_cyber_event_logger((long long)run_job->get_actual_start_time(), jobID, "STARTED", false);
-                global_object::logger->_2019_18675_real_cyber_event_logger((long long)run_job->get_actual_finish_time(), jobID, "FINISHED", false);
-        
+                int job_id = std::stoi(std::to_string(run_job->get_job_id()) + std::to_string(run_job->get_task_id()));
+                global_object::logger->_2018_11150_real_cyber_event_logger(run_job->get_actual_start_time(), job_id, "STARTED");
+                global_object::logger->_2018_11150_real_cyber_event_logger(run_job->get_actual_finish_time(), job_id, "FINISHED");
+
                 utils::mtx_data_log.unlock();
             }
             else utils::current_time += run_job->get_simulated_execution_time();

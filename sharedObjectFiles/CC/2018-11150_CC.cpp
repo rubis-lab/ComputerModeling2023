@@ -22,9 +22,7 @@ void sim_main()
   /********************************************/
   write5 = 0;
   write6 = 0;
-  read2 = read2 / 100 + 300000;
-
-  double STEERING = 1500.0;
+  read2 = read2 / 100 + 600000;
 
   if(read4 > 6000) {
     

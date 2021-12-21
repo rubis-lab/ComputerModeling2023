@@ -34,15 +34,27 @@
  */
 Logger::Logger()
 {
-    rw_log.open(utils::cpsim_path + "/Log/202182520_read_write.log", std::ios::out);
-    std::string rwcontents = "[ TASK NAME ] [ TIME ] [ READ/WRITE ] [ DATA LENGTH ] [ RAW DATA ]\n";
-    rw_log.write(rwcontents.c_str(), rwcontents.size());
-    rw_log.close();
+    std::ofstream scheduling_log;
+    scheduling_log.open(utils::cpsim_path + "/Log/2018_11150_read_write.log", std::ios::out|std::ios::trunc);     
+    
+    if(!scheduling_log){
+        std::cerr << "Failed to open log file.\n";
+        exit(1);
+    }
+
+    scheduling_log << "[ TASK NAME ] [ TIME ] [ READ/WRITE ] [ DATA LENGTH ] [ RAW DATA ]\n";
+    scheduling_log.close();
 
 
-    event_log.open(utils::cpsim_path + "/Log/202182520_event.log", std::ios::out);
-    std::string evcontents = "[ TIME ] [ JOB ID ] [ EVENT TYPE ]\n";
-    event_log.write(evcontents.c_str(), evcontents.size());
+    std::ofstream event_log;
+    event_log.open(utils::cpsim_path + "/Log/2018_11150_event.log", std::ios::out|std::ios::trunc);     
+    
+    if(!event_log){
+        std::cerr << "Failed to open log file.\n";
+        exit(1);
+    }
+
+    event_log << "[TIME][JOB ID][EVENT TYPE]\n";
     event_log.close();
 }
 
@@ -318,164 +330,58 @@ void Logger::_201717288_real_cyber_event_logger(long long time, int job_id, std:
     event_log<< std::left << std::setw(12) << event_type << std::endl;
 }
 
-std::string Logger::_2019_13914_print_tagged_data_log(std::string task_name, std::shared_ptr<TaggedData> current_data, int size){
-    std::stringstream data;
-    data << std::hex << "0x" << current_data -> data_read1 << " ";
-    data << std::hex << "0x" << current_data -> data_read2 << " ";
-    data << std::hex << "0x" << current_data -> data_read3 << " ";
-    data << std::hex << "0x" << current_data -> data_read4 << " ";
-    data << std::hex << "0x" << current_data -> data_read5 << " ";
-    data << std::hex << "0x" << current_data -> data_read6 << "\n";
-    
-    std::stringstream log;
-    log << " ";
-    log << std::left << std::setw(14) << task_name;
-    log << std::left << std::setw(9) << std::to_string(current_data -> data_time);
-    log << std::left << std::setw(15) << "READ";
-    log << std::left << std::setw(16) << std::to_string(size);
-
-    return log.str() + data.str();
+std::string Logger::_2018_11150_task1_tagged(std::string task_name, std::shared_ptr<TaggedData> data){
+    std::stringstream content;
+    content << std::left << std::setw(14) << task_name;
+    content << std::left << std::setw(9) << std::to_string(data->data_time);
+    content << std::left << std::setw(15) << "READ";
+    content << std::left << std::setw(16) << std::to_string(6*sizeof(int));
+    content << std::left << std::hex << "0x" << data->data_read1 << " "
+                         << std::hex << "0x" << data->data_read2 << " "
+                         << std::hex << "0x" << data->data_read3 << " "
+                         << std::hex << "0x" << data->data_read4 << " "
+                         << std::hex << "0x" << data->data_read5 << " "
+                         << std::hex << "0x" << data->data_read6 << "\n";
+    return content.str();
+}
+std::string Logger::_2018_11150_task1_delayed(std::string task_name, std::shared_ptr<DelayedData> data){
+    std::stringstream content;
+    content << std::left << std::setw(14) << task_name;
+    content << std::left << std::setw(9) << std::to_string(data->data_time);
+    content << std::left << std::setw(15) << "READ";
+    content << std::left << std::setw(16) << std::to_string(4*sizeof(int));
+    content << std::left << std::hex << "0x" << data->data_write1 << " "
+                         << std::hex << "0x" << data->data_write2 << " "
+                         << std::hex << "0x" << data->data_write3 << " "
+                         << std::hex << "0x" << data->data_write4 << "\n";
+    return content.str();
 }
 
-
-void Logger::id_2021_82006_task_read_write_logger(std::string task_name, bool read) {
-    std::ofstream id_2021_82006_read_write;
-    id_2021_82006_read_write.open(utils::cpsim_path + "/Log/id_2021_82006_read_write.log", std::ios::app);  
-    // std::shared_ptr<DelayedData> write_data = global_object::delayed_data_write.front();
-    // std::shared_ptr<TaggedData> read_data = global_object::tagged_data_read.front();
-    std::string contents = "";
-    std::stringstream sstream;
-    contents += task_name + std::string(12 - 2,' ');
-    if (strcmp(task_name.c_str(), "CC")) {
-        if(read) {
-            std::shared_ptr<TaggedData> read_data = global_object::tagged_data_read.at(global_object::tagged_data_read.size()-1);
-            contents += std::to_string(read_data->data_time) + std::string(6 - std::to_string(read_data->data_time).length(),' ');
-            contents += "READ" + std::string(13 - 5,' ');
-            contents += std::to_string(std::to_string(read_data->data_read1).length()) + std::string(13 - std::to_string(std::to_string(read_data->data_read1).length()).length(),' ');
-            sstream<< std::hex << read_data->data_read1;
-            contents += sstream.str();
-        }
-        else{
-            // std::shared_ptr<TaggedData> read_data = global_object::tagged_data_read.front();
-            contents += "WRITE" + std::string(13 - 5,' ');
-        }
-        //contents += std::to_string(write_data->data_time) + (6 - std::to_string(write_data->data_time).size(),' ');
-        // contents += std::to_string(delayed->data_time) + (6 - std::to_string(delayed->data_time).size(),' ');
-        // contents += std::to_string(std::to_string(write_data->data_write4).length()) + (13 - std::to_string(write_data->data_write4).size(),' ');
-        // sstream<< std::hex << write_data->data_write4;
-        // contents += sstream.str();
-        contents += "\n";
-        id_2021_82006_read_write.write(contents.c_str(), contents.size());
-        id_2021_82006_read_write.close();
-    }
-
-    else if (strcmp(task_name.c_str(), "LK")) {
-        if(read) {
-            std::shared_ptr<TaggedData> read_data = global_object::tagged_data_read.at(global_object::tagged_data_read.size()-1);
-            contents += std::to_string(read_data->data_time) + std::string(6 - std::to_string(read_data->data_time).length(),' ');
-            contents += "READ" + std::string(13 - 5,' ');
-            contents += std::to_string(std::to_string(read_data->data_read1).length()) + std::string(13 - std::to_string(std::to_string(read_data->data_read1).length()).length(),' ');
-            sstream<< std::hex << read_data->data_read1;
-            contents += sstream.str();
-        }
-        else {
-            // std::shared_ptr<TaggedData> read_data = global_object::tagged_data_read.front();
-            contents += "WRITE" + std::string(13 - 5,' ');
-        }
-        // contents += std::to_string(read_data->data_time) + std::string(5,' ');
-        // contents += std::to_string(std::to_string(read_data->data_read4).length()) + (13 - std::to_string(read_data->data_read4).size(),' ');
-        // sstream<< std::hex << read_data->data_read4;
-        // contents += sstream.str();
-        contents += "\n";
-        id_2021_82006_read_write.write(contents.c_str(), contents.size());
-        id_2021_82006_read_write.close();
-    }
-}
-
-void Logger::id_2021_82006_real_cyber_event_logger(long long time, int job_id, std::string event_type) {
-    std::ofstream id_2021_82006_event;
-    id_2021_82006_event.open(utils::cpsim_path + "/Log/id_2021_82006_event.log", std::ios::app);
-    std::string contents = "";
-    // std::shared_ptr<ScheduleData> current_data = global_object::schedule_data.front();
-
-    contents += std::to_string(time) + std::string(6 - std::to_string(time).size(),' ');
-    contents += std::to_string(job_id) + std::string(8 - std::to_string(job_id).size(),' ');
-
-    if(strcmp(event_type.c_str(), "RELEASED")) {
-        contents += "RELEASED";
-    }
-
-    else if(strcmp(event_type.c_str(), "STARTED")) {
-        contents += "STARTED";
-    }
-
-    else if(strcmp(event_type.c_str(), "FINISHED")) {
-        contents += "FINISHED";
-    }
-
-    else if(strcmp(event_type.c_str(), "FINISHED")) {
-        contents += "FINISHED (DEADLINE MISS)";
-    }
-
-    contents += "\n";
-    id_2021_82006_event.write(contents.c_str(), contents.size());
-    id_2021_82006_event.close();
-    id_2021_82006_event.close();
-}
-
-void Logger::_202182520_task_read_write_logger(std::string task_name, std::string time, std::string rw, std::string data_length, std::string raw_data) {
-    rw_log.open(utils::cpsim_path + "/Log/202182520_read_write.log", std::ios::app);
-
-    std::string contents = task_name + " / " + time + " / " + rw + " / " + data_length + " / " + raw_data + "\n";
-
-    rw_log.write(contents.c_str(), contents.size());
-    rw_log.close();
-}
-
-void Logger::_202182520_real_cyber_event_logger(double time, int job_id, std::string event_type) {
-    event_log.open(utils::cpsim_path + "/Log/202182520_event.log", std::ios::app);
-
-    std::string contents = std::to_string((int)time) + " / J" + std::to_string(job_id) + " / " + event_type + "\n";
-
-    event_log.write(contents.c_str(), contents.size());
-    event_log.close();
-}
-
-void Logger::_201616286_task_read_write_logger(std::string task_name, std::string type, int data_time, int nbytes, char *data)
+void Logger::_2018_11150_task_read_write_logger(std::string contents)
 {
-    std::ofstream read_write_log;
-    read_write_log.open(utils::cpsim_path + "/Log/_201616286_read_write.log", std::ios::app);    
-    read_write_log << std::left;
-    read_write_log << std::setw(10) << task_name;
-    read_write_log << std::setw(10) << data_time;
-    read_write_log << std::setw(10) << type;
-    read_write_log << std::setw(10) << nbytes;
+    std::ofstream scheduling_log;
+    scheduling_log.open(utils::cpsim_path + "/Log/2018_11150_read_write.log", std::ios::app);     
     
-    for (int i = 0 ; i < nbytes ; i += 1)
-        read_write_log << "0x" << std::setw(2) << std::setfill('0') << std::hex << (0x000000ff & (int) data[i]) << " ";
-    read_write_log << std::endl;
-    read_write_log.close();
+    if(!scheduling_log){
+        std::cerr << "Failed to open log file.\n";
+        exit(1);
+    }
+
+    scheduling_log << contents;
+    scheduling_log.close();
 }
 
-void Logger::_201616286_real_cyber_event_logger(long long time, int task_id, int job_id, std::string event_type)
-{
-    long long t;
-    std::string j, e;
+void Logger::_2018_11150_real_cyber_event_logger(long long time, int job_id, std::string event_type){
     std::ofstream event_log;
-
-    this -> event_queue.push(std::make_tuple(-time, "J" + std::to_string(task_id) + std::to_string(job_id), event_type));
-    event_log.open(utils::cpsim_path + "/Log/_201616286_event.log", std::ios::app);    
-
-    while ((!this->event_queue.empty()) && ((-std::get<0>(this -> event_queue.top())) <= utils::current_time)) {
-        
-        std::tie(t, j, e) = event_queue.top();
-        event_log << std::left;
-        event_log << std::setw(10) << -t;
-        event_log << std::setw(10) << j;
-        event_log << std::setw(10) << e;
-        event_log << std::endl;
-        event_queue.pop();
+    event_log.open(utils::cpsim_path + "/Log/2018_11150_event.log", std::ios::app);     
+    
+    if(!event_log){
+        std::cerr << "Failed to open log file.\n";
+        exit(1);
     }
+
+    event_log << std::left << std::setw(6) << std::to_string(time);
+    event_log << std::left << std::setw(8) << "J" + std::to_string(job_id);
+    event_log << std::left << event_type << "\n";
     event_log.close();
 }
-

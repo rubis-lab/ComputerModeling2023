@@ -11,8 +11,8 @@ CPU family:          6
 Model:               78
 Model name:          Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz
 Stepping:            3
-CPU MHz:             2400.000
-BogoMIPS:            4800.00
+CPU MHz:             2399.998
+BogoMIPS:            4799.99
 Hypervisor vendor:   KVM
 Virtualization type: full
 L1d cache:           32K

@@ -588,8 +588,12 @@ void Job::run_function() //TODO log here, read and write in all combinations, re
             global_object::logger -> _2019_18675_task_read_write_logger(this->get_task_name(), global_object::logger->_2019_18675_log_prepare_Tagged_Data(current_data));
             
             global_object::tagged_data_read.clear();
-            if (is_target_to_log)
-                global_object::logger -> _201616286_task_read_write_logger(utils::log_task, "READ", current_data -> data_time, sizeof(TaggedData) - 4, reinterpret_cast<char *>(&(*current_data)) + 4);
+
+            utils::mtx_data_log.lock();
+            if(get_task_name() == utils::log_task){
+                global_object::logger->_2018_11150_task_read_write_logger(global_object::logger->_2018_11150_task1_tagged(utils::log_task, current_data));
+            }
+            utils::mtx_data_log.unlock();
         }
 
         run();
@@ -601,8 +605,12 @@ void Job::run_function() //TODO log here, read and write in all combinations, re
         delayed_data->data_write3 = shared::rtY.write3;
         delayed_data->data_write2 = shared::CC_Send_BRAKE;
         delayed_data->data_write1 = shared::CC_Send_ACCEL;
-        if (is_target_to_log)
-            global_object::logger -> _201616286_task_read_write_logger(utils::log_task, "WRITE", delayed_data -> data_time, sizeof(DelayedData) - 4, reinterpret_cast<char *>(&(*delayed_data)) + 4);
+
+        utils::mtx_data_log.lock();
+        if(get_task_name() == utils::log_task){
+            global_object::logger->_2018_11150_task_read_write_logger(global_object::logger->_2018_11150_task1_delayed(utils::log_task, delayed_data));
+        }
+        utils::mtx_data_log.unlock();
     }
     else if((get_is_read() == true) && (get_is_write() == false)) //for other tasks (SENSING...)
     {
@@ -613,8 +621,12 @@ void Job::run_function() //TODO log here, read and write in all combinations, re
             global_object::logger -> _2019_18675_task_read_write_logger(this->get_task_name(), global_object::logger->_2019_18675_log_prepare_Tagged_Data(current_data));
             
             global_object::tagged_data_read.clear();
-            if (is_target_to_log)
-                global_object::logger -> _201616286_task_read_write_logger(utils::log_task, "READ", current_data -> data_time, sizeof(TaggedData) - 4, reinterpret_cast<char *>(&(*current_data)) + 4);
+            
+            utils::mtx_data_log.lock();
+            if(get_task_name() == utils::log_task){
+                global_object::logger->_2018_11150_task_read_write_logger(global_object::logger->_2018_11150_task1_tagged(utils::log_task, current_data));
+            }
+            utils::mtx_data_log.unlock();
         }
         run();
     }
@@ -634,8 +646,12 @@ void Job::run_function() //TODO log here, read and write in all combinations, re
         delayed_data->data_write3 = shared::rtY.write3;
         delayed_data->data_write2 = shared::CC_Send_BRAKE;
         delayed_data->data_write1 = shared::CC_Send_ACCEL;
-        if (is_target_to_log)
-            global_object::logger -> _201616286_task_read_write_logger(utils::log_task, "WRITE", delayed_data -> data_time, sizeof(DelayedData) - 4, reinterpret_cast<char *>(&(*delayed_data)) + 4);
+
+        utils::mtx_data_log.lock();
+        if(get_task_name() == utils::log_task){
+            global_object::logger->_2018_11150_task_read_write_logger(global_object::logger->_2018_11150_task1_delayed(utils::log_task, delayed_data));
+        }
+        utils::mtx_data_log.unlock();
         #endif
         global_object::logger->id_202181892_task_read_write_logger(get_task_name(),delayed_data->data_write1,delayed_data->data_write2,delayed_data->data_write3,delayed_data->data_write4);
     }

@@ -18,7 +18,7 @@ void sim_main()
     }
     else if ((rtU->read1 < 0.0) && (rtU->read1 < -STEERING))
     {
-      rtDW->w3 = STEERING;
+      rtDW->w3 = 5000.0;
     }
     else
     {
@@ -37,7 +37,7 @@ void sim_main()
 
     if ((rtU->read1 > 0.0) && (rtU->read1 > STEERING))
     {
-      rtDW->w4 = STEERING;
+      rtDW->w4 = 5000.0;
     }
     else if ((rtU->read1 > 0.0) && (rtU->read1 <= STEERING))
     {
