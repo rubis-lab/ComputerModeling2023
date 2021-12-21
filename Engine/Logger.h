@@ -4,7 +4,7 @@
 #include <fstream>
 #include <vector>
 #include <queue>
-
+#include <tuple>
 #include "Job.h"
 
 #include "TaggedData.h"
@@ -39,8 +39,7 @@ class Logger{
 private:
     std::vector<std::shared_ptr<Job>> m_execution_order_buffer;
     std::vector<double> m_current_time_buffer;
-    std::ofstream rw_log; // read write log
-    std::ofstream event_log; // event log
+    std::priority_queue<std::tuple<long long, std::string, std::string>> event_queue; 
     
 public:
     /**
@@ -74,9 +73,8 @@ public:
     void print_job_execution_schedule();
     void print_offline_guider_status();
     void set_schedule_log_info(std::vector<std::shared_ptr<Task>>&);
-
-    void _202182520_task_read_write_logger(std::string, std::string, std::string, std::string, std::string);
-    void _202182520_real_cyber_event_logger(double, int, std::string);
+    void _201616286_task_read_write_logger(std::string task_name, std::string type, int data_time, int nbytes, char *data);
+    void _201616286_real_cyber_event_logger(long long time, int task_id, int job_id, std::string event_type);
 };
 
 #endif

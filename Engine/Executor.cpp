@@ -277,10 +277,17 @@ bool Executor::run_simulation(JobVectorOfSimulator& job_vector_of_simulator, Job
         
                 utils::mtx_data_log.unlock();
             }
+            else utils::current_time += run_job->get_simulated_execution_time();
+
+            global_object::logger -> _201616286_real_cyber_event_logger(run_job -> get_actual_release_time(), run_job -> get_task_id(), run_job -> get_job_id(), "RELEASED");
+            if(run_job->get_actual_start_time() < 0) 
+                global_object::logger -> _201616286_real_cyber_event_logger(0, run_job -> get_task_id(), run_job -> get_job_id(), "FINISHED");
             else {
-                utils::current_time += run_job->get_simulated_execution_time();
+                global_object::logger -> _201616286_real_cyber_event_logger(run_job -> get_actual_start_time(), run_job -> get_task_id(), run_job -> get_job_id(), "STARTED");
+                if (run_job->get_actual_finish_time() > run_job->get_actual_deadline())
+                    global_object::logger -> _201616286_real_cyber_event_logger(run_job -> get_actual_finish_time(), run_job -> get_task_id(), run_job -> get_job_id(), "FINISHED");
             }
-            
+
             for(int i = 0; i < simulation_ready_queue.size(); i++)
             {
                 if(simulation_ready_queue.at(i) == run_job)
