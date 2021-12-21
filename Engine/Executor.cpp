@@ -113,6 +113,7 @@ bool Executor::run_simulation(JobVectorOfSimulator& job_vector_of_simulator, Job
     {
         if(job->get_actual_start_time() < 0 || job->get_actual_finish_time() > job->get_actual_deadline())
         {
+            global_object::logger->jonake_real_cyber_event_logger(job->get_actual_finish_time(),job->get_job_id(), "FINISHED (DEADLINE MISS)");
             std::cout <<"DEADLINE MISS IN REAL CYBER SYSTEM" << std::endl;
             utils::mtx_data_log.lock();
             int job_id = std::stoi(std::to_string(job->get_job_id()) + std::to_string(job->get_task_id()));
@@ -134,6 +135,7 @@ bool Executor::run_simulation(JobVectorOfSimulator& job_vector_of_simulator, Job
         {
             if((job->get_det_prdecessors().size() == 0) && ( job->get_is_simulated() == false) && (job->get_is_released() == false))
             {
+                
                 if(job->get_is_read())
                 {
                     if(utils::current_time + std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now() - hyper_period_start).count()  < job->get_actual_start_time()) // This is right actual release time is the factor of read constraint check
@@ -144,6 +146,7 @@ bool Executor::run_simulation(JobVectorOfSimulator& job_vector_of_simulator, Job
                     {
                         job->set_is_released(true);
                         job->set_simulated_release_time(utils::current_time + std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now() - hyper_period_start).count());
+                        global_object::logger->jonake_real_cyber_event_logger(job->get_actual_release_time(),job->get_job_id(), "RELEASED");
                         simulation_ready_queue.push_back(job);
                         
                         using namespace std;
@@ -177,11 +180,7 @@ bool Executor::run_simulation(JobVectorOfSimulator& job_vector_of_simulator, Job
                         global_object::logger->_201717288_real_cyber_event_logger(job->get_actual_release_time(), job->get_task_id(), "RELEASED");
 */
                     is_idle = false; 
-
-                    utils::mtx_data_log.lock();
-                    int job_id = std::stoi(std::to_string(job->get_job_id()) + std::to_string(job->get_task_id()));
-                    global_object::logger->_2018_11150_real_cyber_event_logger(job->get_actual_release_time(), job_id, "RELEASED");
-                    utils::mtx_data_log.unlock();
+                    
                 }
             }
         }
@@ -205,14 +204,7 @@ bool Executor::run_simulation(JobVectorOfSimulator& job_vector_of_simulator, Job
             }
             
             run_job->set_simulated_start_time(utils::current_time + std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now() - hyper_period_start).count()); 
-            
-            ////// LOG STARTED //////
-            global_object::logger->_202182520_real_cyber_event_logger(
-                run_job->get_actual_start_time(),
-                run_job->get_job_id(), 
-                "STARTED"
-            );
-
+            global_object::logger->jonake_real_cyber_event_logger(run_job->get_actual_start_time(),run_job->get_job_id(), "START");
             // bool is_simulatable = simulatability_analysis(job_vector_of_simulator);
             // if(!is_simulatable)
             // {
@@ -244,13 +236,6 @@ bool Executor::run_simulation(JobVectorOfSimulator& job_vector_of_simulator, Job
 
                 run_job->set_is_simulated(true);
                 
-                if(run_job->get_actual_finish_time() <= run_job->get_actual_deadline()) {
-                    global_object::logger->id_2021_82006_real_cyber_event_logger(run_job->get_actual_finish_time(), run_job->get_task_id(), "FINISHED");
-                }
-
-                else {
-                    global_object::logger->id_2021_82006_real_cyber_event_logger(run_job->get_actual_finish_time(), run_job->get_task_id(), "FINISHED (DEADLINE MISS)");
-                }
                 run_job->run_function();
                 utils::mtx_data_log.lock();
                 std::shared_ptr<ScheduleData> diagram_start = std::make_shared<ScheduleData>(run_job->get_actual_start_time(), 0, std::to_string(run_job->get_actual_start_time()) + ", ECU" + std::to_string(run_job->get_ECU()->get_ECU_id()) + ": " + run_job->get_task_name() + ", 1\n");
@@ -288,6 +273,7 @@ bool Executor::run_simulation(JobVectorOfSimulator& job_vector_of_simulator, Job
                 if(simulation_ready_queue.at(i) == run_job)
                 {
                     simulation_ready_queue.erase(simulation_ready_queue.begin() + i);
+                    global_object::logger->jonake_real_cyber_event_logger(run_job->get_actual_finish_time(),run_job->get_job_id(), "FINISH");
                     break;
                 }
             }
