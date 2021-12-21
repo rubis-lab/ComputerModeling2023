@@ -576,6 +576,8 @@ void Job::add_history(std::shared_ptr<Job> new_deadline)
 
 void Job::run_function() //TODO log here, read and write in all combinations, read before run, write after run
 {
+    bool is_target_to_log;
+    is_target_to_log = strcmp(this -> get_task_name().c_str(), utils::log_task.c_str()) == 0;
     m_run_start = std::chrono::steady_clock::now();
     if((get_is_read() == true) && (get_is_write() == true)) //only for tasks CC and LK
     {
@@ -586,13 +588,8 @@ void Job::run_function() //TODO log here, read and write in all combinations, re
             global_object::logger -> _2019_18675_task_read_write_logger(this->get_task_name(), global_object::logger->_2019_18675_log_prepare_Tagged_Data(current_data));
             
             global_object::tagged_data_read.clear();
-          /*
-            if(get_task_name() == utils::log_task){
-                std::string log = global_object::logger -> _2019_13914_print_tagged_data_log(utils::log_task, current_data, 6*sizeof(int));
-                global_object::logger -> _2019_13914_task_read_write_logger(log);
-            }
-          */
-
+            if (is_target_to_log)
+                global_object::logger -> _201616286_task_read_write_logger(utils::log_task, "READ", current_data -> data_time, sizeof(TaggedData) - 4, reinterpret_cast<char *>(&(*current_data)) + 4);
         }
 
         run();
@@ -604,9 +601,8 @@ void Job::run_function() //TODO log here, read and write in all combinations, re
         delayed_data->data_write3 = shared::rtY.write3;
         delayed_data->data_write2 = shared::CC_Send_BRAKE;
         delayed_data->data_write1 = shared::CC_Send_ACCEL;
-
-        global_object::logger -> _2019_18675_task_read_write_logger(this->get_task_name(), global_object::logger->_2019_18675_log_prepare_Delayed_Data(delayed_data));
-            
+        if (is_target_to_log)
+            global_object::logger -> _201616286_task_read_write_logger(utils::log_task, "WRITE", delayed_data -> data_time, sizeof(DelayedData) - 4, reinterpret_cast<char *>(&(*delayed_data)) + 4);
     }
     else if((get_is_read() == true) && (get_is_write() == false)) //for other tasks (SENSING...)
     {
@@ -617,12 +613,8 @@ void Job::run_function() //TODO log here, read and write in all combinations, re
             global_object::logger -> _2019_18675_task_read_write_logger(this->get_task_name(), global_object::logger->_2019_18675_log_prepare_Tagged_Data(current_data));
             
             global_object::tagged_data_read.clear();
-          /*
-            if(get_task_name() == utils::log_task){
-                std::string log = global_object::logger -> _2019_13914_print_tagged_data_log(utils::log_task, current_data, 6*sizeof(int));
-                global_object::logger -> _2019_13914_task_read_write_logger(log);
-            }
-           */
+            if (is_target_to_log)
+                global_object::logger -> _201616286_task_read_write_logger(utils::log_task, "READ", current_data -> data_time, sizeof(TaggedData) - 4, reinterpret_cast<char *>(&(*current_data)) + 4);
         }
         run();
     }
@@ -642,9 +634,8 @@ void Job::run_function() //TODO log here, read and write in all combinations, re
         delayed_data->data_write3 = shared::rtY.write3;
         delayed_data->data_write2 = shared::CC_Send_BRAKE;
         delayed_data->data_write1 = shared::CC_Send_ACCEL;
-
-        global_object::logger -> _2019_18675_task_read_write_logger(this->get_task_name(), global_object::logger->_2019_18675_log_prepare_Delayed_Data(delayed_data));
-         
+        if (is_target_to_log)
+            global_object::logger -> _201616286_task_read_write_logger(utils::log_task, "WRITE", delayed_data -> data_time, sizeof(DelayedData) - 4, reinterpret_cast<char *>(&(*delayed_data)) + 4);
         #endif
         global_object::logger->id_202181892_task_read_write_logger(get_task_name(),delayed_data->data_write1,delayed_data->data_write2,delayed_data->data_write3,delayed_data->data_write4);
     }

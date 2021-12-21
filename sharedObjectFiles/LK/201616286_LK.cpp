@@ -24,14 +24,7 @@ void sim_main()
     {
       if ((rtU->read1 < 0.0) && (rtU->read1 >= -STEERING))
       {
-        //rtDW->w3 = rtU->read1 * -1;
-        rtDW->w4 = 0.0;
-        if(rtDW->w3 > rtU->read1) { // smooth steer
-          rtDW->w3 -= 100.0;
-        }
-        else {
-          rtDW->w3 += 100.0;
-        }
+        rtDW->w3 = rtU->read1 * -1;
       }
     }
 
@@ -41,14 +34,7 @@ void sim_main()
     }
     else if ((rtU->read1 > 0.0) && (rtU->read1 <= STEERING))
     {
-      //rtDW->w4 = rtU->read1;
-      rtDW->w3 = 0.0;
-      if(rtDW->w4 < rtU->read1) { // smooth steer
-        rtDW->w4 += 100.0;
-      }
-      else {
-        rtDW->w4 -= 100.0;
-      }
+      rtDW->w4 = rtU->read1;
     }
     else
     {
