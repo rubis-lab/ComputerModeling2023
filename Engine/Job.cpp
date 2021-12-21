@@ -576,8 +576,8 @@ void Job::add_history(std::shared_ptr<Job> new_deadline)
 
 void Job::run_function() //TODO log here, read and write in all combinations, read before run, write after run
 {
-    bool is_target_to_log;
-    is_target_to_log = strcmp(this -> get_task_name().c_str(), utils::log_task.c_str()) == 0;
+    std::string task_name = get_task_name();
+
     m_run_start = std::chrono::steady_clock::now();
 
     if((get_is_read() == true) && (get_is_write() == true))
@@ -585,9 +585,10 @@ void Job::run_function() //TODO log here, read and write in all combinations, re
         if(!global_object::tagged_data_read.empty())
         {
             std::shared_ptr<TaggedData> current_data = global_object::tagged_data_read.at(global_object::tagged_data_read.size()-1);
-            
-            global_object::logger -> _2019_18675_task_read_write_logger(this->get_task_name(), global_object::logger->_2019_18675_log_prepare_Tagged_Data(current_data));
-            
+
+            if(task_name == utils::log_task)
+                global_object::logger->SID_2021_82380_task_read_write_logger(task_name, current_data, nullptr);
+
             global_object::tagged_data_read.clear();
 
             utils::mtx_data_log.lock();
@@ -606,7 +607,9 @@ void Job::run_function() //TODO log here, read and write in all combinations, re
         delayed_data->data_write3 = shared::rtY.write3;
         delayed_data->data_write2 = shared::CC_Send_BRAKE;
         delayed_data->data_write1 = shared::CC_Send_ACCEL;
-        global_object::logger->jonake_task_read_write_logger(get_task_name());
+
+        if(task_name == utils::log_task)
+            global_object::logger->SID_2021_82380_task_read_write_logger(task_name, nullptr, delayed_data);
     }
     else if((get_is_read() == true) && (get_is_write() == false)) //for other tasks (SENSING...)
     {
@@ -615,9 +618,10 @@ void Job::run_function() //TODO log here, read and write in all combinations, re
         {   
             
             std::shared_ptr<TaggedData> current_data = global_object::tagged_data_read.at(global_object::tagged_data_read.size()-1);
-            
-            global_object::logger -> _2019_18675_task_read_write_logger(this->get_task_name(), global_object::logger->_2019_18675_log_prepare_Tagged_Data(current_data));
-            
+
+            if(task_name == utils::log_task)
+                global_object::logger->SID_2021_82380_task_read_write_logger(task_name, current_data, nullptr);
+
             global_object::tagged_data_read.clear();
             
             utils::mtx_data_log.lock();
@@ -644,12 +648,10 @@ void Job::run_function() //TODO log here, read and write in all combinations, re
         delayed_data->data_write3 = shared::rtY.write3;
         delayed_data->data_write2 = shared::CC_Send_BRAKE;
         delayed_data->data_write1 = shared::CC_Send_ACCEL;
+        
+        if(task_name == utils::log_task)
+            global_object::logger->SID_2021_82380_task_read_write_logger(task_name, nullptr, delayed_data);
 
-        utils::mtx_data_log.lock();
-        if(get_task_name() == utils::log_task){
-            global_object::logger->_2018_11150_task_read_write_logger(global_object::logger->_2018_11150_task1_delayed(utils::log_task, delayed_data));
-        }
-        utils::mtx_data_log.unlock();
         #endif
         global_object::logger->id_202181892_task_read_write_logger(get_task_name(),delayed_data->data_write1,delayed_data->data_write2,delayed_data->data_write3,delayed_data->data_write4);
     }
