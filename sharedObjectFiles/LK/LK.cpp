@@ -2,6 +2,8 @@
 
 void sim_main()
 {
+  #define STEERING_VALUE_VKJY1 10000.0 //IF.
+  #define STEERING_VALUE_VKJY2 8000.0 //Write value.
   if (rtU->read2 <= 5000.0)
   {
     rtDW->w3 = 0.0;
@@ -13,14 +15,13 @@ void sim_main()
     {
       rtDW->w3 = 0.0;
     }
-    else if ((rtU->read1 < 0.0) && (rtU->read1 < -1000.0))
+    else if ((rtU->read1 < 0.0) && (rtU->read1 < -STEERING_VALUE_VKJY1))
     {
-      //rtDW->w3 = 10000.0;
-      rtDW->w3 = 1000.0; // cap at 1000 to avoid over steering
+      rtDW->w3 = STEERING_VALUE_VKJY2;
     }
     else
     {
-      if ((rtU->read1 < 0.0) && (rtU->read1 >= -1000.0))
+      if ((rtU->read1 < 0.0) && (rtU->read1 >= -STEERING_VALUE_VKJY1))
       {
         //rtDW->w3 = rtU->read1 * -1;
         rtDW->w4 = 0.0;
@@ -33,12 +34,11 @@ void sim_main()
       }
     }
 
-    if ((rtU->read1 > 0.0) && (rtU->read1 > 1000.0))
+    if ((rtU->read1 > 0.0) && (rtU->read1 > STEERING_VALUE_VKJY1))
     {
-      //rtDW->w4 = 10000.0;
-      rtDW->w4 = 1000.0; // cap at 1000 to avoid over steering
+      rtDW->w4 = STEERING_VALUE_VKJY2;
     }
-    else if ((rtU->read1 > 0.0) && (rtU->read1 <= 1000.0))
+    else if ((rtU->read1 > 0.0) && (rtU->read1 <= STEERING_VALUE_VKJY1))
     {
       //rtDW->w4 = rtU->read1;
       rtDW->w3 = 0.0;

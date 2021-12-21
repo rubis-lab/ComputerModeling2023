@@ -63,7 +63,7 @@ void sim_main()
   write5 = 0;
   write6 = 0;
   //read2 = read2 / 100 - 400000;
-  read2 = read2 / 100 - 50000; // speed up to 70kmh
+  read2 = read2 / 100 + 450000; //130
 
   if(read4 > 6000) {
     

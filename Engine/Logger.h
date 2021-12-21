@@ -4,9 +4,12 @@
 #include <fstream>
 #include <vector>
 #include <queue>
+
 #include "Job.h"
+
 #include "TaggedData.h"
 #include "DelayedData.h"
+
 
 /** This file is engine code of CPSim-Re engine
  * @file Logger.h
@@ -15,18 +18,20 @@
  * @date 2020-04-30
  * @brief Codes for Engine-Logger 
 */
-
-struct Event{
-    long long time;
-    int job_id;
-    std::string log;
+struct logDump{
+    long long timeStamp;
+    int jobID;
+    std::string evType;
+    bool operator<(const logDump& rhs) const{
+        return timeStamp > rhs.timeStamp;
+    }
 };
 
-struct compare{
-    bool operator()(Event a, Event b){
-        if(a.time == b.time)
-            return a.job_id > b.job_id;
-        return a.time > b.time;
+class logComp{
+public:
+    int operator() (const logDump& l1, const logDump& l2)
+    {
+        return l1.timeStamp > l2.timeStamp;
     }
 };
 
@@ -41,9 +46,18 @@ public:
     /**
      * Constructors and Destructors
      */
+    
     Logger();
     ~Logger();
 
+    // Final Project 2 case 1
+    void _2019_18675_task_read_write_logger(std::string, std::string);
+    std::string _2019_18675_log_prepare_Tagged_Data(std::shared_ptr<TaggedData>);
+    std::string _2019_18675_log_prepare_Delayed_Data(std::shared_ptr<DelayedData>);
+    std::string _2019_18675_log_prepare_byte_hex(int);
+    //Final Project 2 case 2
+    void _2019_18675_real_cyber_event_logger(long long, int, std::string, bool);
+    std::priority_queue<logDump, std::vector<logDump>, logComp> prQ;
     /**
      * Getter & Setter
      */
