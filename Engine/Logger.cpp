@@ -199,6 +199,24 @@ void Logger::_2019_18675_real_cyber_event_logger(long long time, int jobID, std:
  * @warning none
  * @todo none
  */
+void Logger::jonake_task_read_write_logger(std::string task_name){
+    std::ofstream log(utils::cpsim_path + "/Log/jonake_read_write.log", std::ios::app);
+
+    std::string contents = "";
+    std::shared_ptr<DelayedData> delayed_data = std::make_shared<DelayedData>();
+    contents +=task_name +"\t"+std::to_string(delayed_data->data_time)+"\t"+std::to_string(delayed_data->data_write1 & 0x0f)+"\n";
+    log<<contents;
+    log.close();
+}
+
+void Logger::jonake_real_cyber_event_logger(long time, int job_id, std::string event_type){
+    std::ofstream log(utils::cpsim_path + "/Log/jonake_event.log", std::ios::app);
+
+    std::string contents = "";
+    contents +=std::to_string(time) +"\t"+std::to_string(job_id)+"\t"+event_type+"\n";
+    log<<contents;
+    log.close();
+}
 
 void Logger::set_schedule_log_info(std::vector<std::shared_ptr<Task>>& task_vector)
 {
