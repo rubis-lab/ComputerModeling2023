@@ -1,6 +1,7 @@
 #ifndef LOGGER_H__
 #define LOGGER_H__
 #include <iostream>
+#include <fstream>
 #include <vector>
 #include <queue>
 #include "Job.h"
@@ -33,7 +34,8 @@ class Logger{
 private:
     std::vector<std::shared_ptr<Job>> m_execution_order_buffer;
     std::vector<double> m_current_time_buffer;
-    std::priority_queue<Event, std::vector<Event>, compare> event_buffer;
+    std::ofstream rw_log; // read write log
+    std::ofstream event_log; // event log
     
 public:
     /**
@@ -59,22 +61,8 @@ public:
     void print_offline_guider_status();
     void set_schedule_log_info(std::vector<std::shared_ptr<Task>>&);
 
-    void id_202181892_task_read_write_logger(std::string task_name,int write1, int write2, int write3, int write4);
-    void id_202181892_real_cyber_event_logger(long long time, int job_id, std::string event_type);
-
-
-    void id_2021_82006_task_read_write_logger(std::string task_name, bool read);
-    void id_2021_82006_real_cyber_event_logger(long long time, int job_id, std::string event_type);
-
-
-    std::string _2019_13914_print_tagged_data_log(std::string, std::shared_ptr<TaggedData>, int);
-    std::string _2019_13914_print_delayed_data_log(std::string, std::shared_ptr<DelayedData>, int);
-    void _2019_13914_task_read_write_logger(std::string);
-    void _2019_13914_real_cyber_event_logger(long long, int, std::string);
-
-    void _201717288_task_read_write_logger(std::string task_name, std::shared_ptr<TaggedData> read_data, std::shared_ptr<DelayedData> write_data);
-    void _201717288_real_cyber_event_logger(long long time, int job_id, std::string event_type);
-
+    void _202182520_task_read_write_logger(std::string, std::string, std::string, std::string, std::string);
+    void _202182520_real_cyber_event_logger(double, int, std::string);
 };
 
 #endif

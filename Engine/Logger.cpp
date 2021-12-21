@@ -34,22 +34,16 @@
  */
 Logger::Logger()
 {
+    rw_log.open(utils::cpsim_path + "/Log/202182520_read_write.log", std::ios::out);
+    std::string rwcontents = "[ TASK NAME ] [ TIME ] [ READ/WRITE ] [ DATA LENGTH ] [ RAW DATA ]\n";
+    rw_log.write(rwcontents.c_str(), rwcontents.size());
+    rw_log.close();
 
-    // std::cout << utils::log_task << std::endl;
 
-
-/*
-    std::ofstream read_write_log;
-    read_write_log.open(utils::cpsim_path + "/Log/_2017-17288_read_write.log");
-    read_write_log << "[TASK NAME][TIME][READ/WRITE][DATA LENGTH][RAW DATA]" << std::endl;
-    read_write_log.close();
-
-    std::ofstream event_log;
-    event_log.open(utils::cpsim_path + "/Log/_2017-17288_event.log");
-    event_log << "[TIME][JOB ID][EVENT TYPE]" << std::endl;
+    event_log.open(utils::cpsim_path + "/Log/202182520_event.log", std::ios::out);
+    std::string evcontents = "[ TIME ] [ JOB ID ] [ EVENT TYPE ]\n";
+    event_log.write(evcontents.c_str(), evcontents.size());
     event_log.close();
-*/
-
 }
 
 /**
@@ -67,7 +61,7 @@ Logger::Logger()
  */
 Logger::~Logger()
 {
-
+ 
 }
 
 /**
@@ -319,194 +313,20 @@ void Logger::id_2021_82006_real_cyber_event_logger(long long time, int job_id, s
     id_2021_82006_event.close();
 }
 
-std::string Logger::_2019_13914_print_delayed_data_log(std::string task_name, std::shared_ptr<DelayedData> delayed_data, int size){
-    std::stringstream data;
-    data << std::hex << "0x" << delayed_data -> data_write1 << " ";
-    data << std::hex << "0x" << delayed_data -> data_write2 << " ";
-    data << std::hex << "0x" << delayed_data -> data_write3 << " ";
-    data << std::hex << "0x" << delayed_data -> data_write4 << "\n";
-    
-    std::stringstream log;
-    log << " ";
-    log << std::left << std::setw(14) << task_name;
-    log << std::left << std::setw(9) << std::to_string(delayed_data -> data_time);
-    log << std::left << std::setw(15) << "READ";
-    log << std::left << std::setw(16) << std::to_string(size);
+void Logger::_202182520_task_read_write_logger(std::string task_name, std::string time, std::string rw, std::string data_length, std::string raw_data) {
+    rw_log.open(utils::cpsim_path + "/Log/202182520_read_write.log", std::ios::app);
 
-    return log.str() + data.str();
+    std::string contents = task_name + " / " + time + " / " + rw + " / " + data_length + " / " + raw_data + "\n";
+
+    rw_log.write(contents.c_str(), contents.size());
+    rw_log.close();
 }
 
-void Logger::_2019_13914_task_read_write_logger(std::string task_name){
-    std::ofstream log;
+void Logger::_202182520_real_cyber_event_logger(double time, int job_id, std::string event_type) {
+    event_log.open(utils::cpsim_path + "/Log/202182520_event.log", std::ios::app);
 
-    static bool init = false;
-    if(!init){
-        log.open(utils::cpsim_path + "/Log/2019-13914_read_write.log", std::ios::out);
-        log << "[ TASK NAME ] [ TIME ] [ READ/WRITE ] [ DATA LENGTH ] [ RAW DATA ]\n";
-        log.close();
-        init = true;
-    }
-    log.open(utils::cpsim_path + "/Log/2019-13914_read_write.log", std::ios::app);
-    log << task_name;
-    log.close();
-    return;
+    std::string contents = std::to_string((int)time) + " / J" + std::to_string(job_id) + " / " + event_type + "\n";
+
+    event_log.write(contents.c_str(), contents.size());
+    event_log.close();
 }
-
-
-void Logger::id_202181892_task_read_write_logger(std::string task_name, int write1, int write2, int write3, int write4){
-    std::ofstream MyFile;
-    MyFile.open(utils::cpsim_path + "/Log/_2021-81892_read_write.log", std::ios::app);
-    
-    if(!global_object::tagged_data_read.empty())
-    {
-        std::shared_ptr<TaggedData> read_data = global_object::tagged_data_read.at(global_object::tagged_data_read.size()-1);
-        if((utils::log_task).compare(task_name)==0){
-            std::string contents = "";
-            contents += task_name + std::string(11-task_name.size(),' ');
-            if(task_name.compare("LK")==0 || task_name.compare("CC")==0 || task_name.compare("SENSING")==0){
-                //read_data1
-                contents += std::to_string(std::__size_to_integer(utils::current_time)) + std::string(6-(std::to_string(std::__size_to_integer(utils::current_time))).length(),' ');
-                contents += "READ" + std::string(12-4,' ');
-                contents += std::to_string(std::to_string((read_data->data_read1)).length()) + std::string(13-(std::to_string((std::to_string((read_data->data_read1)).length()))).length(),' ');
-                std::stringstream sstream;
-                sstream << std::hex << read_data->data_read1;
-                std::string hex_string = sstream.str();
-                std::string hex_format = "0x" + hex_string;
-                contents += hex_format + '\n';
-                //read_data2
-                contents += task_name + std::string(11-task_name.size(),' ');
-                contents += std::to_string(std::__size_to_integer(utils::current_time)) + std::string(6-(std::to_string(std::__size_to_integer(utils::current_time))).length(),' ');
-                contents += "READ" + std::string(12-4,' ');
-                contents += std::to_string(std::to_string((read_data->data_read2)).length()) + std::string(13-(std::to_string((std::to_string((read_data->data_read2)).length()))).length(),' ');
-                std::stringstream sstream2;
-                sstream2 << std::hex << read_data->data_read2;
-                std::string hex_string2 = sstream2.str();
-                std::string hex_format2 = "0x" + hex_string2;
-                contents += hex_format2 + '\n';
-                
-            }
-            if(task_name.compare("CC")==0 || task_name.compare("SENSING")==0){
-                //read_data3
-                contents += task_name + std::string(11-task_name.size(),' ');
-                contents += std::to_string(std::__size_to_integer(utils::current_time)) + std::string(6-(std::to_string(std::__size_to_integer(utils::current_time))).length(),' ');
-                contents += "READ" + std::string(12-4,' ');
-                contents += std::to_string(std::to_string((read_data->data_read3)).length()) + std::string(13-(std::to_string((std::to_string((read_data->data_read3)).length()))).length(),' ');
-                std::stringstream sstream;
-                sstream << std::hex << read_data->data_read3;
-                std::string hex_string = sstream.str();
-                std::string hex_format = "0x" + hex_string;
-                contents += hex_format + '\n';
-                //read_data4
-                contents += task_name + std::string(11-task_name.size(),' ');
-                contents += std::to_string(std::__size_to_integer(utils::current_time)) + std::string(6-(std::to_string(std::__size_to_integer(utils::current_time))).length(),' ');
-                contents += "READ" + std::string(12-4,' ');
-                contents += std::to_string(std::to_string((read_data->data_read4)).length()) + std::string(13-(std::to_string((std::to_string((read_data->data_read4)).length()))).length(),' ');
-                std::stringstream sstream2;
-                sstream2 << std::hex << read_data->data_read4;
-                std::string hex_string2 = sstream2.str();
-                std::string hex_format2 = "0x" + hex_string2;
-                contents += hex_format2 + '\n';
-            }
-            MyFile.write(contents.c_str(), contents.size());
-            //MyFile.close();
-        }
-    }
-    
-    if(!((write1==0) && (write2==0) && (write3==0) && (write4==0))){//!global_object::delayed_data_write.empty()){
-        //std::shared_ptr<DelayedData> write_data = global_object::delayed_data_write.front();
-        //std::shared_ptr<DelayedData> write_data = global_object::delayed_data_write.at(global_object::delayed_data_write.size()-1);
-        if((utils::log_task).compare(task_name)==0){
-            std::string contents = "";
-            contents += task_name + std::string(11-task_name.size(),' ');
-            if(task_name.compare("LK")==0){
-                //write_data3
-                contents += std::to_string(std::__size_to_integer(utils::current_time)) + std::string(6-(std::to_string(std::__size_to_integer(utils::current_time))).length(),' ');
-                contents += "WRITE" + std::string(12-5,' ');
-                contents += std::to_string(std::to_string((write3)).length()) + std::string(13-(std::to_string((std::to_string((write3)).length()))).length(),' ');
-                std::stringstream sstream;
-                sstream << std::hex << write3;
-                std::string hex_string = sstream.str();
-                std::string hex_format = "0x" + hex_string;
-                contents += hex_format + '\n';
-                //write_data4
-                contents += task_name + std::string(11-task_name.size(),' ');
-                contents += std::to_string(std::__size_to_integer(utils::current_time)) + std::string(6-(std::to_string(std::__size_to_integer(utils::current_time))).length(),' ');
-                contents += "WRITE" + std::string(12-5,' ');
-                contents += std::to_string(std::to_string((write4)).length()) + std::string(13-(std::to_string((std::to_string((write4)).length()))).length(),' ');
-                std::stringstream sstream2;
-                sstream2 << std::hex << write4;
-                std::string hex_string2 = sstream2.str();
-                std::string hex_format2 = "0x" + hex_string2;
-                contents += hex_format2 + '\n';
-            }
-            if(task_name.compare("CC")==0){
-                //write_data1
-                contents += std::to_string(std::__size_to_integer(utils::current_time)) + std::string(6-(std::to_string(std::__size_to_integer(utils::current_time))).length(),' ');
-                contents += "WRITE" + std::string(12-5,' ');
-                contents += std::to_string(std::to_string((write1)).length()) + std::string(13-(std::to_string((std::to_string((write1)).length()))).length(),' ');
-                std::stringstream sstream;
-                sstream << std::hex << write1;
-                std::string hex_string = sstream.str();
-                std::string hex_format = "0x" + hex_string;
-                contents += hex_format + '\n';
-                //write_data2
-                contents += task_name + std::string(11-task_name.size(),' ');
-                contents += std::to_string(std::__size_to_integer(utils::current_time)) + std::string(6-(std::to_string(std::__size_to_integer(utils::current_time))).length(),' ');
-                contents += "WRITE" + std::string(12-5,' ');
-                contents += std::to_string(std::to_string((write2)).length()) + std::string(13-(std::to_string((std::to_string((write2)).length()))).length(),' ');
-                std::stringstream sstream2;
-                sstream2 << std::hex << write2;
-                std::string hex_string2 = sstream2.str();
-                std::string hex_format2 = "0x" + hex_string2;
-                contents += hex_format2 + '\n';
-            }
-            MyFile.write(contents.c_str(), contents.size());
-        }
-    }
-    MyFile.close();
-}
-
-void id_202181892_real_cyber_event_logger(long long time, int job_id, std::string event_type){
-    
-    std::ofstream MyFile;
-    MyFile.open(utils::cpsim_path + "/Log/_2021-81892_event.log", std::ios::app);
-    std::string contents = "";
-    contents += std::to_string(std::__size_to_integer(time)) + std::string(6-(std::to_string(std::__size_to_integer(time))).length(),' ');
-    contents += 'J' + std::to_string(job_id) + std::string(8-1-std::to_string(job_id).length(),' ');
-    contents += event_type;
-    MyFile.write(contents.c_str(), contents.size());
-    MyFile.close();
-}
-
-void Logger::_2019_13914_real_cyber_event_logger(long long time, int job_id, std::string event_type){
-    std::ofstream event_log;
-
-    static bool init = false;
-    if(!init){
-        event_log.open(utils::cpsim_path+"/Log/2019-13914_event.log",std::ios::out);
-        event_log << "[ TIME ] [ JOB ID ] [ EVENT TYPE ]\n";
-        event_log.close();
-        init = true;
-    }
-
-    std::stringstream log;
-    log << " ";
-    log << std::left << std::setw(9) << std::to_string(time);
-    log << std::left << std::setw(11) << "J" + std::to_string(job_id);
-    log << std::left << std::setw(15) << event_type;
-
-    Event event;
-    event.time = time;
-    event.job_id = job_id;
-    event.log = log.str();
-    event_buffer.push(event);
-    while(event_buffer.size() > 10){
-        std::ofstream event_log;
-        event_log.open(utils::cpsim_path+"/Log/2019-13914_event.log",std::ios::app);
-        event_log << event_buffer.top().log << "\n";
-        event_buffer.pop();
-        event_log.close();
-    }
-}
-
-
