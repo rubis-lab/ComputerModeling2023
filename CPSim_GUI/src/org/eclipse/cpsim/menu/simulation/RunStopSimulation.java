@@ -404,7 +404,7 @@ public class RunStopSimulation extends AbstractHandler implements IElementUpdate
 			 */
 
 			String filepath = getCPSIMenv() +"/"+ rawdata_xml;
-			//String filepath = "/home/park/"+rawdata_xml;
+			//String filepath = "/home/rubis/"+rawdata_xml;
 			File resultFile = new File(filepath);
 			StreamResult result2 = new StreamResult(new FileOutputStream(resultFile));
 
