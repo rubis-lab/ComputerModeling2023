@@ -114,3 +114,26 @@ void Logger::start_logging()
         utils::mtx_data_log.unlock();    
     }    
 }
+
+void task_read_write_logger_201914388(const std::string& task_name) {
+    static bool is_first = true;
+    if (is_first) {
+        std::ofstream initial_scheduling_log;
+        initial_scheduling_log.open(utils::cpsim_path + "/Log/201914388_read_write.log", std::ios::out);
+        std::string initial_contents = "[ TIME ][ READ/WRITE ][ TASK NAME ][ DATA NAME ]";
+        initial_scheduling_log.write(initial_contents.c_str(), initial_contents.size());
+        initial_scheduling_log.close();
+        is_first = false;
+    }
+
+    std::ofstream scheduling_log;
+    scheduling_log.open(utils::cpsim_path + "/Log/201914388_read_write.log", std::ios::app);
+    std::string contents = "";
+    std::shared_ptr<ScheduleData> current_data = global_object::schedule_data.front();
+    contents += std::to_string(current_data->get_time()) + "\t";
+    contents += current_data->get_data() + "\t";
+    contents += utils::log_task + "\t";
+    contents += task_name + "\n";
+    scheduling_log.write(contents.c_str(), contents.size());
+    scheduling_log.close();
+}
