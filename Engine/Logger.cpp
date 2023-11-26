@@ -121,8 +121,8 @@ void task_read_write_logger_201914388(const std::string& task_name) {
         std::ofstream initial_scheduling_log;
         initial_scheduling_log.open(utils::cpsim_path + "/Log/201914388_read_write.log", std::ios::out);
         std::string initial_contents = "[ TIME ][ READ/WRITE ][ TASK NAME ][ DATA NAME ]";
-        initial_scheduling_log.write(initial_contents.c_str(), initial_contents.size());
-        initial_scheduling_log.close();
+        // initial_scheduling_log.write(initial_contents.c_str(), initial_contents.size());
+        // initial_scheduling_log.close();
         is_first = false;
     }
 
