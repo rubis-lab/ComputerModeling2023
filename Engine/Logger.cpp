@@ -115,25 +115,28 @@ void Logger::start_logging()
     }    
 }
 
-void task_read_write_logger_201914388(const std::string& task_name) {
-    static bool is_first = true;
-    if (is_first) {
-        std::ofstream initial_scheduling_log;
-        initial_scheduling_log.open(utils::cpsim_path + "/Log/201914388_read_write.log", std::ios::out);
-        std::string initial_contents = "[ TIME ][ READ/WRITE ][ TASK NAME ][ DATA NAME ]";
-        // initial_scheduling_log.write(initial_contents.c_str(), initial_contents.size());
-        // initial_scheduling_log.close();
-        is_first = false;
-    }
+void Logger::set_task_read_write_logger_201914388() {
+    std::ofstream trw_log;
+    trw_log.open(utils::cpsim_path + "/Log/201914388_read_write.log", std::ios::out);
 
+    std::string contents = "[ TIME ][ READ/WRITE ][ TASK NAME ][ DATA NAME ]\n";
+    trw_log.write(contents.c_str(), contents.size());
+    trw_log.close();
+}
+
+void Logger::task_read_write_logger_201914388(const std::string& task_name) {
     std::ofstream scheduling_log;
     scheduling_log.open(utils::cpsim_path + "/Log/201914388_read_write.log", std::ios::app);
     std::string contents = "";
     std::shared_ptr<ScheduleData> current_data = global_object::schedule_data.front();
     contents += std::to_string(current_data->get_time()) + "\t";
-    contents += current_data->get_data() + "\t";
+    contents += task_name + "\t";
     contents += utils::log_task + "\t";
-    contents += task_name + "\n";
+    if (task_name == "READ" && utils::log_task == "CC") {
+        contents += "TARGET_SPEED\n";
+    } else if (task_name == "WRITE" && utils::log_task == "CC") {
+        contents += "ACCEL_VALUE\n";
+    }
     scheduling_log.write(contents.c_str(), contents.size());
     scheduling_log.close();
 }
