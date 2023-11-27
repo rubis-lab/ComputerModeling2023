@@ -352,7 +352,6 @@ void Initializer::initialize(EcuVector& ecu_vector, TaskVector& task_vector, Job
         global_object::logger = std::make_shared<Logger>();
     }
     global_object::logger->set_schedule_log_info(task_vector);
-    global_object::logger->set_task_read_write_logger_201914388();
 #ifdef CANMODE__
     /**
      * CAN Receiver Thread Initialized

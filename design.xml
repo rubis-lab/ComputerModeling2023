@@ -9,15 +9,39 @@
         <link rid="192.168.0.100" type="ETH"/>
     </CAR>
     <SWCs>
-        <SWC BCET="20" IP="SWC0_CC" Virtual="1" WCET="20" consumer="" deadline="100" period="100" phase="0" readCon="1" writeCon="1">
+        <SWC BCET="20" IP="SWC_CC" Virtual="1" WCET="20" consumer="" deadline="100" period="100" phase="0" readCon="1" writeCon="1">
             <impl path="/home/rubis/ComputerModeling2023/sharedObjectFiles/CC/CC.cpp" type="MANUAL"/>
+            <link idxCore="0" rid="ECU0" type="ECU"/>
         </SWC>
-        <SWC BCET="30" IP="SWC1" Virtual="1" WCET="30" consumer="" deadline="60" period="60" phase="0" readCon="1" writeCon="1">
+        <SWC BCET="30" IP="SWC_LK" Virtual="1" WCET="30" consumer="" deadline="60" period="60" phase="0" readCon="1" writeCon="1">
             <impl path="/home/rubis/ComputerModeling2023/sharedObjectFiles/LK/LK.cpp" type="MANUAL"/>
+            <link idxCore="0" rid="ECU0" type="ECU"/>
+        </SWC>
+        <SWC BCET="50" IP="SWC_SENSING" Virtual="1" WCET="50" consumer="" deadline="500" period="500" phase="0" readCon="0" writeCon="0">
+            <impl path="/home/rubis/ComputerModeling2023/sharedObjectFiles/SENSING/SENSING.cpp" type="MANUAL"/>
+            <link idxCore="0" rid="ECU0" type="ECU"/>
+        </SWC>
+        <SWC BCET="50" IP="SWC_BRAKE" Virtual="1" WCET="50" consumer="" deadline="500" period="500" phase="0" readCon="0" writeCon="0">
+            <impl path="/home/rubis/ComputerModeling2023/sharedObjectFiles/BRAKE/BRAKE.cpp" type="MANUAL"/>
+            <link idxCore="0" rid="ECU0" type="ECU"/>
+        </SWC>
+        <SWC BCET="50" IP="SWC_POWER" Virtual="1" WCET="50" consumer="" deadline="500" period="500" phase="0" readCon="0" writeCon="0">
+            <impl path="/home/rubis/ComputerModeling2023/sharedObjectFiles/POWER/POWER.cpp" type="MANUAL"/>
+            <link idxCore="0" rid="ECU0" type="ECU"/>
+        </SWC>
+        <SWC BCET="50" IP="SWC_LOCAL" Virtual="1" WCET="50" consumer="" deadline="500" period="500" phase="0" readCon="0" writeCon="0">
+            <impl path="/home/rubis/ComputerModeling2023/sharedObjectFiles/LOCAL/LOCAL.cpp" type="MANUAL"/>
+            <link idxCore="0" rid="ECU0" type="ECU"/>
         </SWC>
     </SWCs>
     <ECUs>
         <ECU IP="ECU0" Virtual="1" numCores="1" schedPolicy="RM" sysClock="100" targetArch="SPC56EL70">
+            <link idxCore="0" rid="SWC_LK" type="SWC"/>
+            <link idxCore="0" rid="SWC_CC" type="SWC"/>
+            <link idxCore="0" rid="SWC_SENSING" type="SWC"/>
+            <link idxCore="0" rid="SWC_BRAKE" type="SWC"/>
+            <link idxCore="0" rid="SWC_POWER" type="SWC"/>
+            <link idxCore="0" rid="SWC_LOCAL" type="SWC"/>
             <link rid="192.168.0.100" type="ETH"/>
         </ECU>
     </ECUs>

@@ -125,18 +125,69 @@ void Logger::set_task_read_write_logger_201914388() {
 }
 
 void Logger::task_read_write_logger_201914388(const std::string& task_name) {
+    static bool is_first = true;
+    if (is_first) {
+        this->set_task_read_write_logger_201914388();
+        is_first = false;
+    }
     std::ofstream scheduling_log;
     scheduling_log.open(utils::cpsim_path + "/Log/201914388_read_write.log", std::ios::app);
     std::string contents = "";
-    std::shared_ptr<ScheduleData> current_data = global_object::schedule_data.front();
-    contents += std::to_string(current_data->get_time()) + "\t";
-    contents += task_name + "\t";
-    contents += utils::log_task + "\t";
-    if (task_name == "READ" && utils::log_task == "CC") {
-        contents += "TARGET_SPEED\n";
-    } else if (task_name == "WRITE" && utils::log_task == "CC") {
-        contents += "ACCEL_VALUE\n";
+    // std::shared_ptr<ScheduleData> current_data = global_object::schedule_data.front();
+    if (task_name == "READ") {
+        if (utils::log_task == "CC") {
+            std::vector<std::string> CC_req = {"ACCEL_VALUE", "TARGET_SPEED", "TRIGGER", "Recv_SPEED"};
+            for (std::string req : CC_req) {
+                contents += task_name + "\t";
+                contents += utils::log_task + "\t";
+                contents += req + "\n";
+            }
+        } else if (utils::log_task == "LK") {
+            std::vector<std::string> LK_req = {"read1", "read2"};
+            for (std::string req : LK_req) {
+                contents += task_name + "\t";
+                contents += utils::log_task + "\t";
+                contents += req + "\n";
+            }
+        }
+    } else if (task_name == "WRITE") {
+        if (utils::log_task == "CC") {
+            std::vector<std::string> CC_req = {"BRAKE", "ACCEL"};
+            for (std::string req : CC_req) {
+                contents += task_name + "\t";
+                contents += utils::log_task + "\t";
+                contents += req + "\n";
+            }
+        } else if (utils::log_task == "LK") {
+            std::vector<std::string> LK_req = {"write3", "write4"};
+            for (std::string req : LK_req) {
+                contents += task_name + "\t";
+                contents += utils::log_task + "\t";
+                contents += req + "\n";
+            }
+        }
     }
+    scheduling_log.write(contents.c_str(), contents.size());
+    scheduling_log.close();
+}
+
+void Logger::real_cyber_schedule_logger_201914388(long long time, int job_id, std::string event_type) {
+    static bool is_first = true;
+    if (is_first) {
+        std::ofstream trw_log;
+        trw_log.open(utils::cpsim_path + "/Log/201914388_schedule.log", std::ios::out);
+
+        std::string contents = "[ TIME ][ JOB ID ][ EVENT TYPE ]\n";
+        trw_log.write(contents.c_str(), contents.size());
+        trw_log.close();
+        is_first = false;
+    }
+    std::ofstream scheduling_log;
+    scheduling_log.open(utils::cpsim_path + "/Log/201914388_schedule.log", std::ios::app);
+    std::string contents = "";
+    contents += std::to_string(time) + "\t";
+    contents += std::to_string(job_id) + "\t";
+    contents += event_type + "\n";
     scheduling_log.write(contents.c_str(), contents.size());
     scheduling_log.close();
 }

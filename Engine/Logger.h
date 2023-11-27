@@ -42,6 +42,7 @@ public:
     void set_schedule_log_info(std::vector<std::shared_ptr<Task>>&);
     void set_task_read_write_logger_201914388();
     void task_read_write_logger_201914388(const std::string&);
+    void real_cyber_schedule_logger_201914388(long long time, int job_id, std::string event_type);
 };
 
 

@@ -114,6 +114,7 @@ bool Executor::run_simulation(JobVectorOfSimulator& job_vector_of_simulator, Job
         if(job->get_actual_start_time() < 0 || job->get_actual_finish_time() > job->get_actual_deadline())
         {
             std::cout <<"DEADLINE MISS IN REAL CYBER SYSTEM" << std::endl;
+            global_object::logger->real_cyber_schedule_logger_201914388(utils::current_time, job->get_job_id(), "DEADLINE MISS");
         }
     }
     //std::cout << std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now() - utils::simulator_start_time).count() <<std::endl;
@@ -142,6 +143,9 @@ bool Executor::run_simulation(JobVectorOfSimulator& job_vector_of_simulator, Job
                         job->set_simulated_release_time(utils::current_time + std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now() - hyper_period_start).count());
                         simulation_ready_queue.push_back(job);
                         is_idle = false;   
+                        // std::thread t(&Logger::real_cyber_schedule_logger_201914388, global_object::logger, job->get_simulated_release_time(), job->get_job_id(), "RELEASED");
+                        // t.detach();
+                        global_object::logger->real_cyber_schedule_logger_201914388(job->get_simulated_release_time(), job->get_job_id(), "RELEASED");
                     }
                 }
                 else
@@ -150,6 +154,9 @@ bool Executor::run_simulation(JobVectorOfSimulator& job_vector_of_simulator, Job
                     job->set_simulated_release_time(utils::current_time + std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now() - hyper_period_start).count());
                     simulation_ready_queue.push_back(job);    
                     is_idle = false; 
+                    // std::thread t(&Logger::real_cyber_schedule_logger_201914388, global_object::logger, job->get_simulated_release_time(), job->get_job_id(), "RELEASED");
+                    // t.detach();
+                    global_object::logger->real_cyber_schedule_logger_201914388(job->get_simulated_release_time(), job->get_job_id(), "RELEASED");
                 }
             }
         }
@@ -173,7 +180,10 @@ bool Executor::run_simulation(JobVectorOfSimulator& job_vector_of_simulator, Job
             }
             
             run_job->set_simulated_start_time(utils::current_time + std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now() - hyper_period_start).count()); 
-             
+            
+            // std::thread t(&Logger::real_cyber_schedule_logger_201914388, global_object::logger, run_job->get_simulated_start_time(), run_job->get_job_id(), "STARTED");
+            // t.detach();
+            global_object::logger->real_cyber_schedule_logger_201914388(run_job->get_simulated_start_time(), run_job->get_job_id(), "STARTED");
             // bool is_simulatable = simulatability_analysis(job_vector_of_simulator);
             // if(!is_simulatable)
             // {
@@ -204,7 +214,11 @@ bool Executor::run_simulation(JobVectorOfSimulator& job_vector_of_simulator, Job
                     break;
                 }
             }
-            
+
+            // std::thread t(&Logger::real_cyber_schedule_logger_201914388, global_object::logger, utils::current_time, run_job->get_job_id(), "FINISHED");
+            // t.detach();
+            global_object::logger->real_cyber_schedule_logger_201914388(utils::current_time, run_job->get_job_id(), "FINISHED");
+
             update_all(job_vector_of_simulator, run_job);
         }
     }
