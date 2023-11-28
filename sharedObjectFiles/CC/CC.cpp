@@ -22,9 +22,9 @@ void sim_main()
   /********************************************/
   write5 = 0;
   write6 = 0;
-  read2 = read2 / 100 - 400000;
+  read2 = read2 / 100 - 100000;
 
-  if(read4 > 6000) {
+  if(read4 >6000) {
     
     write6 = read1;
 	
@@ -40,3 +40,4 @@ void sim_main()
   *CC_Send_BRAKE = write5;
   *CC_Send_ACCEL = write6;
 }
+
