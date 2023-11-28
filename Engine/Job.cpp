@@ -618,6 +618,7 @@ void Job::run_function()
         delayed_data->data_write3 = shared::rtY.write3;
         delayed_data->data_write2 = shared::CC_Send_BRAKE;
         delayed_data->data_write1 = shared::CC_Send_ACCEL;
+        global_object::delayed_data_write.push_back(delayed_data);
 
         global_object::logger->task_read_write_logger_201914388("WRITE");        
         #endif
