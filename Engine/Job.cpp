@@ -575,8 +575,7 @@ void Job::run_function()
         if(!global_object::tagged_data_read.empty())
         {
             std::shared_ptr<TaggedData> current_data = global_object::tagged_data_read.at(global_object::tagged_data_read.size()-1);
-            // std::thread t(&Logger::task_read_write_logger_201914388, global_object::logger, "READ");
-            // t.detach();
+
             global_object::logger->task_read_write_logger_201914388("READ");
             global_object::tagged_data_read.clear();
         }
@@ -589,8 +588,7 @@ void Job::run_function()
         delayed_data->data_write2 = shared::CC_Send_BRAKE;
         delayed_data->data_write1 = shared::CC_Send_ACCEL;
         global_object::delayed_data_write.push_back(delayed_data);
-        // std::thread t(&Logger::task_read_write_logger_201914388, global_object::logger, "WRITE");
-        // t.detach();
+
         global_object::logger->task_read_write_logger_201914388("WRITE");
     }
     else if((get_is_read() == true) && (get_is_write() == false))
@@ -599,8 +597,7 @@ void Job::run_function()
         {
             std::shared_ptr<TaggedData> current_data = global_object::tagged_data_read.at(global_object::tagged_data_read.size()-1);
             global_object::tagged_data_read.clear();
-            // std::thread t(&Logger::task_read_write_logger_201914388, global_object::logger, "READ");
-            // t.detach();
+
             global_object::logger->task_read_write_logger_201914388("READ");
         }
         run();
@@ -621,8 +618,7 @@ void Job::run_function()
         delayed_data->data_write3 = shared::rtY.write3;
         delayed_data->data_write2 = shared::CC_Send_BRAKE;
         delayed_data->data_write1 = shared::CC_Send_ACCEL;
-        // std::thread t(&Logger::task_read_write_logger_201914388, global_object::logger, "WRITE");
-        // t.detach();
+
         global_object::logger->task_read_write_logger_201914388("WRITE");        
         #endif
     }
