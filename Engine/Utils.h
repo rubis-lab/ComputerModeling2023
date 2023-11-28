@@ -46,7 +46,7 @@ typedef std::vector<std::shared_ptr<CAN_message> > CanMsgVector;
 #endif
 
 namespace utils
-{
+{   
     inline std::mutex mtx_data_read;
     inline std::mutex mtx_data_write;
     inline std::mutex mtx_data_log;

@@ -243,6 +243,16 @@ void Initializer::initialize(EcuVector& ecu_vector, TaskVector& task_vector, Job
     /**
      * Speicification Initialization
      */
+    std::string s="[ TIME ] [ READ/WRITE ] [ TASK NAME ] [ DATA NAME ]\n";
+    std::ofstream rw_log;
+    rw_log.open(utils::cpsim_path + "/Log/VictorMihaila_read_write.log");
+    rw_log.write(s.c_str(), s.size());
+    rw_log.close();
+    s="[ TIME ] [ JOB ID ] [ EVENT TYPE ]\n";
+    std::ofstream s_log;
+    s_log.open(utils::cpsim_path + "/Log/VictorMihaila_schedule.log");
+    s_log.write(s.c_str(), s.size());
+    s_log.close();
     if(utils::real_workload == true)
     {
         Specifier specifier;
