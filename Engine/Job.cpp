@@ -575,35 +575,11 @@ void Job::run_function()
         if(!global_object::tagged_data_read.empty())
         {
             std::shared_ptr<TaggedData> current_data = global_object::tagged_data_read.at(global_object::tagged_data_read.size()-1);
+            if(get_task_name() == utils::log_task)
+            global_object::logger->_2023_81570_task_read_write_logger(utils::log_task, current_data, nullptr);
             global_object::tagged_data_read.clear();
         }
         run();
-  
-        std::shared_ptr<DelayedData> delayed_data = std::make_shared<DelayedData>();
-        delayed_data->data_time = m_actual_finish_time;
-        delayed_data->data_write4 = shared::rtY.write4;
-        delayed_data->data_write3 = shared::rtY.write3;
-        delayed_data->data_write2 = shared::CC_Send_BRAKE;
-        delayed_data->data_write1 = shared::CC_Send_ACCEL;
-    }
-    else if((get_is_read() == true) && (get_is_write() == false))
-    {
-        if(!global_object::tagged_data_read.empty())
-        {
-            std::shared_ptr<TaggedData> current_data = global_object::tagged_data_read.at(global_object::tagged_data_read.size()-1);
-            global_object::tagged_data_read.clear();
-        }
-        run();
-    }
-    else if((get_is_read() == false) && (get_is_write() == true))
-    {
-        run();
-        
-        #ifdef CANMODE__   
-        CAN_message msg; 
-        msg.transmit_can_message(m_task_name);
-        #endif
-        #ifdef ETHERNET_MODE__  
 
         std::shared_ptr<DelayedData> delayed_data = std::make_shared<DelayedData>();
         delayed_data->data_time = m_actual_finish_time;
@@ -611,6 +587,38 @@ void Job::run_function()
         delayed_data->data_write3 = shared::rtY.write3;
         delayed_data->data_write2 = shared::CC_Send_BRAKE;
         delayed_data->data_write1 = shared::CC_Send_ACCEL;
+        if(get_task_name() == utils::log_task)
+        global_object::logger->_2023_81570_task_read_write_logger(utils::log_task, nullptr, delayed_data);
+    }
+    else if((get_is_read() == true) && (get_is_write() == false))
+    {
+        if(!global_object::tagged_data_read.empty())
+        {
+            std::shared_ptr<TaggedData> current_data = global_object::tagged_data_read.at(global_object::tagged_data_read.size()-1);
+            if(get_task_name() == utils::log_task)
+                global_object::logger->_2023_81570_task_read_write_logger(utils::log_task, current_data, nullptr);
+            global_object::tagged_data_read.clear();
+        }
+        run();
+    }
+    else if((get_is_read() == false) && (get_is_write() == true))
+    {
+        run();
+
+        #ifdef CANMODE__
+        CAN_message msg;
+        msg.transmit_can_message(m_task_name);
+        #endif
+        #ifdef ETHERNET_MODE__
+
+        std::shared_ptr<DelayedData> delayed_data = std::make_shared<DelayedData>();
+        delayed_data->data_time = m_actual_finish_time;
+        delayed_data->data_write4 = shared::rtY.write4;
+        delayed_data->data_write3 = shared::rtY.write3;
+        delayed_data->data_write2 = shared::CC_Send_BRAKE;
+        delayed_data->data_write1 = shared::CC_Send_ACCEL;
+        if(get_task_name() == utils::log_task)
+        global_object::logger->_2023_81570_task_read_write_logger(utils::log_task, nullptr, delayed_data);
         #endif
     }
     m_run_end = std::chrono::steady_clock::now();
