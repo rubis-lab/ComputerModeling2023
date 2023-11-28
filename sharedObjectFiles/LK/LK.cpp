@@ -9,6 +9,15 @@ void sim_main()
   }
   else
   {
+
+    rtDW->w4 += 10.0; 
+
+    if (rtDW->w4 > 10000.0))
+    {
+      rtDW->w4 = 10000.0;
+    }
+
+    
     if (rtU->read1 > 0.0)
     {
       rtDW->w3 = 0.0;
@@ -41,6 +50,7 @@ void sim_main()
       }
     }
   }
+
   rtY->write3 = rtDW->w3;
   rtY->write4 = rtDW->w4;
 }
