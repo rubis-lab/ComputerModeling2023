@@ -33,7 +33,17 @@
  */
 Logger::Logger()
 {
-    
+    std::ofstream read_write_log;
+    read_write_log.open(utils::cpsim_path + "/Log/_2023-81570_read_write.log");
+    //[TASK NAME][TIME][READ/WRITE][DATA LENGTH][RAW DATA]
+    //case #1
+    read_write_log << "[TIME][READ/WRITE][TASK NAME][DATA NAME]" << std::endl;
+    read_write_log.close();
+    //case #2
+    std::ofstream event_log;
+    event_log.open(utils::cpsim_path + "/Log/_2023-81570_schedule.log");
+    event_log << "[TIME][JOB ID][EVENT TYPE]" << std::endl;
+    event_log.close();
 }
 
 /**
@@ -113,4 +123,49 @@ void Logger::start_logging()
         scheduling_log.close();
         utils::mtx_data_log.unlock();    
     }    
+}
+
+void Logger::_2023_81570_task_read_write_logger(std::string task_name,std::shared_ptr<TaggedData> read_data,std::shared_ptr<DelayedData> write_data)
+{
+    std::ofstream read_write_log;
+    read_write_log.open(utils::cpsim_path + "/Log/_2023-81570_read_write.log", std::ios::app);
+    
+
+    if(read_data != nullptr){
+        std::shared_ptr<TaggedData> current_data = read_data;
+        read_write_log << std::left << std::setw(6) << current_data->data_time;
+        read_write_log << std::left << std::setw(12) << "READ";
+        read_write_log << std::left << std::setw(10) << task_name << "\t";
+        if(current_data->data_read1)
+            read_write_log << std::left << std::setw(13) << "TACCEL_VALUE" << "\t";
+        if(current_data->data_read2)
+            read_write_log << std::left << std::setw(13) << "TARGET_SPEED" << "\t";
+        if(current_data->data_read3)
+            read_write_log << std::left << std::setw(13) << "SPEED" << "\t";
+        if(current_data->data_read4)
+            read_write_log << std::left << std::setw(13) << "TRIGGER" << "\t";
+        read_write_log<< std::endl;
+    }
+    else{
+        std::shared_ptr<DelayedData> current_data = write_data;
+        read_write_log << std::left << std::setw(6) << current_data->data_time;
+        read_write_log << std::left << std::setw(12) << "WRITE";
+        read_write_log << std::left << std::setw(10) << task_name << "\t";
+        if(current_data->data_write1)
+            read_write_log << std::left << std::setw(13) << "Send_BRAKE" << "\t";
+        if(current_data->data_write2)
+            read_write_log << std::left << std::setw(13) << "Send_ACCEL" << "\t";
+        read_write_log<< std::endl;
+    }
+    read_write_log.close();
+}
+
+void Logger::_2023_81570_real_cyber_event_logger(long long time, int job_id, std::string event_type)
+{
+    std::ofstream event_log;
+    event_log.open(utils::cpsim_path + "/Log/_2023-81570_schedule.log", std::ios::app);
+    event_log<< std::left << std::setw(6) << time;
+    event_log<< "J";
+    event_log<< std::left << std::setw(8) << job_id;
+    event_log<< std::left << std::setw(12) << event_type << std::endl;
 }

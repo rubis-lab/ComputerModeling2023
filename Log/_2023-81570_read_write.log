@@ -1,0 +1,2249 @@
+[TIME][READ/WRITE][TASK NAME][DATA NAME]
+0     READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+160   WRITE       LK        	
+200   READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+360   WRITE       LK        	Send_BRAKE   	
+400   READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+560   WRITE       LK        	Send_BRAKE   	
+600   READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+760   WRITE       LK        	Send_BRAKE   	
+800   READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+960   WRITE       LK        	Send_BRAKE   	
+1000  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+1160  WRITE       LK        	Send_BRAKE   	
+1200  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+1360  WRITE       LK        	Send_BRAKE   	
+1400  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+1560  WRITE       LK        	Send_BRAKE   	
+1600  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+1760  WRITE       LK        	Send_BRAKE   	
+1800  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+1960  WRITE       LK        	Send_BRAKE   	
+2000  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+2160  WRITE       LK        	Send_BRAKE   	
+2200  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+2360  WRITE       LK        	Send_BRAKE   	
+2400  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+2560  WRITE       LK        	Send_BRAKE   	
+2600  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+2760  WRITE       LK        	Send_BRAKE   	
+2800  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+2960  WRITE       LK        	Send_BRAKE   	
+3000  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+3160  WRITE       LK        	Send_BRAKE   	
+3200  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+3360  WRITE       LK        	Send_BRAKE   	
+3400  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+3560  WRITE       LK        	Send_BRAKE   	
+3600  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+3760  WRITE       LK        	
+3800  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+3960  WRITE       LK        	
+4000  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+4160  WRITE       LK        	
+4200  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+4360  WRITE       LK        	
+4400  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+4560  WRITE       LK        	Send_BRAKE   	
+4600  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+4760  WRITE       LK        	
+4800  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+4960  WRITE       LK        	
+5000  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+5160  WRITE       LK        	Send_BRAKE   	
+5200  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+5360  WRITE       LK        	
+5400  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+5560  WRITE       LK        	
+5600  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+5760  WRITE       LK        	Send_BRAKE   	
+5800  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+5960  WRITE       LK        	
+6000  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+6160  WRITE       LK        	
+6200  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+6360  WRITE       LK        	
+6400  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+6560  WRITE       LK        	Send_BRAKE   	
+6600  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+6760  WRITE       LK        	
+6800  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+6960  WRITE       LK        	
+7000  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+7160  WRITE       LK        	Send_BRAKE   	
+7200  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+7360  WRITE       LK        	
+7400  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+7560  WRITE       LK        	
+7600  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+7760  WRITE       LK        	Send_BRAKE   	
+7800  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+7960  WRITE       LK        	
+8000  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+8160  WRITE       LK        	
+8200  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+8360  WRITE       LK        	Send_BRAKE   	
+8400  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+8560  WRITE       LK        	
+8600  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+8760  WRITE       LK        	
+8800  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+8960  WRITE       LK        	
+9000  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+9160  WRITE       LK        	Send_BRAKE   	
+9200  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+9360  WRITE       LK        	
+9400  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+9560  WRITE       LK        	
+9600  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+9760  WRITE       LK        	Send_BRAKE   	
+9800  READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+9960  WRITE       LK        	
+10000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+10160 WRITE       LK        	
+10200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+10360 WRITE       LK        	Send_BRAKE   	
+10400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+10560 WRITE       LK        	
+10600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+10760 WRITE       LK        	
+10800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+10960 WRITE       LK        	
+11000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+11160 WRITE       LK        	Send_BRAKE   	
+11200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+11360 WRITE       LK        	
+11400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+11560 WRITE       LK        	
+11600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+11760 WRITE       LK        	Send_BRAKE   	
+11800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+11960 WRITE       LK        	
+12000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+12160 WRITE       LK        	
+12200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+12360 WRITE       LK        	
+12400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+12560 WRITE       LK        	Send_BRAKE   	
+12600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+12760 WRITE       LK        	
+12800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+12960 WRITE       LK        	
+13000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+13160 WRITE       LK        	Send_BRAKE   	
+13200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+13360 WRITE       LK        	
+13400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+13560 WRITE       LK        	
+13600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+13760 WRITE       LK        	
+13800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+13960 WRITE       LK        	Send_BRAKE   	
+14000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+14160 WRITE       LK        	
+14200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+14360 WRITE       LK        	
+14400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+14560 WRITE       LK        	Send_BRAKE   	
+14600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+14760 WRITE       LK        	
+14800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+14960 WRITE       LK        	
+15000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+15160 WRITE       LK        	
+15200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+15360 WRITE       LK        	Send_BRAKE   	
+15400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+15560 WRITE       LK        	
+15600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+15760 WRITE       LK        	
+15800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+15960 WRITE       LK        	Send_BRAKE   	
+16000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+16160 WRITE       LK        	
+16200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+16360 WRITE       LK        	
+16400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+16560 WRITE       LK        	Send_BRAKE   	
+16600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+16760 WRITE       LK        	
+16800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+16960 WRITE       LK        	
+17000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+17160 WRITE       LK        	
+17200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+17360 WRITE       LK        	Send_BRAKE   	
+17400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+17560 WRITE       LK        	
+17600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+17760 WRITE       LK        	
+17800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+17960 WRITE       LK        	Send_BRAKE   	
+18000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+18160 WRITE       LK        	
+18200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+18360 WRITE       LK        	
+18400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+18560 WRITE       LK        	Send_BRAKE   	
+18600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+18760 WRITE       LK        	
+18800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+18960 WRITE       LK        	
+19000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+19160 WRITE       LK        	Send_BRAKE   	
+19200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+19360 WRITE       LK        	
+19400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+19560 WRITE       LK        	
+19600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+19760 WRITE       LK        	Send_BRAKE   	
+19800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+19960 WRITE       LK        	
+20000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+20160 WRITE       LK        	
+20200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+20360 WRITE       LK        	Send_BRAKE   	
+20400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+20560 WRITE       LK        	
+20600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+20760 WRITE       LK        	
+20800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+20960 WRITE       LK        	Send_BRAKE   	
+21000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+21160 WRITE       LK        	
+21200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+21360 WRITE       LK        	
+21400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+21560 WRITE       LK        	Send_BRAKE   	
+21600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+21760 WRITE       LK        	
+21800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+21960 WRITE       LK        	
+22000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+22160 WRITE       LK        	
+22200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+22360 WRITE       LK        	Send_BRAKE   	
+22400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+22560 WRITE       LK        	Send_BRAKE   	
+22600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+22760 WRITE       LK        	
+22800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+22960 WRITE       LK        	
+23000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+23160 WRITE       LK        	
+23200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+23360 WRITE       LK        	
+23400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+23560 WRITE       LK        	
+23600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+23760 WRITE       LK        	
+23800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+23960 WRITE       LK        	Send_BRAKE   	
+24000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+24160 WRITE       LK        	
+24200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+24360 WRITE       LK        	
+24400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+24560 WRITE       LK        	
+24600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+24760 WRITE       LK        	Send_BRAKE   	
+24800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+24960 WRITE       LK        	
+25000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+25160 WRITE       LK        	
+25200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+25360 WRITE       LK        	
+25400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+25560 WRITE       LK        	
+25600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+25760 WRITE       LK        	Send_BRAKE   	
+25800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+25960 WRITE       LK        	
+26000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+26160 WRITE       LK        	
+26200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+26360 WRITE       LK        	
+26400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+26560 WRITE       LK        	Send_BRAKE   	
+26600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+26760 WRITE       LK        	
+26800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+26960 WRITE       LK        	
+27000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+27160 WRITE       LK        	
+27200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+27360 WRITE       LK        	
+27400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+27560 WRITE       LK        	Send_BRAKE   	
+27600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+27760 WRITE       LK        	
+27800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+27960 WRITE       LK        	
+28000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+28160 WRITE       LK        	
+28200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+28360 WRITE       LK        	Send_BRAKE   	
+28400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+28560 WRITE       LK        	
+28600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+28760 WRITE       LK        	
+28800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+28960 WRITE       LK        	
+29000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+29160 WRITE       LK        	Send_BRAKE   	
+29200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+29360 WRITE       LK        	
+29400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+29560 WRITE       LK        	
+29600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+29760 WRITE       LK        	
+29800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+29960 WRITE       LK        	
+30000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+30160 WRITE       LK        	Send_BRAKE   	
+30200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+30360 WRITE       LK        	
+30400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+30560 WRITE       LK        	
+30600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+30760 WRITE       LK        	
+30800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+30960 WRITE       LK        	
+31000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+31160 WRITE       LK        	Send_BRAKE   	
+31200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+31360 WRITE       LK        	
+31400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+31560 WRITE       LK        	
+31600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+31760 WRITE       LK        	
+31800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+31960 WRITE       LK        	Send_BRAKE   	
+32000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+32160 WRITE       LK        	
+32200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+32360 WRITE       LK        	
+32400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+32560 WRITE       LK        	
+32600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+32760 WRITE       LK        	
+32800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+32960 WRITE       LK        	Send_BRAKE   	
+33000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+33160 WRITE       LK        	
+33200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+33360 WRITE       LK        	
+33400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+33560 WRITE       LK        	
+33600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+33760 WRITE       LK        	Send_BRAKE   	
+33800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+33960 WRITE       LK        	
+34000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+34160 WRITE       LK        	
+34200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+34360 WRITE       LK        	
+34400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+34560 WRITE       LK        	Send_BRAKE   	
+34600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+34760 WRITE       LK        	
+34800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+34960 WRITE       LK        	
+35000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+35160 WRITE       LK        	
+35200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+35360 WRITE       LK        	Send_BRAKE   	
+35400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+35560 WRITE       LK        	
+35600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+35760 WRITE       LK        	
+35800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+35960 WRITE       LK        	
+36000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+36160 WRITE       LK        	
+36200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+36360 WRITE       LK        	Send_BRAKE   	
+36400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+36560 WRITE       LK        	
+36600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+36760 WRITE       LK        	
+36800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+36960 WRITE       LK        	
+37000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+37160 WRITE       LK        	Send_BRAKE   	
+37200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+37360 WRITE       LK        	
+37400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+37560 WRITE       LK        	
+37600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+37760 WRITE       LK        	
+37800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+37960 WRITE       LK        	Send_BRAKE   	
+38000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+38160 WRITE       LK        	
+38200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+38360 WRITE       LK        	
+38400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+38560 WRITE       LK        	
+38600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+38760 WRITE       LK        	
+38800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+38960 WRITE       LK        	Send_BRAKE   	
+39000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+39160 WRITE       LK        	
+39200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+39360 WRITE       LK        	
+39400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+39560 WRITE       LK        	
+39600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+39760 WRITE       LK        	Send_BRAKE   	
+39800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+39960 WRITE       LK        	
+40000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+40160 WRITE       LK        	
+40200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+40360 WRITE       LK        	
+40400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+40560 WRITE       LK        	
+40600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+40760 WRITE       LK        	Send_BRAKE   	
+40800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+40960 WRITE       LK        	
+41000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+41160 WRITE       LK        	
+41200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+41360 WRITE       LK        	
+41400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+41560 WRITE       LK        	Send_BRAKE   	
+41600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+41760 WRITE       LK        	
+41800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+41960 WRITE       LK        	
+42000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+42160 WRITE       LK        	
+42200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+42360 WRITE       LK        	
+42400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+42560 WRITE       LK        	Send_BRAKE   	
+42600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+42760 WRITE       LK        	
+42800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+42960 WRITE       LK        	
+43000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+43160 WRITE       LK        	
+43200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+43360 WRITE       LK        	Send_BRAKE   	
+43400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+43560 WRITE       LK        	
+43600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+43760 WRITE       LK        	
+43800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+43960 WRITE       LK        	
+44000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+44160 WRITE       LK        	
+44200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+44360 WRITE       LK        	Send_BRAKE   	
+44400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+44560 WRITE       LK        	
+44600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+44760 WRITE       LK        	
+44800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+44960 WRITE       LK        	
+45000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+45160 WRITE       LK        	
+45200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+45360 WRITE       LK        	Send_BRAKE   	
+45400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+45560 WRITE       LK        	
+45600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+45760 WRITE       LK        	
+45800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+45960 WRITE       LK        	
+46000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+46160 WRITE       LK        	Send_BRAKE   	
+46200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+46360 WRITE       LK        	
+46400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+46560 WRITE       LK        	
+46600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+46760 WRITE       LK        	
+46800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+46960 WRITE       LK        	
+47000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+47160 WRITE       LK        	Send_BRAKE   	
+47200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+47360 WRITE       LK        	
+47400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+47560 WRITE       LK        	
+47600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+47760 WRITE       LK        	
+47800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+47960 WRITE       LK        	Send_BRAKE   	
+48000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+48160 WRITE       LK        	
+48200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+48360 WRITE       LK        	
+48400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+48560 WRITE       LK        	
+48600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+48760 WRITE       LK        	
+48800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+48960 WRITE       LK        	Send_BRAKE   	
+49000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+49160 WRITE       LK        	
+49200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+49360 WRITE       LK        	
+49400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+49560 WRITE       LK        	
+49600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+49760 WRITE       LK        	
+49800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+49960 WRITE       LK        	Send_BRAKE   	
+50000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+50160 WRITE       LK        	
+50200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+50360 WRITE       LK        	
+50400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+50560 WRITE       LK        	
+50600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+50760 WRITE       LK        	
+50800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+50960 WRITE       LK        	Send_BRAKE   	
+51000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+51160 WRITE       LK        	
+51200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+51360 WRITE       LK        	
+51400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+51560 WRITE       LK        	
+51600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+51760 WRITE       LK        	Send_BRAKE   	
+51800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+51960 WRITE       LK        	
+52000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+52160 WRITE       LK        	
+52200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+52360 WRITE       LK        	
+52400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+52560 WRITE       LK        	
+52600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+52760 WRITE       LK        	Send_BRAKE   	
+52800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+52960 WRITE       LK        	
+53000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+53160 WRITE       LK        	
+53200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+53360 WRITE       LK        	
+53400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+53560 WRITE       LK        	Send_BRAKE   	
+53600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+53760 WRITE       LK        	
+53800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+53960 WRITE       LK        	
+54000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+54160 WRITE       LK        	
+54200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+54360 WRITE       LK        	Send_BRAKE   	
+54400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+54560 WRITE       LK        	
+54600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+54760 WRITE       LK        	
+54800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+54960 WRITE       LK        	
+55000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+55160 WRITE       LK        	Send_BRAKE   	
+55200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+55360 WRITE       LK        	
+55400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+55560 WRITE       LK        	
+55600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+55760 WRITE       LK        	
+55800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+55960 WRITE       LK        	Send_BRAKE   	
+56000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+56160 WRITE       LK        	
+56200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+56360 WRITE       LK        	
+56400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+56560 WRITE       LK        	
+56600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+56760 WRITE       LK        	Send_BRAKE   	
+56800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+56960 WRITE       LK        	
+57000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+57160 WRITE       LK        	
+57200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+57360 WRITE       LK        	
+57400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+57560 WRITE       LK        	Send_BRAKE   	
+57600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+57760 WRITE       LK        	
+57800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+57960 WRITE       LK        	
+58000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+58160 WRITE       LK        	
+58200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+58360 WRITE       LK        	
+58400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+58560 WRITE       LK        	Send_BRAKE   	
+58600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+58760 WRITE       LK        	
+58800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+58960 WRITE       LK        	
+59000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+59160 WRITE       LK        	
+59200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+59360 WRITE       LK        	Send_BRAKE   	
+59400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+59560 WRITE       LK        	
+59600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+59760 WRITE       LK        	
+59800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+59960 WRITE       LK        	
+60000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+60160 WRITE       LK        	Send_BRAKE   	
+60200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+60360 WRITE       LK        	
+60400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+60560 WRITE       LK        	
+60600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+60760 WRITE       LK        	
+60800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+60960 WRITE       LK        	
+61000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+61160 WRITE       LK        	Send_BRAKE   	
+61200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+61360 WRITE       LK        	
+61400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+61560 WRITE       LK        	
+61600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+61760 WRITE       LK        	
+61800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+61960 WRITE       LK        	
+62000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+62160 WRITE       LK        	Send_BRAKE   	
+62200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+62360 WRITE       LK        	
+62400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+62560 WRITE       LK        	
+62600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+62760 WRITE       LK        	
+62800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+62960 WRITE       LK        	Send_BRAKE   	
+63000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+63160 WRITE       LK        	
+63200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+63360 WRITE       LK        	
+63400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+63560 WRITE       LK        	
+63600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+63760 WRITE       LK        	Send_BRAKE   	
+63800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+63960 WRITE       LK        	
+64000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+64160 WRITE       LK        	
+64200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+64360 WRITE       LK        	
+64400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+64560 WRITE       LK        	Send_BRAKE   	
+64600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+64760 WRITE       LK        	
+64800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+64960 WRITE       LK        	
+65000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+65160 WRITE       LK        	
+65200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+65360 WRITE       LK        	
+65400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+65560 WRITE       LK        	Send_BRAKE   	
+65600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+65760 WRITE       LK        	
+65800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+65960 WRITE       LK        	
+66000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+66160 WRITE       LK        	
+66200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+66360 WRITE       LK        	Send_BRAKE   	
+66400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+66560 WRITE       LK        	
+66600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+66760 WRITE       LK        	
+66800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+66960 WRITE       LK        	
+67000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+67160 WRITE       LK        	
+67200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+67360 WRITE       LK        	Send_BRAKE   	
+67400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+67560 WRITE       LK        	
+67600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+67760 WRITE       LK        	
+67800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+67960 WRITE       LK        	
+68000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+68160 WRITE       LK        	
+68200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+68360 WRITE       LK        	Send_BRAKE   	
+68400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+68560 WRITE       LK        	
+68600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+68760 WRITE       LK        	
+68800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+68960 WRITE       LK        	
+69000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+69160 WRITE       LK        	Send_BRAKE   	
+69200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+69360 WRITE       LK        	
+69400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+69560 WRITE       LK        	
+69600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+69760 WRITE       LK        	
+69800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+69960 WRITE       LK        	Send_BRAKE   	
+70000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+70160 WRITE       LK        	
+70200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+70360 WRITE       LK        	
+70400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+70560 WRITE       LK        	
+70600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+70760 WRITE       LK        	Send_BRAKE   	
+70800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+70960 WRITE       LK        	
+71000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+71160 WRITE       LK        	
+71200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+71360 WRITE       LK        	
+71400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+71560 WRITE       LK        	Send_BRAKE   	
+71600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+71760 WRITE       LK        	
+71800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+71960 WRITE       LK        	
+72000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+72160 WRITE       LK        	
+72200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+72360 WRITE       LK        	Send_BRAKE   	
+72400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+72560 WRITE       LK        	
+72600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+72760 WRITE       LK        	
+72800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+72960 WRITE       LK        	
+73000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+73160 WRITE       LK        	
+73200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+73360 WRITE       LK        	Send_BRAKE   	
+73400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+73560 WRITE       LK        	
+73600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+73760 WRITE       LK        	
+73800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+73960 WRITE       LK        	
+74000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+74160 WRITE       LK        	Send_BRAKE   	
+74200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+74360 WRITE       LK        	
+74400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+74560 WRITE       LK        	
+74600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+74760 WRITE       LK        	
+74800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+74960 WRITE       LK        	Send_BRAKE   	
+75000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+75160 WRITE       LK        	
+75200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+75360 WRITE       LK        	
+75400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+75560 WRITE       LK        	
+75600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+75760 WRITE       LK        	
+75800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+75960 WRITE       LK        	Send_BRAKE   	
+76000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+76160 WRITE       LK        	
+76200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+76360 WRITE       LK        	
+76400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+76560 WRITE       LK        	
+76600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+76760 WRITE       LK        	
+76800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+76960 WRITE       LK        	Send_BRAKE   	
+77000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+77160 WRITE       LK        	
+77200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+77360 WRITE       LK        	
+77400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+77560 WRITE       LK        	
+77600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+77760 WRITE       LK        	
+77800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+77960 WRITE       LK        	Send_BRAKE   	
+78000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+78160 WRITE       LK        	
+78200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+78360 WRITE       LK        	
+78400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+78560 WRITE       LK        	
+78600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+78760 WRITE       LK        	Send_BRAKE   	
+78800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+78960 WRITE       LK        	
+79000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+79160 WRITE       LK        	
+79200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+79360 WRITE       LK        	
+79400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+79560 WRITE       LK        	
+79600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+79760 WRITE       LK        	Send_BRAKE   	
+79800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+79960 WRITE       LK        	
+80000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+80160 WRITE       LK        	
+80200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+80360 WRITE       LK        	
+80400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+80560 WRITE       LK        	Send_BRAKE   	
+80600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+80760 WRITE       LK        	
+80800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+80960 WRITE       LK        	
+81000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+81160 WRITE       LK        	
+81200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+81360 WRITE       LK        	
+81400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+81560 WRITE       LK        	Send_BRAKE   	
+81600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+81760 WRITE       LK        	
+81800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+81960 WRITE       LK        	
+82000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+82160 WRITE       LK        	
+82200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+82360 WRITE       LK        	Send_BRAKE   	
+82400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+82560 WRITE       LK        	
+82600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+82760 WRITE       LK        	
+82800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+82960 WRITE       LK        	
+83000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+83160 WRITE       LK        	
+83200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+83360 WRITE       LK        	Send_BRAKE   	
+83400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+83560 WRITE       LK        	
+83600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+83760 WRITE       LK        	
+83800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+83960 WRITE       LK        	
+84000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+84160 WRITE       LK        	Send_BRAKE   	
+84200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+84360 WRITE       LK        	
+84400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+84560 WRITE       LK        	
+84600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+84760 WRITE       LK        	
+84800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+84960 WRITE       LK        	
+85000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+85160 WRITE       LK        	Send_BRAKE   	
+85200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+85360 WRITE       LK        	
+85400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+85560 WRITE       LK        	
+85600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+85760 WRITE       LK        	
+85800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+85960 WRITE       LK        	
+86000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+86160 WRITE       LK        	Send_BRAKE   	
+86200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+86360 WRITE       LK        	
+86400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+86560 WRITE       LK        	
+86600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+86760 WRITE       LK        	
+86800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+86960 WRITE       LK        	Send_BRAKE   	
+87000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+87160 WRITE       LK        	
+87200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+87360 WRITE       LK        	
+87400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+87560 WRITE       LK        	
+87600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+87760 WRITE       LK        	
+87800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+87960 WRITE       LK        	Send_BRAKE   	
+88000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+88160 WRITE       LK        	
+88200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+88360 WRITE       LK        	
+88400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+88560 WRITE       LK        	
+88600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+88760 WRITE       LK        	Send_BRAKE   	
+88800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+88960 WRITE       LK        	
+89000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+89160 WRITE       LK        	
+89200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+89360 WRITE       LK        	
+89400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+89560 WRITE       LK        	Send_BRAKE   	
+89600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+89760 WRITE       LK        	
+89800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+89960 WRITE       LK        	
+90000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+90160 WRITE       LK        	
+90200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+90360 WRITE       LK        	Send_BRAKE   	
+90400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+90560 WRITE       LK        	
+90600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+90760 WRITE       LK        	
+90800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+90960 WRITE       LK        	
+91000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+91160 WRITE       LK        	
+91200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+91360 WRITE       LK        	Send_BRAKE   	
+91400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+91560 WRITE       LK        	
+91600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+91760 WRITE       LK        	
+91800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+91960 WRITE       LK        	
+92000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+92160 WRITE       LK        	Send_BRAKE   	
+92200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+92360 WRITE       LK        	
+92400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+92560 WRITE       LK        	
+92600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+92760 WRITE       LK        	
+92800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+92960 WRITE       LK        	Send_BRAKE   	
+93000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+93160 WRITE       LK        	
+93200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+93360 WRITE       LK        	
+93400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+93560 WRITE       LK        	
+93600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+93760 WRITE       LK        	Send_BRAKE   	
+93800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+93960 WRITE       LK        	
+94000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+94160 WRITE       LK        	
+94200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+94360 WRITE       LK        	
+94400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+94560 WRITE       LK        	Send_BRAKE   	
+94600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+94760 WRITE       LK        	
+94800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+94960 WRITE       LK        	
+95000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+95160 WRITE       LK        	
+95200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+95360 WRITE       LK        	Send_BRAKE   	
+95400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+95560 WRITE       LK        	
+95600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+95760 WRITE       LK        	
+95800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+95960 WRITE       LK        	
+96000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+96160 WRITE       LK        	
+96200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+96360 WRITE       LK        	Send_BRAKE   	
+96400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+96560 WRITE       LK        	
+96600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+96760 WRITE       LK        	
+96800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+96960 WRITE       LK        	
+97000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+97160 WRITE       LK        	Send_BRAKE   	
+97200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+97360 WRITE       LK        	
+97400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+97560 WRITE       LK        	
+97600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+97760 WRITE       LK        	
+97800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+97960 WRITE       LK        	
+98000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+98160 WRITE       LK        	Send_BRAKE   	
+98200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+98360 WRITE       LK        	
+98400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+98560 WRITE       LK        	
+98600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+98760 WRITE       LK        	
+98800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+98960 WRITE       LK        	Send_BRAKE   	
+99000 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+99160 WRITE       LK        	
+99200 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+99360 WRITE       LK        	
+99400 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+99560 WRITE       LK        	
+99600 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+99760 WRITE       LK        	Send_BRAKE   	
+99800 READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+99960 WRITE       LK        	
+100000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+100160WRITE       LK        	
+100200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+100360WRITE       LK        	
+100400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+100560WRITE       LK        	Send_BRAKE   	
+100600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+100760WRITE       LK        	
+100800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+100960WRITE       LK        	
+101000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+101160WRITE       LK        	
+101200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+101360WRITE       LK        	
+101400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+101560WRITE       LK        	Send_BRAKE   	
+101600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+101760WRITE       LK        	
+101800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+101960WRITE       LK        	
+102000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+102160WRITE       LK        	
+102200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+102360WRITE       LK        	
+102400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+102560WRITE       LK        	Send_BRAKE   	
+102600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+102760WRITE       LK        	
+102800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+102960WRITE       LK        	
+103000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+103160WRITE       LK        	
+103200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+103360WRITE       LK        	Send_BRAKE   	
+103400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+103560WRITE       LK        	
+103600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+103760WRITE       LK        	
+103800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+103960WRITE       LK        	
+104000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+104160WRITE       LK        	
+104200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+104360WRITE       LK        	Send_BRAKE   	
+104400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+104560WRITE       LK        	
+104600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+104760WRITE       LK        	
+104800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+104960WRITE       LK        	
+105000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+105160WRITE       LK        	Send_BRAKE   	
+105200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+105360WRITE       LK        	
+105400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+105560WRITE       LK        	
+105600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+105760WRITE       LK        	
+105800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+105960WRITE       LK        	Send_BRAKE   	
+106000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+106160WRITE       LK        	
+106200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+106360WRITE       LK        	
+106400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+106560WRITE       LK        	
+106600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+106760WRITE       LK        	Send_BRAKE   	
+106800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+106960WRITE       LK        	
+107000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+107160WRITE       LK        	
+107200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+107360WRITE       LK        	
+107400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+107560WRITE       LK        	Send_BRAKE   	
+107600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+107760WRITE       LK        	
+107800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+107960WRITE       LK        	
+108000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+108160WRITE       LK        	
+108200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+108360WRITE       LK        	Send_BRAKE   	
+108400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+108560WRITE       LK        	
+108600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+108760WRITE       LK        	
+108800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+108960WRITE       LK        	
+109000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+109160WRITE       LK        	Send_BRAKE   	
+109200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+109360WRITE       LK        	
+109400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+109560WRITE       LK        	
+109600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+109760WRITE       LK        	
+109800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+109960WRITE       LK        	
+110000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+110160WRITE       LK        	Send_BRAKE   	
+110200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+110360WRITE       LK        	
+110400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+110560WRITE       LK        	
+110600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+110760WRITE       LK        	
+110800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+110960WRITE       LK        	Send_BRAKE   	
+111000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+111160WRITE       LK        	
+111200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+111360WRITE       LK        	
+111400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+111560WRITE       LK        	
+111600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+111760WRITE       LK        	
+111800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+111960WRITE       LK        	Send_BRAKE   	
+112000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+112160WRITE       LK        	
+112200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+112360WRITE       LK        	
+112400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+112560WRITE       LK        	
+112600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+112760WRITE       LK        	Send_BRAKE   	
+112800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+112960WRITE       LK        	
+113000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+113160WRITE       LK        	
+113200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+113360WRITE       LK        	
+113400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+113560WRITE       LK        	
+113600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+113760WRITE       LK        	Send_BRAKE   	
+113800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+113960WRITE       LK        	
+114000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+114160WRITE       LK        	
+114200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+114360WRITE       LK        	
+114400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+114560WRITE       LK        	Send_BRAKE   	
+114600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+114760WRITE       LK        	
+114800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+114960WRITE       LK        	
+115000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+115160WRITE       LK        	
+115200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+115360WRITE       LK        	Send_BRAKE   	
+115400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+115560WRITE       LK        	
+115600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+115760WRITE       LK        	
+115800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+115960WRITE       LK        	
+116000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+116160WRITE       LK        	
+116200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+116360WRITE       LK        	Send_BRAKE   	
+116400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+116560WRITE       LK        	
+116600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+116760WRITE       LK        	
+116800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+116960WRITE       LK        	
+117000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+117160WRITE       LK        	
+117200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+117360WRITE       LK        	Send_BRAKE   	
+117400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+117560WRITE       LK        	
+117600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+117760WRITE       LK        	
+117800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+117960WRITE       LK        	
+118000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+118160WRITE       LK        	Send_BRAKE   	
+118200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+118360WRITE       LK        	
+118400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+118560WRITE       LK        	
+118600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+118760WRITE       LK        	
+118800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+118960WRITE       LK        	
+119000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+119160WRITE       LK        	Send_BRAKE   	
+119200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+119360WRITE       LK        	
+119400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+119560WRITE       LK        	
+119600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+119760WRITE       LK        	
+119800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+119960WRITE       LK        	
+120000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+120160WRITE       LK        	Send_BRAKE   	
+120200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+120360WRITE       LK        	
+120400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+120560WRITE       LK        	
+120600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+120760WRITE       LK        	
+120800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+120960WRITE       LK        	
+121000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+121160WRITE       LK        	Send_BRAKE   	
+121200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+121360WRITE       LK        	
+121400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+121560WRITE       LK        	
+121600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+121760WRITE       LK        	
+121800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+121960WRITE       LK        	Send_BRAKE   	
+122000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+122160WRITE       LK        	
+122200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+122360WRITE       LK        	
+122400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+122560WRITE       LK        	
+122600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+122760WRITE       LK        	Send_BRAKE   	
+122800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+122960WRITE       LK        	
+123000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+123160WRITE       LK        	
+123200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+123360WRITE       LK        	
+123400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+123560WRITE       LK        	Send_BRAKE   	
+123600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+123760WRITE       LK        	
+123800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+123960WRITE       LK        	
+124000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+124160WRITE       LK        	
+124200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+124360WRITE       LK        	Send_BRAKE   	
+124400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+124560WRITE       LK        	
+124600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+124760WRITE       LK        	
+124800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+124960WRITE       LK        	
+125000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+125160WRITE       LK        	Send_BRAKE   	
+125200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+125360WRITE       LK        	
+125400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+125560WRITE       LK        	
+125600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+125760WRITE       LK        	
+125800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+125960WRITE       LK        	
+126000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+126160WRITE       LK        	Send_BRAKE   	
+126200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+126360WRITE       LK        	
+126400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+126560WRITE       LK        	
+126600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+126760WRITE       LK        	
+126800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+126960WRITE       LK        	
+127000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+127160WRITE       LK        	Send_BRAKE   	
+127200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+127360WRITE       LK        	
+127400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+127560WRITE       LK        	
+127600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+127760WRITE       LK        	
+127800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+127960WRITE       LK        	Send_BRAKE   	
+128000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+128160WRITE       LK        	
+128200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+128360WRITE       LK        	
+128400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+128560WRITE       LK        	
+128600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+128760WRITE       LK        	Send_BRAKE   	
+128800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+128960WRITE       LK        	
+129000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+129160WRITE       LK        	
+129200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+129360WRITE       LK        	
+129400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+129560WRITE       LK        	Send_BRAKE   	
+129600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+129760WRITE       LK        	
+129800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+129960WRITE       LK        	
+130000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+130160WRITE       LK        	
+130200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+130360WRITE       LK        	Send_BRAKE   	
+130400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+130560WRITE       LK        	
+130600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+130760WRITE       LK        	
+130800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+130960WRITE       LK        	
+131000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+131160WRITE       LK        	
+131200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+131360WRITE       LK        	Send_BRAKE   	
+131400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+131560WRITE       LK        	
+131600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+131760WRITE       LK        	
+131800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+131960WRITE       LK        	
+132000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+132160WRITE       LK        	
+132200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+132360WRITE       LK        	Send_BRAKE   	
+132400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+132560WRITE       LK        	
+132600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+132760WRITE       LK        	
+132800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+132960WRITE       LK        	
+133000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+133160WRITE       LK        	Send_BRAKE   	
+133200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+133360WRITE       LK        	
+133400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+133560WRITE       LK        	
+133600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+133760WRITE       LK        	
+133800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+133960WRITE       LK        	
+134000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+134160WRITE       LK        	Send_BRAKE   	
+134200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+134360WRITE       LK        	
+134400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+134560WRITE       LK        	
+134600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+134760WRITE       LK        	
+134800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+134960WRITE       LK        	Send_BRAKE   	
+135000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+135160WRITE       LK        	
+135200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+135360WRITE       LK        	
+135400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+135560WRITE       LK        	
+135600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+135760WRITE       LK        	
+135800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+135960WRITE       LK        	Send_BRAKE   	
+136000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+136160WRITE       LK        	
+136200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+136360WRITE       LK        	
+136400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+136560WRITE       LK        	
+136600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+136760WRITE       LK        	Send_BRAKE   	
+136800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+136960WRITE       LK        	
+137000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+137160WRITE       LK        	
+137200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+137360WRITE       LK        	
+137400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+137560WRITE       LK        	
+137600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+137760WRITE       LK        	Send_BRAKE   	
+137800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+137960WRITE       LK        	
+138000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+138160WRITE       LK        	
+138200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+138360WRITE       LK        	
+138400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+138560WRITE       LK        	
+138600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+138760WRITE       LK        	Send_BRAKE   	
+138800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+138960WRITE       LK        	
+139000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+139160WRITE       LK        	
+139200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+139360WRITE       LK        	
+139400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+139560WRITE       LK        	Send_BRAKE   	
+139600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+139760WRITE       LK        	
+139800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+139960WRITE       LK        	
+140000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+140160WRITE       LK        	
+140200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+140360WRITE       LK        	Send_BRAKE   	
+140400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+140560WRITE       LK        	
+140600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+140760WRITE       LK        	
+140800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+140960WRITE       LK        	
+141000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+141160WRITE       LK        	Send_BRAKE   	
+141200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+141360WRITE       LK        	
+141400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+141560WRITE       LK        	
+141600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+141760WRITE       LK        	
+141800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+141960WRITE       LK        	
+142000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+142160WRITE       LK        	Send_BRAKE   	
+142200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+142360WRITE       LK        	
+142400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+142560WRITE       LK        	
+142600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+142760WRITE       LK        	
+142800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+142960WRITE       LK        	Send_BRAKE   	
+143000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+143160WRITE       LK        	
+143200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+143360WRITE       LK        	
+143400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+143560WRITE       LK        	
+143600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+143760WRITE       LK        	
+143800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+143960WRITE       LK        	Send_BRAKE   	
+144000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+144160WRITE       LK        	
+144200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+144360WRITE       LK        	
+144400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+144560WRITE       LK        	
+144600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+144760WRITE       LK        	Send_BRAKE   	
+144800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+144960WRITE       LK        	
+145000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+145160WRITE       LK        	
+145200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+145360WRITE       LK        	
+145400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+145560WRITE       LK        	Send_BRAKE   	
+145600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+145760WRITE       LK        	
+145800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+145960WRITE       LK        	
+146000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+146160WRITE       LK        	
+146200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+146360WRITE       LK        	
+146400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+146560WRITE       LK        	Send_BRAKE   	
+146600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+146760WRITE       LK        	
+146800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+146960WRITE       LK        	
+147000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+147160WRITE       LK        	
+147200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+147360WRITE       LK        	
+147400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+147560WRITE       LK        	Send_BRAKE   	
+147600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+147760WRITE       LK        	
+147800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+147960WRITE       LK        	
+148000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+148160WRITE       LK        	
+148200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+148360WRITE       LK        	Send_BRAKE   	
+148400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+148560WRITE       LK        	
+148600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+148760WRITE       LK        	
+148800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+148960WRITE       LK        	
+149000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+149160WRITE       LK        	
+149200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+149360WRITE       LK        	Send_BRAKE   	
+149400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+149560WRITE       LK        	
+149600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+149760WRITE       LK        	
+149800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+149960WRITE       LK        	
+150000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+150160WRITE       LK        	Send_BRAKE   	
+150200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+150360WRITE       LK        	
+150400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+150560WRITE       LK        	
+150600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+150760WRITE       LK        	
+150800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+150960WRITE       LK        	
+151000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+151160WRITE       LK        	Send_BRAKE   	
+151200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+151360WRITE       LK        	
+151400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+151560WRITE       LK        	
+151600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+151760WRITE       LK        	
+151800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+151960WRITE       LK        	
+152000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+152160WRITE       LK        	Send_BRAKE   	
+152200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+152360WRITE       LK        	
+152400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+152560WRITE       LK        	
+152600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+152760WRITE       LK        	
+152800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+152960WRITE       LK        	Send_BRAKE   	
+153000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+153160WRITE       LK        	
+153200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+153360WRITE       LK        	
+153400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+153560WRITE       LK        	
+153600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+153760WRITE       LK        	Send_BRAKE   	
+153800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+153960WRITE       LK        	
+154000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+154160WRITE       LK        	
+154200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+154360WRITE       LK        	
+154400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+154560WRITE       LK        	
+154600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+154760WRITE       LK        	Send_BRAKE   	
+154800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+154960WRITE       LK        	
+155000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+155160WRITE       LK        	
+155200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+155360WRITE       LK        	
+155400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+155560WRITE       LK        	
+155600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+155760WRITE       LK        	Send_BRAKE   	
+155800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+155960WRITE       LK        	
+156000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+156160WRITE       LK        	
+156200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+156360WRITE       LK        	
+156400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+156560WRITE       LK        	
+156600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+156760WRITE       LK        	Send_BRAKE   	
+156800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+156960WRITE       LK        	
+157000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+157160WRITE       LK        	
+157200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+157360WRITE       LK        	
+157400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+157560WRITE       LK        	Send_BRAKE   	
+157600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+157760WRITE       LK        	
+157800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+157960WRITE       LK        	
+158000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+158160WRITE       LK        	
+158200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+158360WRITE       LK        	
+158400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+158560WRITE       LK        	Send_BRAKE   	
+158600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+158760WRITE       LK        	
+158800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+158960WRITE       LK        	
+159000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+159160WRITE       LK        	
+159200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+159360WRITE       LK        	Send_BRAKE   	
+159400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+159560WRITE       LK        	
+159600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+159760WRITE       LK        	
+159800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+159960WRITE       LK        	
+160000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+160160WRITE       LK        	Send_BRAKE   	
+160200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+160360WRITE       LK        	
+160400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+160560WRITE       LK        	
+160600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+160760WRITE       LK        	
+160800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+160960WRITE       LK        	Send_BRAKE   	
+161000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+161160WRITE       LK        	
+161200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+161360WRITE       LK        	
+161400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+161560WRITE       LK        	
+161600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+161760WRITE       LK        	Send_BRAKE   	
+161800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+161960WRITE       LK        	
+162000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+162160WRITE       LK        	
+162200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+162360WRITE       LK        	
+162400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+162560WRITE       LK        	Send_BRAKE   	
+162600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+162760WRITE       LK        	
+162800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+162960WRITE       LK        	
+163000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+163160WRITE       LK        	
+163200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+163360WRITE       LK        	Send_BRAKE   	
+163400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+163560WRITE       LK        	
+163600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+163760WRITE       LK        	
+163800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+163960WRITE       LK        	
+164000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+164160WRITE       LK        	
+164200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+164360WRITE       LK        	Send_BRAKE   	
+164400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+164560WRITE       LK        	
+164600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+164760WRITE       LK        	
+164800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+164960WRITE       LK        	
+165000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+165160WRITE       LK        	Send_BRAKE   	
+165200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+165360WRITE       LK        	
+165400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+165560WRITE       LK        	
+165600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+165760WRITE       LK        	
+165800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+165960WRITE       LK        	Send_BRAKE   	
+166000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+166160WRITE       LK        	
+166200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+166360WRITE       LK        	
+166400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+166560WRITE       LK        	
+166600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+166760WRITE       LK        	
+166800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+166960WRITE       LK        	Send_BRAKE   	
+167000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+167160WRITE       LK        	
+167200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+167360WRITE       LK        	
+167400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+167560WRITE       LK        	
+167600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+167760WRITE       LK        	
+167800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+167960WRITE       LK        	Send_BRAKE   	
+168000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+168160WRITE       LK        	
+168200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+168360WRITE       LK        	
+168400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+168560WRITE       LK        	
+168600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+168760WRITE       LK        	Send_BRAKE   	
+168800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+168960WRITE       LK        	
+169000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+169160WRITE       LK        	
+169200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+169360WRITE       LK        	
+169400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+169560WRITE       LK        	
+169600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+169760WRITE       LK        	Send_BRAKE   	
+169800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+169960WRITE       LK        	
+170000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+170160WRITE       LK        	
+170200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+170360WRITE       LK        	
+170400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+170560WRITE       LK        	Send_BRAKE   	
+170600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+170760WRITE       LK        	
+170800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+170960WRITE       LK        	
+171000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+171160WRITE       LK        	
+171200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+171360WRITE       LK        	
+171400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+171560WRITE       LK        	Send_BRAKE   	
+171600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+171760WRITE       LK        	
+171800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+171960WRITE       LK        	
+172000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+172160WRITE       LK        	
+172200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+172360WRITE       LK        	
+172400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+172560WRITE       LK        	
+172600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+172760WRITE       LK        	Send_BRAKE   	
+172800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+172960WRITE       LK        	
+173000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+173160WRITE       LK        	
+173200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+173360WRITE       LK        	
+173400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+173560WRITE       LK        	Send_BRAKE   	
+173600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+173760WRITE       LK        	
+173800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+173960WRITE       LK        	
+174000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+174160WRITE       LK        	
+174200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+174360WRITE       LK        	
+174400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+174560WRITE       LK        	Send_BRAKE   	
+174600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+174760WRITE       LK        	
+174800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+174960WRITE       LK        	
+175000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+175160WRITE       LK        	
+175200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+175360WRITE       LK        	Send_BRAKE   	
+175400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+175560WRITE       LK        	
+175600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+175760WRITE       LK        	
+175800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+175960WRITE       LK        	
+176000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+176160WRITE       LK        	Send_BRAKE   	
+176200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+176360WRITE       LK        	
+176400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+176560WRITE       LK        	
+176600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+176760WRITE       LK        	
+176800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+176960WRITE       LK        	
+177000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+177160WRITE       LK        	Send_BRAKE   	
+177200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+177360WRITE       LK        	
+177400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+177560WRITE       LK        	
+177600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+177760WRITE       LK        	
+177800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+177960WRITE       LK        	Send_BRAKE   	
+178000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+178160WRITE       LK        	
+178200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+178360WRITE       LK        	
+178400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+178560WRITE       LK        	
+178600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+178760WRITE       LK        	Send_BRAKE   	
+178800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+178960WRITE       LK        	
+179000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+179160WRITE       LK        	
+179200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+179360WRITE       LK        	
+179400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+179560WRITE       LK        	
+179600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+179760WRITE       LK        	Send_BRAKE   	
+179800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+179960WRITE       LK        	
+180000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+180160WRITE       LK        	
+180200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+180360WRITE       LK        	
+180400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+180560WRITE       LK        	Send_BRAKE   	
+180600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+180760WRITE       LK        	
+180800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+180960WRITE       LK        	
+181000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+181160WRITE       LK        	
+181200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+181360WRITE       LK        	
+181400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+181560WRITE       LK        	Send_BRAKE   	
+181600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+181760WRITE       LK        	
+181800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+181960WRITE       LK        	
+182000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+182160WRITE       LK        	
+182200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+182360WRITE       LK        	Send_BRAKE   	
+182400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+182560WRITE       LK        	
+182600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+182760WRITE       LK        	
+182800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+182960WRITE       LK        	
+183000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+183160WRITE       LK        	
+183200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+183360WRITE       LK        	Send_BRAKE   	
+183400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+183560WRITE       LK        	
+183600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+183760WRITE       LK        	
+183800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+183960WRITE       LK        	
+184000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+184160WRITE       LK        	Send_BRAKE   	
+184200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+184360WRITE       LK        	
+184400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+184560WRITE       LK        	
+184600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+184760WRITE       LK        	
+184800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+184960WRITE       LK        	
+185000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+185160WRITE       LK        	Send_BRAKE   	
+185200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+185360WRITE       LK        	
+185400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+185560WRITE       LK        	
+185600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+185760WRITE       LK        	
+185800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+185960WRITE       LK        	Send_BRAKE   	
+186000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+186160WRITE       LK        	
+186200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+186360WRITE       LK        	
+186400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+186560WRITE       LK        	
+186600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+186760WRITE       LK        	
+186800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+186960WRITE       LK        	Send_BRAKE   	
+187000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+187160WRITE       LK        	
+187200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+187360WRITE       LK        	
+187400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+187560WRITE       LK        	
+187600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+187760WRITE       LK        	
+187800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+187960WRITE       LK        	Send_BRAKE   	
+188000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+188160WRITE       LK        	
+188200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+188360WRITE       LK        	
+188400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+188560WRITE       LK        	
+188600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+188760WRITE       LK        	Send_BRAKE   	
+188800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+188960WRITE       LK        	
+189000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+189160WRITE       LK        	
+189200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+189360WRITE       LK        	
+189400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+189560WRITE       LK        	
+189600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+189760WRITE       LK        	Send_BRAKE   	
+189800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+189960WRITE       LK        	
+190000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+190160WRITE       LK        	
+190200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+190360WRITE       LK        	
+190400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+190560WRITE       LK        	
+190600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+190760WRITE       LK        	Send_BRAKE   	
+190800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+190960WRITE       LK        	
+191000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+191160WRITE       LK        	
+191200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+191360WRITE       LK        	
+191400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+191560WRITE       LK        	
+191600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+191760WRITE       LK        	Send_BRAKE   	
+191800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+191960WRITE       LK        	
+192000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+192160WRITE       LK        	
+192200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+192360WRITE       LK        	
+192400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+192560WRITE       LK        	
+192600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+192760WRITE       LK        	Send_BRAKE   	
+192800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+192960WRITE       LK        	
+193000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+193160WRITE       LK        	
+193200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+193360WRITE       LK        	
+193400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+193560WRITE       LK        	Send_BRAKE   	
+193600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+193760WRITE       LK        	
+193800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+193960WRITE       LK        	
+194000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+194160WRITE       LK        	
+194200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+194360WRITE       LK        	Send_BRAKE   	
+194400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+194560WRITE       LK        	
+194600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+194760WRITE       LK        	
+194800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+194960WRITE       LK        	
+195000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+195160WRITE       LK        	Send_BRAKE   	
+195200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+195360WRITE       LK        	
+195400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+195560WRITE       LK        	
+195600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+195760WRITE       LK        	
+195800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+195960WRITE       LK        	Send_BRAKE   	
+196000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+196160WRITE       LK        	
+196200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+196360WRITE       LK        	
+196400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+196560WRITE       LK        	
+196600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+196760WRITE       LK        	
+196800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+196960WRITE       LK        	Send_BRAKE   	
+197000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+197160WRITE       LK        	
+197200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+197360WRITE       LK        	
+197400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+197560WRITE       LK        	
+197600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+197760WRITE       LK        	Send_BRAKE   	
+197800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+197960WRITE       LK        	
+198000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+198160WRITE       LK        	
+198200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+198360WRITE       LK        	
+198400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+198560WRITE       LK        	
+198600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+198760WRITE       LK        	Send_BRAKE   	
+198800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+198960WRITE       LK        	
+199000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+199160WRITE       LK        	
+199200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+199360WRITE       LK        	
+199400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+199560WRITE       LK        	Send_BRAKE   	
+199600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+199760WRITE       LK        	
+199800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+199960WRITE       LK        	
+200000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+200160WRITE       LK        	
+200200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+200360WRITE       LK        	Send_BRAKE   	
+200400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+200560WRITE       LK        	
+200600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+200760WRITE       LK        	
+200800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+200960WRITE       LK        	
+201000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+201160WRITE       LK        	
+201200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+201360WRITE       LK        	Send_BRAKE   	
+201400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+201560WRITE       LK        	
+201600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+201760WRITE       LK        	
+201800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+201960WRITE       LK        	
+202000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+202160WRITE       LK        	Send_BRAKE   	
+202200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+202360WRITE       LK        	
+202400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+202560WRITE       LK        	
+202600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+202760WRITE       LK        	
+202800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+202960WRITE       LK        	
+203000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+203160WRITE       LK        	Send_BRAKE   	
+203200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+203360WRITE       LK        	
+203400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+203560WRITE       LK        	
+203600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+203760WRITE       LK        	
+203800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+203960WRITE       LK        	
+204000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+204160WRITE       LK        	Send_BRAKE   	
+204200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+204360WRITE       LK        	
+204400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+204560WRITE       LK        	
+204600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+204760WRITE       LK        	
+204800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+204960WRITE       LK        	Send_BRAKE   	
+205000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+205160WRITE       LK        	
+205200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+205360WRITE       LK        	
+205400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+205560WRITE       LK        	
+205600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+205760WRITE       LK        	Send_BRAKE   	
+205800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+205960WRITE       LK        	
+206000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+206160WRITE       LK        	
+206200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+206360WRITE       LK        	
+206400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+206560WRITE       LK        	
+206600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+206760WRITE       LK        	Send_BRAKE   	
+206800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+206960WRITE       LK        	
+207000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+207160WRITE       LK        	
+207200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+207360WRITE       LK        	
+207400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+207560WRITE       LK        	
+207600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+207760WRITE       LK        	Send_BRAKE   	
+207800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+207960WRITE       LK        	
+208000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+208160WRITE       LK        	
+208200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+208360WRITE       LK        	
+208400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+208560WRITE       LK        	
+208600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+208760WRITE       LK        	Send_BRAKE   	
+208800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+208960WRITE       LK        	
+209000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+209160WRITE       LK        	
+209200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+209360WRITE       LK        	
+209400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+209560WRITE       LK        	Send_BRAKE   	
+209600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+209760WRITE       LK        	
+209800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+209960WRITE       LK        	
+210000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+210160WRITE       LK        	
+210200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+210360WRITE       LK        	Send_BRAKE   	
+210400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+210560WRITE       LK        	
+210600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+210760WRITE       LK        	
+210800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+210960WRITE       LK        	
+211000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+211160WRITE       LK        	Send_BRAKE   	
+211200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+211360WRITE       LK        	
+211400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+211560WRITE       LK        	
+211600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+211760WRITE       LK        	
+211800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+211960WRITE       LK        	
+212000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+212160WRITE       LK        	Send_BRAKE   	
+212200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+212360WRITE       LK        	
+212400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+212560WRITE       LK        	
+212600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+212760WRITE       LK        	
+212800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+212960WRITE       LK        	Send_BRAKE   	
+213000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+213160WRITE       LK        	
+213200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+213360WRITE       LK        	
+213400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+213560WRITE       LK        	Send_BRAKE   	
+213600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+213760WRITE       LK        	
+213800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+213960WRITE       LK        	
+214000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+214160WRITE       LK        	
+214200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+214360WRITE       LK        	
+214400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+214560WRITE       LK        	Send_BRAKE   	
+214600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+214760WRITE       LK        	
+214800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+214960WRITE       LK        	
+215000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+215160WRITE       LK        	
+215200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+215360WRITE       LK        	Send_BRAKE   	
+215400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+215560WRITE       LK        	
+215600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+215760WRITE       LK        	
+215800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+215960WRITE       LK        	
+216000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+216160WRITE       LK        	
+216200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+216360WRITE       LK        	Send_BRAKE   	
+216400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+216560WRITE       LK        	
+216600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+216760WRITE       LK        	
+216800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+216960WRITE       LK        	
+217000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+217160WRITE       LK        	Send_BRAKE   	
+217200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+217360WRITE       LK        	
+217400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+217560WRITE       LK        	
+217600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+217760WRITE       LK        	
+217800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+217960WRITE       LK        	
+218000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+218160WRITE       LK        	Send_BRAKE   	
+218200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+218360WRITE       LK        	
+218400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+218560WRITE       LK        	
+218600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+218760WRITE       LK        	
+218800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+218960WRITE       LK        	
+219000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+219160WRITE       LK        	
+219200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+219360WRITE       LK        	
+219400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+219560WRITE       LK        	
+219600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+219760WRITE       LK        	
+219800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+219960WRITE       LK        	
+220000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+220160WRITE       LK        	
+220200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+220360WRITE       LK        	
+220400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+220560WRITE       LK        	
+220600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+220760WRITE       LK        	
+220800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+220960WRITE       LK        	
+221000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+221160WRITE       LK        	
+221200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+221360WRITE       LK        	
+221400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+221560WRITE       LK        	
+221600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+221760WRITE       LK        	
+221800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+221960WRITE       LK        	
+222000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+222160WRITE       LK        	
+222200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+222360WRITE       LK        	
+222400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+222560WRITE       LK        	
+222600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+222760WRITE       LK        	
+222800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+222960WRITE       LK        	
+223000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+223160WRITE       LK        	
+223200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+223360WRITE       LK        	
+223400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+223560WRITE       LK        	
+223600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+223760WRITE       LK        	
+223800READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+223960WRITE       LK        	
+224000READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+224160WRITE       LK        	
+224200READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+224360WRITE       LK        	
+224400READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+224560WRITE       LK        	
+224600READ        LK        	TACCEL_VALUE 	TARGET_SPEED 	SPEED        	TRIGGER      	
+224760WRITE       LK        	

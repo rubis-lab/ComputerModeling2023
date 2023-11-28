@@ -141,15 +141,23 @@ bool Executor::run_simulation(JobVectorOfSimulator& job_vector_of_simulator, Job
                         job->set_is_released(true);
                         job->set_simulated_release_time(utils::current_time + std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now() - hyper_period_start).count());
                         simulation_ready_queue.push_back(job);
-                        is_idle = false;   
+                        if(job->get_actual_start_time() < 0 || job->get_actual_finish_time() > job->get_actual_deadline())
+                            global_object::logger->_2023_81570_real_cyber_event_logger(job->get_actual_deadline(), job->get_task_id(), "FINISHED");
+                        else
+                            global_object::logger->_2023_81570_real_cyber_event_logger(job->get_actual_release_time(), job->get_task_id(), "RELEASED");
+                        is_idle = false;
                     }
                 }
                 else
                 {
                     job->set_is_released(true);
                     job->set_simulated_release_time(utils::current_time + std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now() - hyper_period_start).count());
-                    simulation_ready_queue.push_back(job);    
-                    is_idle = false; 
+                    simulation_ready_queue.push_back(job);
+                    if(job->get_actual_start_time() < 0 || job->get_actual_finish_time() > job->get_actual_deadline())
+                        global_object::logger->_2023_81570_real_cyber_event_logger(job->get_actual_deadline(), job->get_task_id(), "FINISHED");
+                    else
+                        global_object::logger->_2023_81570_real_cyber_event_logger(job->get_actual_release_time(), job->get_task_id(), "RELEASED");
+                    is_idle = false;
                 }
             }
         }
@@ -173,7 +181,9 @@ bool Executor::run_simulation(JobVectorOfSimulator& job_vector_of_simulator, Job
             }
             
             run_job->set_simulated_start_time(utils::current_time + std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now() - hyper_period_start).count()); 
-             
+            
+            if(run_job->get_actual_start_time() > 0)
+                global_object::logger->_2023_81570_real_cyber_event_logger(run_job->get_actual_start_time(), run_job->get_task_id(), "STARTED");
             // bool is_simulatable = simulatability_analysis(job_vector_of_simulator);
             // if(!is_simulatable)
             // {

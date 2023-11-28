@@ -253,6 +253,10 @@ vector
 -
 Job.h
 /home/rubis/ComputerModeling2023/Engine/Job.h
+TaggedData.h
+/home/rubis/ComputerModeling2023/Engine/TaggedData.h
+DelayedData.h
+/home/rubis/ComputerModeling2023/Engine/DelayedData.h
 
 /home/rubis/ComputerModeling2023/Engine/Network.cpp
 Network.h
