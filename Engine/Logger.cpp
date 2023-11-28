@@ -133,11 +133,14 @@ void Logger::task_read_write_logger_201914388(const std::string& task_name) {
     std::ofstream scheduling_log;
     scheduling_log.open(utils::cpsim_path + "/Log/201914388_read_write.log", std::ios::app);
     std::string contents = "";
-    // std::shared_ptr<ScheduleData> current_data = global_object::schedule_data.front();
+    std::string time = "";
     if (task_name == "READ") {
+        std::shared_ptr<TaggedData> current_data = global_object::tagged_data_read.at(global_object::tagged_data_read.size()-1);
+        time = std::to_string(current_data->data_time);
         if (utils::log_task == "CC") {
             std::vector<std::string> CC_req = {"ACCEL_VALUE", "TARGET_SPEED", "TRIGGER", "Recv_SPEED"};
             for (std::string req : CC_req) {
+                contents += time + "\t";
                 contents += task_name + "\t";
                 contents += utils::log_task + "\t";
                 contents += req + "\n";
@@ -145,15 +148,19 @@ void Logger::task_read_write_logger_201914388(const std::string& task_name) {
         } else if (utils::log_task == "LK") {
             std::vector<std::string> LK_req = {"read1", "read2"};
             for (std::string req : LK_req) {
+                contents += time + "\t";
                 contents += task_name + "\t";
                 contents += utils::log_task + "\t";
                 contents += req + "\n";
             }
         }
     } else if (task_name == "WRITE") {
+        std::shared_ptr<DelayedData> current_data = global_object::delayed_data_write.at(global_object::delayed_data_write.size()-1);
+        time = std::to_string(current_data->data_time);
         if (utils::log_task == "CC") {
             std::vector<std::string> CC_req = {"BRAKE", "ACCEL"};
             for (std::string req : CC_req) {
+                contents += time + "\t";
                 contents += task_name + "\t";
                 contents += utils::log_task + "\t";
                 contents += req + "\n";
@@ -161,11 +168,13 @@ void Logger::task_read_write_logger_201914388(const std::string& task_name) {
         } else if (utils::log_task == "LK") {
             std::vector<std::string> LK_req = {"write3", "write4"};
             for (std::string req : LK_req) {
+                contents += time + "\t";
                 contents += task_name + "\t";
                 contents += utils::log_task + "\t";
                 contents += req + "\n";
             }
         }
+        global_object::delayed_data_write.clear();
     }
     scheduling_log.write(contents.c_str(), contents.size());
     scheduling_log.close();

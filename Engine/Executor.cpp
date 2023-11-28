@@ -217,7 +217,7 @@ bool Executor::run_simulation(JobVectorOfSimulator& job_vector_of_simulator, Job
 
             // std::thread t(&Logger::real_cyber_schedule_logger_201914388, global_object::logger, utils::current_time, run_job->get_job_id(), "FINISHED");
             // t.detach();
-            global_object::logger->real_cyber_schedule_logger_201914388(utils::current_time, run_job->get_job_id(), "FINISHED");
+            global_object::logger->real_cyber_schedule_logger_201914388(run_job->get_simulated_finish_time(), run_job->get_job_id(), "FINISHED");
 
             update_all(job_vector_of_simulator, run_job);
         }
