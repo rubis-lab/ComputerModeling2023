@@ -54,6 +54,42 @@ Logger::~Logger()
 
 }
 
+
+//open(utils::cpsim_path + "/Log/2023-81117_read_write.log", std::ios::out);
+
+void PuscasuRazvanStefan_202381117_task_read_write_logger(std::string task_name)
+{
+    //std::cout<<"AAAAAAAAAAAAAAAAAAAAAAAAAAA\n\n";
+
+    //while (std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now() - utils::simulator_start_time).count()  < utils::simulation_termination_time)
+    //{
+        //utils::mtx_data_log.lock();
+
+        if(global_object::schedule_data.size() > 10)
+        {
+            std::string out = "aaaaaaaaaaaaaaaaaaaaaaaaa\n";
+            auto job = global_object::running_job;
+            if (task_name != utils::log_task)
+            {
+                //utils::mtx_data_log.unlock();
+                return;
+            }
+            if (job->get_is_read())
+            {
+                out += (std::to_string(job->get_actual_start_time())) + " READ     " + task_name + "TARGET_SPEED" "\n";
+            }
+            else
+            {
+                out += (std::to_string(job->get_actual_finish_time())) + " WRITE     " + task_name + "ACCEL_VALUE"  + "\n";
+            }
+
+            turbat::logg.write(out.c_str(), out.size());
+            //logg.close();
+        }
+        //utils::mtx_data_log.unlock();
+    //}
+}
+
 /**
  * @fn void start_logging()
  * @brief this function starts the logging of simulation events
@@ -92,7 +128,7 @@ void Logger::start_logging()
     std::ofstream scheduling_log;
     while (std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now() - utils::simulator_start_time).count()  < utils::simulation_termination_time)
     {
-        scheduling_log.open(utils::cpsim_path + "/Log/scheduling.log", std::ios::app);    
+        scheduling_log.open(utils::cpsim_path + "/Log/scheduling2.log", std::ios::app);    
         utils::mtx_data_log.lock();
         if(global_object::schedule_data.size() > 10)
         {

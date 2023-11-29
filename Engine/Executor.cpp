@@ -97,6 +97,7 @@ void Executor::set_current_hyper_period_end(int current_hyper_period_end)
  */
 bool Executor::run_simulation(JobVectorOfSimulator& job_vector_of_simulator, JobVectorsForEachECU& job_vectors_for_each_ECU, double start_time)
 {
+    std::vector<event_t> events;
     double end_time = start_time + utils::hyper_period;
     move_ecus_jobs_to_simulator(job_vector_of_simulator, job_vectors_for_each_ECU); // Copies job vectors from ECUs to Sim.
     if (!utils::real_workload)
@@ -114,6 +115,12 @@ bool Executor::run_simulation(JobVectorOfSimulator& job_vector_of_simulator, Job
         if(job->get_actual_start_time() < 0 || job->get_actual_finish_time() > job->get_actual_deadline())
         {
             std::cout <<"DEADLINE MISS IN REAL CYBER SYSTEM" << std::endl;
+
+            event_t event;
+            event.time = job->get_actual_deadline();
+            event.jid  = job->get_job_id();
+            event.event = "DEADLINE MISS";
+            events.push_back(event);
         }
     }
     //std::cout << std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now() - utils::simulator_start_time).count() <<std::endl;
@@ -210,6 +217,32 @@ bool Executor::run_simulation(JobVectorOfSimulator& job_vector_of_simulator, Job
     }
 
     utils::current_time = end_time;
+
+    for (auto job : job_vector_of_simulator)
+    {
+        event_t e1,e2,e3;
+        e1.time=job->get_actual_release_time();
+        e1.jid=job->get_job_id();
+        e1.event="RELEASED";
+        events.push_back(e1);
+        e2.time=job->get_actual_release_time();
+        e2.jid=job->get_job_id();
+        e2.event="STARTED";
+        events.push_back(e2);
+        e3.time=job->get_actual_release_time();
+        e3.jid=job->get_job_id();
+        e3.event="FINISHED";
+        events.push_back(e3);
+    }
+    std::sort(events.begin(), events.end(), [](const event_t &a, const event_t &b){return a.time<b.time;});
+    std::ofstream aaaa;
+    aaaa.open(utils::cpsim_path + "/Log/2023-81117_schedule.log", std::ios::out);
+    for (auto event: events)
+    {
+        std::string s = (std::to_string(event.time) + "    J" + std::to_string(event.jid) + "     " + event.event + "\n");
+        aaaa.write(s.c_str(), s.size());
+    }
+    aaaa.close();
     return true;
 }
 

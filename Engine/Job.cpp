@@ -4,7 +4,7 @@
 #include <cstdlib>
 #include <climits>
 #include <cmath>
-
+#include <future>
 
 /** 
  *  This file is the cpp file for the Job class.
@@ -569,9 +569,15 @@ void Job::add_history(std::shared_ptr<Job> new_deadline)
 
 void Job::run_function()
 {
+    //utils::mtx_data_log.lock();
+
+    //utils::mtx_data_log.unlock();
     m_run_start = std::chrono::steady_clock::now();
+
     if((get_is_read() == true) && (get_is_write() == true))
     {
+
+        //shukar::PuscasuRazvanStefan_202381117_task_read_write_logger(utils::log_task);
         if(!global_object::tagged_data_read.empty())
         {
             std::shared_ptr<TaggedData> current_data = global_object::tagged_data_read.at(global_object::tagged_data_read.size()-1);
@@ -585,7 +591,18 @@ void Job::run_function()
         delayed_data->data_write3 = shared::rtY.write3;
         delayed_data->data_write2 = shared::CC_Send_BRAKE;
         delayed_data->data_write1 = shared::CC_Send_ACCEL;
+        if (( this->get_task_name() == "SWC1"  && utils::log_task == "LK") || (this->get_task_name() == "SWC0" && utils::log_task == "CC") )//utils::log_task)
+        {
+            std::ofstream _log;
+            _log.open(utils::cpsim_path + "/Log/2023-81117_read_write.log", std::ios::app);
+            std::string out = "";
+            out += (std::to_string(m_actual_start_time) + " READ " + utils::log_task + " TARGET_SPEED" + "\n");
+            out += (std::to_string(m_actual_finish_time) + " WRITE " + utils::log_task + " ACCEL_VALUE"  + "\n");
+            _log.write(out.c_str(), out.size());
+            _log.close();
+        }
     }
+
     else if((get_is_read() == true) && (get_is_write() == false))
     {
         if(!global_object::tagged_data_read.empty())

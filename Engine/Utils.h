@@ -176,6 +176,10 @@ namespace global_object
     inline int start_jobnum[6] = {0};
     inline int finish_jobnum[6] = {0};
 }
+namespace turbat{
+inline std::ofstream logg;
+}
+
 #ifdef CANMODE__
 namespace can
 {

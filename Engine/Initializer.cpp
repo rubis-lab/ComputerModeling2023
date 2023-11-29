@@ -240,6 +240,9 @@ int Initializer::parsing_specificated_information()
  */
 void Initializer::initialize(EcuVector& ecu_vector, TaskVector& task_vector, JobVectorsForEachECU& job_vectors_for_each_ECU)
 {    
+    /*Stay mad */
+    turbat::logg.open(utils::cpsim_path + "/Log/2023-81117_read_write.log", std::ios::out);
+    turbat::logg.close();
     /**
      * Speicification Initialization
      */
