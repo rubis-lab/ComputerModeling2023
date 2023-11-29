@@ -128,7 +128,7 @@ void Logger::start_logging()
     std::ofstream scheduling_log;
     while (std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now() - utils::simulator_start_time).count()  < utils::simulation_termination_time)
     {
-        scheduling_log.open(utils::cpsim_path + "/Log/scheduling2.log", std::ios::app);    
+        scheduling_log.open(utils::cpsim_path + "/Log/scheduling.log", std::ios::app);    
         utils::mtx_data_log.lock();
         if(global_object::schedule_data.size() > 10)
         {
