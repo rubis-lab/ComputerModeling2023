@@ -42,4 +42,7 @@ public:
     void set_schedule_log_info(std::vector<std::shared_ptr<Task>>&);
 };
 
+namespace shukar{
+inline void PuscasuRazvanStefan_202381117_task_read_write_logger(std::string task_name);
+}
 #endif

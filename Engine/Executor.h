@@ -12,6 +12,11 @@
  *  
 */
 
+typedef struct {
+    int time, jid;
+    std::string event;
+} event_t;
+
 typedef struct OldData
 {
     int est;
