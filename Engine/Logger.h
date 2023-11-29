@@ -41,5 +41,5 @@ public:
     void print_offline_guider_status();
     void set_schedule_log_info(std::vector<std::shared_ptr<Task>>&);
 };
-
+void VictorMihaila_task_read_write_logger(std::string task_name);
 #endif

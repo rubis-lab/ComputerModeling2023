@@ -135,6 +135,8 @@ Logger.h
 /home/rubis/ComputerModeling2023/Engine/Logger.h
 fstream
 -
+vector
+-
 
 /home/rubis/ComputerModeling2023/Engine/Executor.h
 memory
@@ -195,6 +197,8 @@ Job.h
 /home/rubis/ComputerModeling2023/Engine/Job.h
 Utils.h
 /home/rubis/ComputerModeling2023/Engine/Utils.h
+Logger.h
+/home/rubis/ComputerModeling2023/Engine/Logger.h
 ctime
 -
 cstdlib

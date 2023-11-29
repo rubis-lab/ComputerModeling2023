@@ -1,5 +1,6 @@
 #include "Job.h"
 #include "Utils.h"
+#include "Logger.h"
 #include <ctime>
 #include <cstdlib>
 #include <climits>
@@ -568,8 +569,12 @@ void Job::add_history(std::shared_ptr<Job> new_deadline)
 }
 
 void Job::run_function()
-{
+{   
+    std::ofstream rw_log;
+    rw_log.open(utils::cpsim_path + "/Log/VictorMihaila_read_write.log", std::ios::app);
     m_run_start = std::chrono::steady_clock::now();
+    std::string s1;
+    std::string s2;
     if((get_is_read() == true) && (get_is_write() == true))
     {
         if(!global_object::tagged_data_read.empty())
@@ -585,6 +590,19 @@ void Job::run_function()
         delayed_data->data_write3 = shared::rtY.write3;
         delayed_data->data_write2 = shared::CC_Send_BRAKE;
         delayed_data->data_write1 = shared::CC_Send_ACCEL;
+        if(this->get_task_name()=="SWC0" && utils::log_task=="CC"){
+        std::string s1=(std::to_string(m_actual_start_time) + "         READ            " + "CC" + "            TARGET_SPEED \n");
+        std::string s2=(std::to_string(m_actual_finish_time) + "         WRITE           " + "CC" + "            ACCEL_VALUE \n");
+        rw_log.write(s1.c_str(), s1.size());
+        rw_log.write(s2.c_str(), s2.size());
+        }
+        if(this->get_task_name()=="SWC1" && utils::log_task=="LK"){
+        std::string s1=(std::to_string(m_actual_start_time) + "         READ            " + "LK" + "            TARGET_SPEED \n");
+        std::string s2=(std::to_string(m_actual_finish_time) + "         WRITE           " + "LK" + "            ACCEL_VALUE \n");
+        rw_log.write(s1.c_str(), s1.size());
+        rw_log.write(s2.c_str(), s2.size());
+        }
+        //rw_log.close();
     }
     else if((get_is_read() == true) && (get_is_write() == false))
     {
@@ -614,4 +632,7 @@ void Job::run_function()
         #endif
     }
     m_run_end = std::chrono::steady_clock::now();
+    //if(get_task_name()==utils::log_task){
+    //VictorMihaila_task_read_write_logger(utils::log_task);
+    //}
 }

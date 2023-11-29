@@ -6,6 +6,7 @@
 #include <unordered_map>
 #include "Logger.h"
 #include <fstream>
+#include <vector>
 
 /**
  *  This file is the cpp file for the Executor class.
@@ -97,6 +98,9 @@ void Executor::set_current_hyper_period_end(int current_hyper_period_end)
  */
 bool Executor::run_simulation(JobVectorOfSimulator& job_vector_of_simulator, JobVectorsForEachECU& job_vectors_for_each_ECU, double start_time)
 {
+    std::ofstream s_log;
+    s_log.open(utils::cpsim_path + "/Log/VictorMihaila_schedule.log", std::ios::app);
+    std::vector<Event> events;
     double end_time = start_time + utils::hyper_period;
     move_ecus_jobs_to_simulator(job_vector_of_simulator, job_vectors_for_each_ECU); // Copies job vectors from ECUs to Sim.
     if (!utils::real_workload)
@@ -114,6 +118,13 @@ bool Executor::run_simulation(JobVectorOfSimulator& job_vector_of_simulator, Job
         if(job->get_actual_start_time() < 0 || job->get_actual_finish_time() > job->get_actual_deadline())
         {
             std::cout <<"DEADLINE MISS IN REAL CYBER SYSTEM" << std::endl;
+            //std::string s1 = (std::to_string(job->get_actual_deadline()) + "    " + std::to_string(job->get_job_id()) + "    DEADLINE MISS");
+            //s_log.write(s1.c_str(),s1.size());
+            Event e;
+            e.time=job->get_actual_deadline();
+            e.job_id=job->get_job_id();
+            e.event_type="DEADLINE MISS";
+            events.push_back(e);
         }
     }
     //std::cout << std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now() - utils::simulator_start_time).count() <<std::endl;
@@ -207,9 +218,43 @@ bool Executor::run_simulation(JobVectorOfSimulator& job_vector_of_simulator, Job
             
             update_all(job_vector_of_simulator, run_job);
         }
+
     }
 
     utils::current_time = end_time;
+    for (auto job : job_vector_of_simulator)
+    {
+        Event e1;
+        e1.time=job->get_actual_release_time();
+        e1.job_id=job->get_job_id();
+        e1.event_type="RELEASED";
+        events.push_back(e1);
+        Event e2;
+        e2.time=job->get_actual_start_time();
+        e2.job_id=job->get_job_id();
+        e2.event_type="STARTED";
+        events.push_back(e2);
+        Event e3;
+        e3.time=job->get_actual_finish_time();
+        e3.job_id=job->get_job_id();
+        e3.event_type="FINISHED";
+        events.push_back(e3);
+    }
+    std::sort(events.begin(), events.end(), [](const Event &a, const Event &b){
+        if(a.time!=b.time) return a.time<b.time;
+        if(a.job_id!=b.job_id) return a.time<b.time;
+        return (a.event_type=="RELEASED" && b.event_type!="RELEASED") || (a.event_type=="STARTED" && b.event_type=="FINISHED");
+    });
+    auto newEnd=std::unique(events.begin(), events.end(), [](const Event &a, const Event &b){
+        return a.time==b.time && a.job_id==b.job_id && a.event_type==b.event_type;
+    });
+    events.erase(newEnd, events.end());
+    for(Event e : events){
+        if(e.time>=0){
+            std::string s=(std::to_string(e.time) + "          J" + std::to_string(e.job_id) + "         " + e.event_type + "\n");
+            s_log.write(s.c_str(), s.size());
+        }
+    }
     return true;
 }
 
